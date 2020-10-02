@@ -23,6 +23,7 @@ namespace PF2E_Creature_Maker
 
     public enum Step
     {
+        Start,
         Level,
         Size,
         Traits,
@@ -38,16 +39,16 @@ namespace PF2E_Creature_Maker
         Spells,
         Spell_DC_And_Attack_Bonus,
         Area_Damage,
-        Gear
+        Gear,
+        End
     }
 
     class Program
     {
-        static void Main(string[] args)
+        public static Creature _creature = new Creature();
+        static void Main()
         {
             Random random = new Random();
-            Creature creature = new Creature();
-            List<Creature> creatureSaves = new List<Creature>() { creature };
 
             int partyLevel;
             bool endSteps = false;
@@ -69,8 +70,12 @@ namespace PF2E_Creature_Maker
                 Step.Spells,
                 Step.Spell_DC_And_Attack_Bonus,
                 Step.Area_Damage,
-                Step.Gear
+                Step.Gear,
+                Step.End
             };
+
+            
+            Dictionary<Step, Creature> creatureSaves = new Dictionary<Step, Creature>();
 
             for (int step = 0; endSteps == false; step++)
             {
@@ -81,48 +86,57 @@ namespace PF2E_Creature_Maker
 
                 if (step > 0)
                 {
-                    step = ContinueOrBack(stepOrder, step, creature, creatureSaves);
+                    step = ContinueOrBack(stepOrder, step, creatureSaves);
+                    Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
                 }
+
+                if (creatureSaves.ContainsKey(stepOrder[step]))
+                {
+                    creatureSaves.Remove(stepOrder[step]);
+                }
+                creatureSaves.Add(stepOrder[step], CopyCreature(_creature));
+                Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
 
                 switch (stepOrder[step])
                 {
                     case Step.Level:
                         {
-                            partyLevel = LevelStep(random, creature);
+                            partyLevel = LevelStep(random, _creature);
                             break;
                         }
                     case Step.Size:
                         {
-                            SizeStep(creature, random);
+                            SizeStep(_creature, random);
                             break;
                         }
+                    case Step.End:
                     default:
-                        endSteps = true;
-                        break;
+                        {
+                            endSteps = true;
+                            break;
+                        }
                 }
-
-                creatureSaves.Add(CopyCreature(creature));
             }
 
-            Console.WriteLine("Creature Level: " + creature._level);
-            Console.WriteLine(creature._size);
+            Console.WriteLine("Creature Level: " + _creature.Level);
+            Console.WriteLine(_creature.Size);
         }
 
         public static Creature CopyCreature(Creature creature)
         {
-            Creature creatureCopy = new Creature();
-
-            creatureCopy._isStrengthExtreme = creature._isStrengthExtreme;
-            creatureCopy._saveNumber = creature._saveNumber;
-            creatureCopy._level = creature._level;
-            creatureCopy._name = creature._name;
-            creatureCopy._size = creature._size;
-            creatureCopy._lastSaved = creature._lastSaved;
-            creatureCopy._degreeList = CopyListValues(creature._degreeList);
-
-            for (int i = 0; i < creature._abilityScores.Length; i++)
+            Creature creatureCopy = new Creature
             {
-                creatureCopy._abilityScores[i]._abilityBonus = creature._abilityScores[i]._abilityBonus;
+                IsStrengthExtreme = creature.IsStrengthExtreme,
+                SaveNumber = creature.SaveNumber,
+                Level = creature.Level,
+                Name = creature.Name,
+                Size = creature.Size,
+                DegreeList = CopyListValues(creature.DegreeList)
+            };
+
+            for (int i = 0; i < creature.AbilityScores.Length; i++)
+            {
+                creatureCopy.AbilityScores[i]._abilityBonus = creature.AbilityScores[i]._abilityBonus;
             }
 
             return creatureCopy;
@@ -130,6 +144,7 @@ namespace PF2E_Creature_Maker
 
         public static void SizeStep(Creature creature, Random random)
         {
+            //TODO change search for file name to find in Data Files
             string[] sizeOptions = System.IO.File.ReadAllLines("Menu Page Size.txt");
             List<string[]> sizeOptionsSplit = new List<string[]>();
 
@@ -142,9 +157,11 @@ namespace PF2E_Creature_Maker
             int mediumSizeIndex = 0;
             for (int i = 0; i < sizeOptionsArray.Length; i++)
             {
-                sizeOptionsArray[i] = new SizeOption();
-                sizeOptionsArray[i]._name = sizeOptionsSplit[i][0];
-                sizeOptionsArray[i]._minLevel = int.Parse(sizeOptionsSplit[i][1]);
+                sizeOptionsArray[i] = new SizeOption
+                {
+                    _name = sizeOptionsSplit[i][0],
+                    _minLevel = int.Parse(sizeOptionsSplit[i][1])
+                };
                 if (sizeOptionsSplit[i][2] != "" && sizeOptionsSplit[i][2] != null)
                 {
                     sizeOptionsArray[i]._maxExStrForSizeAndLevel = int.Parse(sizeOptionsSplit[i][2]);
@@ -176,8 +193,7 @@ namespace PF2E_Creature_Maker
             }
 
             string userInput;
-            bool tooLarge = false; //test commit
-
+            bool tooLarge;
             do
             {
                 tooLarge = false;
@@ -185,12 +201,12 @@ namespace PF2E_Creature_Maker
 
                 if (userInput == "")
                 {
-                    SizeOption randomSize = new SizeOption();
+                    SizeOption randomSize;
                     do
                     {
-                        randomSize = sizeOptionsArray[GravityRandom(random, 0, sizeOptionsArray.Length - 1, mediumSizeIndex, weight: 2)];
-                    } while (creature._level < randomSize._minLevel);
-                    creature._size = randomSize._name;
+                        randomSize = sizeOptionsArray[WeightedRandom(random, 0, sizeOptionsArray.Length - 1, mediumSizeIndex, weight: 2)];
+                    } while (creature.Level < randomSize._minLevel);
+                    creature.Size = randomSize._name;
                 }
                 else
                 {
@@ -198,7 +214,7 @@ namespace PF2E_Creature_Maker
                     {
                         if (userInput.ToLower() == sizeOptionsArray[i]._name.ToLower())
                         {
-                            if (creature._level < sizeOptionsArray[i]._minLevel)
+                            if (creature.Level < sizeOptionsArray[i]._minLevel)
                             {
                                 Console.WriteLine("Creatures of this level aren't usually so large. Are you sure? Y/N");
                                 userInput = GetValidString("Y", "N");
@@ -210,28 +226,28 @@ namespace PF2E_Creature_Maker
                             }
                             else
                             {
-                                creature._size = sizeOptionsArray[i]._name;
+                                creature.Size = sizeOptionsArray[i]._name;
                             }
                         }
                     }
                 }
             } while (tooLarge == true);
 
-            Console.WriteLine("Creature Size: " + creature._size);
+            Console.WriteLine("Creature Size: " + creature.Size);
 
             for (int i = 0; i < sizeOptionsArray.Length; i++)
             {
-                if (sizeOptionsArray[i]._name.ToLower() == creature._size.ToLower())
+                if (sizeOptionsArray[i]._name.ToLower() == creature.Size.ToLower())
                 {
-                    if (creature._level <= sizeOptionsArray[i]._maxExStrForSizeAndLevel)
+                    if (creature.Level <= sizeOptionsArray[i]._maxExStrForSizeAndLevel)
                     {
-                        creature._isStrengthExtreme = true;
+                        creature.IsStrengthExtreme = true;
                     }
                     break;
                 }
             }
 
-            Console.WriteLine("Creature's Strength is Extreme: " + creature._isStrengthExtreme);
+            Console.WriteLine("Creature's Strength is Extreme: " + creature.IsStrengthExtreme);
         }
 
         public static void AbilityScoresStep()
@@ -239,7 +255,7 @@ namespace PF2E_Creature_Maker
 
         }
 
-        public static int GravityRandom(Random random, int min, int max, int gravityValue, int weight)
+        public static int WeightedRandom(Random random, int min, int max, int heavyValue, int weight)
         {
             int[] randoms = new int[weight + 1];
 
@@ -254,7 +270,7 @@ namespace PF2E_Creature_Maker
             {
                 foreach (int randValue in randoms)
                 {
-                    if (randValue == gravityValue - difference || randValue == gravityValue + difference)
+                    if (randValue == heavyValue - difference || randValue == heavyValue + difference)
                     {
                         return randValue;
                     }
@@ -263,7 +279,7 @@ namespace PF2E_Creature_Maker
             } while (true);
         }
 
-        public static int ContinueOrBack(Step[] stepOrder, int step, Creature creature, List<Creature> creatureSaves)
+        public static int ContinueOrBack(Step[] stepOrder, int step, Dictionary<Step, Creature> creatureSavesDictionary)
         {
             string userInput;
             do
@@ -277,21 +293,15 @@ namespace PF2E_Creature_Maker
                         Console.WriteLine("Cannot go back any further");
                     }
                     else
-                    {
-                        creatureSaves.RemoveAt(creatureSaves.Count - 1);
-                        creature = CopyCreature(creatureSaves[creatureSaves.Count - 1]);
-                        Console.WriteLine("Restoring creature saved at " + creature._lastSaved);
-                        Console.WriteLine("Creature save number: " + creature._saveNumber);
-                        
+                    {   
                         step -= 1;
+
+                        Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
+                        _creature = CopyCreature(creatureSavesDictionary[stepOrder[step]]);
+                        Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
 
                         Console.WriteLine("Returning to {0} Step", stepOrder[step]);
                     }
-                }
-                else
-                {
-                    creature._lastSaved = stepOrder[step];
-                    creature._saveNumber++;
                 }
             } while (userInput.ToUpper() == "BACK");
 
@@ -312,7 +322,7 @@ namespace PF2E_Creature_Maker
 
         public static int LevelStep(Random random, Creature creature)
         {
-            string userInput = "";
+            string userInput;
             int partyLevel = GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
 
             bool passable = true;
@@ -360,9 +370,9 @@ namespace PF2E_Creature_Maker
             } while (userInput == "N");
 
             Console.WriteLine("Creature Level: " + creatureLevel);
-            creature._level = creatureLevel;
+            creature.Level = creatureLevel;
 
-            for (int i = 11; i <= creature._level; i++)
+            for (int i = 11; i <= creature.Level; i++)
             {
                 int[] extremeLevels = new int[] { 11, 15, 20 };
                 if(extremeLevels.Contains(i))
@@ -370,11 +380,11 @@ namespace PF2E_Creature_Maker
                     int removingDegree;
                     do
                     {
-                        removingDegree = random.Next(0, creature._degreeList.Count);
-                    } while (creature._degreeList[removingDegree] == Degree.ex);
+                        removingDegree = random.Next(0, creature.DegreeList.Count);
+                    } while (creature.DegreeList[removingDegree] == Degree.ex);
 
-                    creature._degreeList.RemoveAt(removingDegree);
-                    creature._degreeList.Add(Degree.ex);
+                    creature.DegreeList.RemoveAt(removingDegree);
+                    creature.DegreeList.Add(Degree.ex);
                 }
             }
 
