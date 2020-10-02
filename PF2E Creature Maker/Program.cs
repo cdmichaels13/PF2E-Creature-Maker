@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
+using System.IO;
 
 namespace PF2E_Creature_Maker
 {
@@ -144,8 +144,7 @@ namespace PF2E_Creature_Maker
 
         public static void SizeStep(Creature creature, Random random)
         {
-            //TODO change search for file name to find in Data Files
-            string[] sizeOptions = System.IO.File.ReadAllLines("Menu Page Size.txt");
+            string[] sizeOptions = File.ReadAllLines("Data Files\\Menu Page Size.txt");
             List<string[]> sizeOptionsSplit = new List<string[]>();
 
             foreach (string sizeOption in sizeOptions)
