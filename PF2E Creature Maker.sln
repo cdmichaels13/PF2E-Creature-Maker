@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PF2E Creature Maker", "PF2E Creature Maker\PF2E Creature Maker.csproj", "{5D2A4E29-8ABE-4CFA-8023-26B00403A032}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D2A4E29-8ABE-4CFA-8023-26B00403A032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2A4E29-8ABE-4CFA-8023-26B00403A032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2A4E29-8ABE-4CFA-8023-26B00403A032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2A4E29-8ABE-4CFA-8023-26B00403A032}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D1D384D-33F3-4EE5-8A47-1A607DD5C695}
+	EndGlobalSection
+EndGlobal

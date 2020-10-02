@@ -1,0 +1,435 @@
+Name,School,Description,Level
+Chill Touch,Necromancy,Your touch hurts the living or disorients undead.,0
+Daze,Enchantment,Damage a creature's mind and possibly stun it.,0
+Detect Magic,Divination,Sense whether magic is nearby.,0
+Disrupt Undead,Necromancy,Damage undead with positive energy.,0
+Divine Lance,Evocation,Throw divine energy that damages based on your deity's alignment.,0
+Forbidding Ward,Abjuration,Protect an ally against one specific enemy.,0
+Guidance,Divination,Divine guidance improves one roll.,0
+Know Direction,Divination,Find true north.,0
+Light,Evocation,Make an object glow.,0
+Message,Illusion,Speak a message to a distant creature-- who can reply.,0
+Prestidigitation,Evocation,Perform a minor magical trick.,0
+Read Aura,Divination,Detect if an object is magical-- and determine the school of its magic.,0
+Shield,Abjuration,A shield of magical force blocks attacks and magic missiles.,0
+Sigil,Transmutation,Leave a magical mark.,0
+Stabilize,Necromancy,Stabilize a dying creature.,0
+Summon Instrument,Conjuration,Conjure a musical instrument.,0
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,1
+Air Bubble,Conjuration,React to create air for a creature to breathe.,1
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,1
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,1
+Bane,Enchantment,Weaken enemies' attacks in an aura around you.,1
+Bless,Enchantment,Strengthen allies' attacks in an aura around you.,1
+Command,Enchantment,Bid a creature to approach-- run-- release something-- lie prone-- or stand up.,1
+Create Water,Conjuration,Conjure 2 gallons of water.,1
+Detect Alignment,Divination,See auras of a chosen alignment.,1
+Detect Poison,Divination,Determine whether an object or creature is poisonous or venomous.,1
+Disrupting Weapons,Necromancy,Weapons deal positive damage to undead.,1
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,1
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,1
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,1
+Lock,Abjuration,Make a lock hard to open.,1
+Magic Stone,Necromancy,Make ordinary stones into magical sling bullets that are especially dangerous to undead.,1
+Magic Weapon,Transmutation,Make a weapon temporarily magical.,1
+Mending,Transmutation,Repair one non-magical item.,1
+Pet Cache,Conjuration,Hide a familiar or animal companion in a pocket dimension.,1
+Protection,Abjuration,Shield a creature against those of a chosen alignment.,1
+Purify Food and Drink,Necromancy,Make beverages and meals safe.,1
+Putrefy Food and Drink,Necromancy,You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,1
+Ray of Enfeeblement,Necromancy,Sap a creature's strength.,1
+Sanctuary,Abjuration,Protect a creature from being attacked.,1
+Spirit Link,Necromancy,Continually transfer your health to someone else.,1
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,1
+Ventriloquism,Illusion,Throw your voice.,1
+Augury,Divination,Predict whether a course of action brings good fortune.,2
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,2
+Brand the Impenitent,Abjuration,You brand the target with an ethereal copy of your deity’s religious symbol.,2
+Calm Emotions,Enchantment,Suppress strong emotions and hostility.,2
+Charitable Urge,Enchantment,Make a creature give away an object in its possession.,2
+Comprehend Language,Divination,A creature understands one language.,2
+Continual Flame,Evocation,A magical flame burns indefinitely.,2
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,2
+Darkness,Evocation,Suppress all light in an area.,2
+Darkvision,Divination,See in the dark.,2
+Deafness,Necromancy,Make a creature deaf.,2
+Death Knell,Necromancy,Finish off a creature who's near death.,2
+Dispel Magic,Abjuration,End a spell or suppress an item's magic.,2
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,2
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,2
+Faerie Fire,Evocation,Colorful light prevents creatures from being concealed or invisible.,2
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,2
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,2
+Ghoulish Cravings,Necromancy,Infect a creature with ghoul fever.,2
+Reaper's Lantern,Necromancy,A ghostly lantern diminishes healing for the living and weakens undead.,2
+Remove Fear,Enchantment,Free a creature from its fright.,2
+Remove Paralysis,Necromancy,Free a creature from paralysis.,2
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,2
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,2
+Restore Senses,Necromancy,Remove a blinding or deafening effect.,2
+See Invisibility,Divination,See invisible creatures and objects.,2
+Shield Other,Necromancy,Absorb half the damage an ally would take.,2
+Silence,Illusion,Mute all sound from a creature.,2
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,2
+Spirit Sense,Divination,Find spirits and haunts.,2
+Spiritual Weapon,Evocation,Materialize a deific weapon of force that appears and attacks repeatedly.,2
+Status,Divination,Keep track of a willing creature's location and well-being.,2
+Sudden Blight,Necromancy,Decay living creatures and plants.,2
+Undetectable Alignment,Abjuration,Make a creature or object appear neutral to alignment detection.,2
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,2
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,2
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,2
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,2
+Detect Alignment,Divination,See auras of a chosen alignment.,2
+Detect Poison,Divination,Determine whether an object or creature is poisonous or venomous.,2
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,2
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,2
+Lock,Abjuration,Make a lock hard to open.,2
+Mending,Transmutation,Repair one non-magical item.,2
+Putrefy Food and Drink,Necromancy,You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,2
+Spirit Link,Necromancy,Continually transfer your health to someone else.,2
+Ventriloquism,Illusion,Throw your voice.,2
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,3
+Bind Undead,Necromancy,Take control of a mindless undead.,3
+Blindness,Necromancy,Strike a target blind.,3
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,3
+Circle of Protection,Abjuration,A creature emits an aura that protects those within against an alignment.,3
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,3
+Dream Message,Enchantment,Send a message that arrives in a dream.,3
+Familiar's Face,Divination,Implant your senses in your animal companion or familiar.,3
+Glyph of Warding,Abjuration,Store a spell in a symbol to make a trap.,3
+Heroism,Enchantment,Stoke a creature's inner heroism to make it more competent.,3
+Locate,Divination,Learn the direction to an object.,3
+Neutralize Poison,Necromancy,Cure a poison afflicting a creature.,3
+Remove Disease,Necromancy,Cure a disease afflicting a creature.,3
+Safe Passage,Abjuration,Make an area safe to move through.,3
+Sanctified Ground,Abjuration,Create a 24-hour area of protection against aberrations-- celestials-- dragons-- fiends-- or undead.,3
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,3
+Show the Way,Divination,You and affected allies gain preternatural knowledge of the path ahead-- allowing you to intuit the best way forward and avoid potential obstacles.,3
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,3
+Wanderer's Guide,Divination,Find an ideal route to a location.,3
+Whirling Scarves,Abjuration,You surround yourself in a vortex of whirling colorful scarves of force that obfuscate you and disorient your foes.,3
+Zone of Truth,Enchantment,Designate an area where creatures are compelled to be truthful.,3
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,3
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,3
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,3
+Comprehend Language,Divination,A creature understands one language.,3
+Continual Flame,Evocation,A magical flame burns indefinitely.,3
+Darkvision,Divination,See in the dark.,3
+Disrupting Weapons,Necromancy,Weapons deal positive damage to undead.,3
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,3
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,3
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,3
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,3
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,3
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,3
+Mending,Transmutation,Repair one non-magical item.,3
+Putrefy Food and Drink,Necromancy,You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,3
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,3
+Spirit Link,Necromancy,Continually transfer your health to someone else.,3
+Sudden Blight,Necromancy,Decay living creatures and plants.,3
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,3
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,3
+Air Walk,Transmutation,Walk on air as though it were solid ground.,4
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,4
+Dimensional Anchor,Abjuration,Keep a creature from teleporting or traveling to other planes.,4
+Discern Lies,Divination,Expertly detect lies and falsehoods.,4
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,4
+Dull Ambition,Enchantment,Curse a creature with an unfortunate lack of ambition.,4
+Enervation,Necromancy,Drain a creature's vigor.,4
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,4
+Freedom of Movement,Abjuration,A creature overcomes hindrances to its movement.,4
+PFS RestrictedGhostly Tragedy,Divination,Have spirits reenact a violent event.,4
+Globe of Invulnerability,Abjuration,Magical sphere counteracts spells that would enter it.,4
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,4
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,4
+Outcast's Curse,Enchantment,Curse a creature to be off-putting and grating.,4
+Read Omens,Divination,Get a piece of advice about an upcoming event.,4
+Remove Curse,Necromancy,Counteract a curse afflicting a creature.,4
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,4
+Spell Immunity,Abjuration,Name a spell to negate its effects on you.,4
+Spiritual Anamnesis,Necromancy,S Overwhelm a target with memories of a past life.,4
+Talking Corpse,Necromancy,Have a corpse answer three questions.,4
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,4
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,4
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,4
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,4
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,4
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,4
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,4
+Circle of Protection,Abjuration,A creature emits an aura that protects those within against an alignment.,4
+Comprehend Language,Divination,A creature understands one language.,4
+Continual Flame,Evocation,A magical flame burns indefinitely.,4
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,4
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,4
+Darkness,Evocation,Suppress all light in an area.,4
+Dream Message,Enchantment,Send a message that arrives in a dream.,4
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,4
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,4
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,4
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,4
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,4
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,4
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,4
+Silence,Illusion,Mute all sound from a creature.,4
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,4
+Spirit Link,Necromancy,Continually transfer your health to someone else.,4
+Spiritual Weapon,Evocation,Materialize a deific weapon of force that appears and attacks repeatedly.,4
+Status,Divination,Keep track of a willing creature's location and well-being.,4
+Sudden Blight,Necromancy,Decay living creatures and plants.,4
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,4
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,4
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,4
+Abyssal Plague,Necromancy,Inflict a draining curse.,5
+Banishment,Abjuration,Send a creature back to its home plane.,5
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,5
+Breath of Life,Necromancy,React to revive a creature at the moment of its death.,5
+Death Ward,Abjuration,Protect a creature against negative energy.,5
+Drop Dead,Illusion,The target appears to die but actually turns invisible.,5
+Flame Strike,Evocation,Call divine fire from the sky.,5
+Prying Eye,Divination,An invisible eye transmits what it sees to you.,5
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,5
+Sending,Divination,Send a mental message to a creature anywhere on the planet and get a reply.,5
+Shadow Blast,Evocation,Shape a cone of shadow to deal damage of a type you choose.,5
+Spiritual Guardian,Abjuration,Create a magical guardian to attack at your command and take damage for your allies.,5
+Summon Celestial,Conjuration,Conjure a celestial to fight on your behalf.,5
+Summon Fiend,Conjuration,Conjure a fiend to fight on your behalf.,5
+Tongues,Divination,Let a creature understand and speak all languages.,5
+Wall of Flesh,Necromancy,Spawn a wall of living flesh.,5
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,5
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,5
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,5
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,5
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,5
+Command,Enchantment,Bid a creature to approach-- run-- release something-- lie prone-- or stand up.,5
+Continual Flame,Evocation,A magical flame burns indefinitely.,5
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,5
+Darkvision,Divination,See in the dark.,5
+Disrupting Weapons,Necromancy,Weapons deal positive damage to undead.,5
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,5
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,5
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,5
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,5
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,5
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,5
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,5
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,5
+Locate,Divination,Learn the direction to an object.,5
+Safe Passage,Abjuration,Make an area safe to move through.,5
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,5
+See Invisibility,Divination,See invisible creatures and objects.,5
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,5
+Spirit Link,Necromancy,Continually transfer your health to someone else.,5
+Sudden Blight,Necromancy,Decay living creatures and plants.,5
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,5
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,5
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,5
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,5
+Whirling Scarves,Abjuration,You surround yourself in a vortex of whirling colorful scarves of force that obfuscate you and disorient your foes.,5
+Blade Barrier,Evocation,Form a wall of swords made of force.,6
+Blinding Fury,Enchantment,Curse a creature that attacks you-- making its victims become invisible to it.,6
+Field of Life,Necromancy,Create a positive energy field that heals those within.,6
+Raise Dead,Necromancy,Return a dead creature to life.,6
+Repulsion,Abjuration,Prevent creatures from approaching you.,6
+Righteous Might,Transmutation,Turn into a battle form with divine armaments.,6
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,6
+Spellwrack,Abjuration,Curse a creature to be harmed when a spell is cast on it and lower the duration of its spells.,6
+Spirit Blast,Necromancy,Damage a creature's spiritual essence.,6
+Stone Tell,Evocation,Speak to spirits within natural stone.,6
+Stone to Flesh,Transmutation,Turn a creature turned to stone back to flesh.,6
+True Seeing,Divination,See through illusions and transmutations.,6
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,6
+Zealous Conviction,Enchantment,Instill unshakable conviction and zeal in willing creatures.,6
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,6
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,6
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,6
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,6
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,6
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,6
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,6
+Continual Flame,Evocation,A magical flame burns indefinitely.,6
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,6
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,6
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,6
+Enervation,Necromancy,Drain a creature's vigor.,6
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,6
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,6
+Flame Strike,Evocation,Call divine fire from the sky.,6
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,6
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,6
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,6
+Heroism,Enchantment,Stoke a creature's inner heroism to make it more competent.,6
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,6
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,6
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,6
+Remove Fear,Enchantment,Free a creature from its fright.,6
+Remove Paralysis,Necromancy,Free a creature from paralysis.,6
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,6
+Restore Senses,Necromancy,Remove a blinding or deafening effect.,6
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,6
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,6
+Shadow Blast,Evocation,Shape a cone of shadow to deal damage of a type you choose.,6
+Show the Way,Divination,You and affected allies gain preternatural knowledge of the path ahead-- allowing you to intuit the best way forward and avoid potential obstacles.,6
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,6
+Spirit Link,Necromancy,Continually transfer your health to someone else.,6
+Spirit Sense,Divination,Find spirits and haunts.,6
+Spiritual Weapon,Evocation,Materialize a deific weapon of force that appears and attacks repeatedly.,6
+Sudden Blight,Necromancy,Decay living creatures and plants.,6
+Summon Celestial,Conjuration,Conjure a celestial to fight on your behalf.,6
+Summon Fiend,Conjuration,Conjure a fiend to fight on your behalf.,6
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,6
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,6
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,6
+Dimensional Lock,Abjuration,Prevent teleportation and planar travel.,7
+Divine Decree,Evocation,Creatures of alignments opposed by your deity are damaged-- enfeebled-- paralyzed-- or banished.,7
+Divine Vessel,Necromancy,Take on aspects of a servitor of your deity.,7
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,7
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,7
+Ethereal Jaunt,Conjuration,Use the Ethereal Plane to move through objects and into the air.,7
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,7
+Plane Shift,Conjuration,Transport creatures to another plane of existence.,7
+Regenerate,Necromancy,Cause a creature to heal over time-- regrow organs-- and reattach body parts.,7
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,7
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,7
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,7
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,7
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,7
+Blade Barrier,Evocation,Form a wall of swords made of force.,7
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,7
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,7
+Continual Flame,Evocation,A magical flame burns indefinitely.,7
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,7
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,7
+Drop Dead,Illusion,The target appears to die but actually turns invisible.,7
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,7
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,7
+Flame Strike,Evocation,Call divine fire from the sky.,7
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,7
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,7
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,7
+Raise Dead,Necromancy,Return a dead creature to life.,7
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,7
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,7
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,7
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,7
+Shadow Blast,Evocation,Shape a cone of shadow to deal damage of a type you choose.,7
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,7
+Spirit Blast,Necromancy,Damage a creature's spiritual essence.,7
+Spirit Link,Necromancy,Continually transfer your health to someone else.,7
+Spiritual Guardian,Abjuration,Create a magical guardian to attack at your command and take damage for your allies.,7
+Sudden Blight,Necromancy,Decay living creatures and plants.,7
+Summon Celestial,Conjuration,Conjure a celestial to fight on your behalf.,7
+Summon Fiend,Conjuration,Conjure a fiend to fight on your behalf.,7
+Tongues,Divination,Let a creature understand and speak all languages.,7
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,7
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,7
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,7
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,7
+Whirling Scarves,Abjuration,You surround yourself in a vortex of whirling colorful scarves of force that obfuscate you and disorient your foes.,7
+Antimagic Field,Abjuration,Magic doesn't function in an area around you.,8
+Devour Life,Necromancy,You attempt to utterly consume the target's life force.,8
+Discern Location,Divination,Discover a target's exact location within unlimited range.,8
+Divine Aura,Abjuration,Allies in an aura have better defenses and are protected against one alignment.,8
+Divine Inspiration,Enchantment,Spiritual energy recovers a creature's expended spell.,8
+Moment of Renewal,Necromancy,Give a day's recovery in an instant.,8
+Spiritual Epidemic,Necromancy,Weaken a target with a communicable curse.,8
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,8
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,8
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,8
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,8
+Blade Barrier,Evocation,Form a wall of swords made of force.,8
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,8
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,8
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,8
+Continual Flame,Evocation,A magical flame burns indefinitely.,8
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,8
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,8
+Divine Decree,Evocation,Creatures of alignments opposed by your deity are damaged-- enfeebled-- paralyzed-- or banished.,8
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,8
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,8
+Enervation,Necromancy,Drain a creature's vigor.,8
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,8
+Field of Life,Necromancy,Create a positive energy field that heals those within.,8
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,8
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,8
+Flame Strike,Evocation,Call divine fire from the sky.,8
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,8
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,8
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,8
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,8
+Raise Dead,Necromancy,Return a dead creature to life.,8
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,8
+Righteous Might,Transmutation,Turn into a battle form with divine armaments.,8
+Safe Passage,Abjuration,Make an area safe to move through.,8
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,8
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,8
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,8
+Shadow Blast,Evocation,Shape a cone of shadow to deal damage of a type you choose.,8
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,8
+Spirit Blast,Necromancy,Damage a creature's spiritual essence.,8
+Spirit Link,Necromancy,Continually transfer your health to someone else.,8
+Spiritual Weapon,Evocation,Materialize a deific weapon of force that appears and attacks repeatedly.,8
+Sudden Blight,Necromancy,Decay living creatures and plants.,8
+Summon Celestial,Conjuration,Conjure a celestial to fight on your behalf.,8
+Summon Fiend,Conjuration,Conjure a fiend to fight on your behalf.,8
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,8
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,8
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,8
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,8
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,8
+Astral Labyrinth,Abjuration,You connect the entire area with an invisible maze of astral energy that interferes with dimensional and mental magic.,9
+Bind Soul,Necromancy,Imprison a dead creature's soul.,9
+Crusade,Enchantment,Creatures become dedicated to a cause of your choice.,9
+Foresight,Divination,Sense when a creature is in danger and React to protect it with good fortune.,9
+Massacre,Necromancy,Instantly kill multiple creatures.,9
+Overwhelming Presence,Enchantment,Take on the majesty of a god.,9
+Telepathic Demand,Enchantment,Send a mental message that impels a creature toward a course of action.,9
+Wail of the Banshee,Necromancy,Scream-- dealing damage and draining creatures.,9
+Weapon of Judgement,Evocation,Form a weapon to enforce war or peace.,9
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,9
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,9
+Anathematic Reprisal,Enchantment,Cause mental pain to one who commits anathema against your deity.,9
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,9
+Banishment,Abjuration,Send a creature back to its home plane.,9
+Blade Barrier,Evocation,Form a wall of swords made of force.,9
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,9
+Chilling Darkness,Evocation,Ray of evil darkness deals cold damage-- counteracts light-- and harms celestials.,9
+Continual Flame,Evocation,A magical flame burns indefinitely.,9
+Crisis of Faith,Enchantment,Cause mental damage and possibly make a worshipper unable to cast spells.,9
+Devour Life,Necromancy,You attempt to utterly consume the target's life force.,9
+Divine Decree,Evocation,Creatures of alignments opposed by your deity are damaged-- enfeebled-- paralyzed-- or banished.,9
+Divine Vessel,Necromancy,Take on aspects of a servitor of your deity.,9
+Divine Wrath,Evocation,Damage and hinder creatures of alignments opposed by your deity.,9
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,9
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,9
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,9
+Ethereal Jaunt,Conjuration,Use the Ethereal Plane to move through objects and into the air.,9
+Field of Life,Necromancy,Create a positive energy field that heals those within.,9
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,9
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,9
+Flame Strike,Evocation,Call divine fire from the sky.,9
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,9
+Harm,Necromancy,Negative energy harms the living or heals the undead-- either a single creature or all in a burst.,9
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,9
+Heroism,Enchantment,Stoke a creature's inner heroism to make it more competent.,9
+Holy Cascade,Evocation,Turn a vial of holy water into an explosion of blessed water.,9
+Raise Dead,Necromancy,Return a dead creature to life.,9
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,9
+Regenerate,Necromancy,Cause a creature to heal over time-- regrow organs-- and reattach body parts.,9
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,9
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,9
+Shadow Blast,Evocation,Shape a cone of shadow to deal damage of a type you choose.,9
+Sound Burst,Evocation,Damage and deafen creatures with a powerful din.,9
+Spirit Blast,Necromancy,Damage a creature's spiritual essence.,9
+Spirit Link,Necromancy,Continually transfer your health to someone else.,9
+Spiritual Guardian,Abjuration,Create a magical guardian to attack at your command and take damage for your allies.,9
+Sudden Blight,Necromancy,Decay living creatures and plants.,9
+Summon Celestial,Conjuration,Conjure a celestial to fight on your behalf.,9
+Summon Fiend,Conjuration,Conjure a fiend to fight on your behalf.,9
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,9
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,9
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,9
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,9
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,9
+Whirling Scarves,Abjuration,You surround yourself in a vortex of whirling colorful scarves of force that obfuscate you and disorient your foes.,9
+Zealous Conviction,Enchantment,Instill unshakable conviction and zeal in willing creatures.,9

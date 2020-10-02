@@ -1,0 +1,707 @@
+Name,School,Description,Level
+Acid Splash,Evocation,Damage creatures with acid.,0
+Dancing Lights,Evocation,Create four floating lights you can move.,0
+Detect Magic,Divination,Sense whether magic is nearby.,0
+Disrupt Undead,Necromancy,Damage undead with positive energy.,0
+Electric Arc,Evocation,Zap one or two creatures with lightning.,0
+Guidance,Divination,Divine guidance improves one roll.,0
+Know Direction,Divination,Find true north.,0
+Light,Evocation,Make an object glow.,0
+Prestidigitation,Evocation,Perform a minor magical trick.,0
+Produce Flame,Evocation,Kindle small flames to attack close or at range.,0
+Ray of Frost,Evocation,Damage a creature with cold.,0
+Read Aura,Divination,Detect if an object is magical-- and determine the school of its magic.,0
+Sigil,Transmutation,Leave a magical mark.,0
+Stabilize,Necromancy,Stabilize a dying creature.,0
+Tanglefoot,Conjuration,Conjure a vine to entangle a creature.,0
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,1
+Air Bubble,Conjuration,React to create air for a creature to breathe.,1
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,1
+Ant Haul,Transmutation,Target can carry more.,1
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,1
+Charm,Enchantment,A humanoid becomes more friendly to you.,1
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,1
+Create Water,Conjuration,Conjure 2 gallons of water.,1
+Detect Poison,Divination,Determine whether an object or creature is poisonous or venomous.,1
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,1
+Feather Fall,Abjuration,React to slow a creature’s fall.,1
+Fleet Step,Transmutation,Make your Speed much faster.,1
+Goblin Pox,Necromancy,Infect a creature with goblin pox.,1
+Grease,Conjuration,Coat a surface or object in slippery grease.,1
+Gust of Wind,Evocation,Wind blows out fires and knocks back objects and creatures.,1
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,1
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,1
+Jump,Transmutation,Make an impressive leap.,1
+Longstrider,Transmutation,Increase your Speed for an hour.,1
+Magic Fang,Transmutation,Make a creature's unarmed attacks magical temporarily.,1
+Magic Stone,Necromancy,Make ordinary stones into magical sling bullets that are especially dangerous to undead.,1
+Mending,Transmutation,Repair one non-magical item.,1
+Negate Aroma,Abjuration,Suppress a creature’s scent.,1
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,1
+Pass Without Trace,Abjuration,Make your tracks hard to find.,1
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,1
+Pest Form,Transmutation,Turn into a nonthreatening animal.,1
+Pet Cache,Conjuration,Hide a familiar or animal companion in a pocket dimension.,1
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,1
+Purify Food and Drink,Necromancy,Make beverages and meals safe.,1
+Putrefy Food and Drink,Necromancy,HS You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,1
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,1
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,1
+Shillelagh,Transmutation,Make a club or staff temporarily magical-- and deal more damage to unnatural creatures.,1
+Shocking Grasp,Evocation,Zap a creature with electricity.,1
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,1
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,1
+Spider Sting,Necromancy,Damage a creature and afflict it with spider venom.,1
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,1
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,1
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,1
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,1
+Ventriloquism,Illusion,Throw your voice.,1
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,1
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,2
+Animal Form,Transmutation,Turn into a dangerous animal.,2
+Animal Messenger,Enchantment,Send a Tiny animal to deliver a message.,2
+Barkskin,Abjuration,Target's skin is covered in protective bark.,2
+Breath of Drought,Evocation,You fill the area with an oppressive-- arid swelter that overwhelms creatures with heat exhaustion.,2
+Continual Flame,Evocation,A magical flame burns indefinitely.,2
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,2
+Darkness,Evocation,Suppress all light in an area.,2
+Darkvision,Divination,See in the dark.,2
+Deafness,Necromancy,Make a creature deaf.,2
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,2
+Dispel Magic,Abjuration,End a spell or suppress an item's magic.,2
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,2
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,2
+Enlarge,Transmutation,A creature grows in size.,2
+Entangle,Transmutation,Plants in an area grow to entangle and immobilize.,2
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,2
+Faerie Fire,Evocation,Colorful light prevents creatures from being concealed or invisible.,2
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,2
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,2
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,2
+Fungal Hyphae,Necromancy,Thin hyphae grow from your feet and plunge into the earth.,2
+Fungal Infestation,Conjuration,Plant poisonous fungal growths in a creature.,2
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,2
+Glitterdust,Evocation,Sparkling dust breaks invisibility and impedes vision.,2
+Heat Metal,Evocation,Make metal red hot.,2
+Humanoid Form,Transmutation,Take the shape of a humanoid.,2
+Iron Gut,Transmutation,Your mouth-- esophagus-- and stomach become incredibly elastic and tougher than metal.,2
+Obscuring Mist,Conjuration,Conceal creatures in a cloud of mist.,2
+Phantom Steed,Conjuration,Conjure a magical horse.,2
+Quench,Abjuration,Put out fires and hurt fire creatures.,2
+Reaper's Lantern,Necromancy,A ghostly lantern diminishes healing for the living and weakens undead.,2
+Remove Fear,Enchantment,Free a creature from its fright.,2
+Remove Paralysis,Necromancy,Free a creature from paralysis.,2
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,2
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,2
+Restore Senses,Necromancy,Remove a blinding or deafening effect.,2
+Rime Slick,Evocation,You call down a chill wind.,2
+Sea Surge,Evocation,You slap or stomp on a nearby solid or liquid surface-- sending a surge of water rushing away from you.,2
+Shape Wood,Transmutation,Reshape unworked wood as you choose.,2
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,2
+Shrink,Transmutation,Reduce a willing creature to Tiny size.,2
+Slough Skin,Necromancy,You continually and harmlessly slough off the top layer of your skin while new skin regenerates immediately.,2
+Speak with Animals,Divination,Communicate with animals.,2
+Spider Climb,Transmutation,Give a creature a climb Speed.,2
+Status,Divination,Keep track of a willing creature's location and well-being.,2
+Sudden Blight,Necromancy,Decay living creatures and plants.,2
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,2
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,2
+Tree Shape,Transmutation,Turn into a tree.,2
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,2
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,2
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,2
+Web,Conjuration,Form a web that keeps creatures from moving.,2
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,2
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,2
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,2
+Detect Poison,Divination,Determine whether an object or creature is poisonous or venomous.,2
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,2
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,2
+Longstrider,Transmutation,Increase your Speed for an hour.,2
+Mending,Transmutation,Repair one non-magical item.,2
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,2
+Pass Without Trace,Abjuration,Make your tracks hard to find.,2
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,2
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,2
+Putrefy Food and Drink,Necromancy,HS You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,2
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,2
+Shocking Grasp,Evocation,Zap a creature with electricity.,2
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,2
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,2
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,2
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,2
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,2
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,2
+Ventriloquism,Illusion,Throw your voice.,2
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,2
+Animal Vision,Divination,Project your senses through an animal.,3
+Aqueous Orb,Conjuration,Roll a ball of water to put out fires and engulf creatures.,3
+Blindness,Necromancy,Strike a target blind.,3
+Crashing Wave,Evocation,Smash a cone of water against foes.,3
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,3
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,3
+Earthbind,Transmutation,Bring a flying creature to the ground.,3
+Familiar's Face,Divination,Implant your senses in your animal companion or familiar.,3
+Feet to Fins,Transmutation,Turn a creature's feet into fins-- enabling it swim but slowing it on land.,3
+Fireball,Evocation,An explosion of fire in an area burns creatures.,3
+Glyph of Warding,Abjuration,Store a spell in a symbol to make a trap.,3
+Haste,Transmutation,Speed up a creature so it can attack or move more often.,3
+Insect Form,Transmutation,Turn into a dangerous giant insect.,3
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,3
+Mad Monkeys,Conjuration,Monkey spirits make mischief.,3
+Meld into Stone,Transmutation,Meld into a block of stone.,3
+Neutralize Poison,Necromancy,Cure a poison afflicting a creature.,3
+Nondetection,Abjuration,Protect a creature or object from detection.,3
+Pillar of Water,Evocation,You create a large-- self-contained cylinder of still fresh water,3
+Remove Disease,Necromancy,Cure a disease afflicting a creature.,3
+Safe Passage,Abjuration,Make an area safe to move through.,3
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,3
+Shifting Sand,Transmutation,You cause the surface to heave.,3
+Show the Way,Divination,You and affected allies gain preternatural knowledge of the path ahead-- allowing you to intuit the best way forward and avoid potential obstacles.,3
+Slow,Transmutation,Make a creature slower-- reducing its actions.,3
+Stinking Cloud,Conjuration,Form a cloud that sickens creatures.,3
+Threefold Aspect,Transmutation,Switch between versions of yourself at different ages.,3
+Unseasonable Squall,Evocation,You issue a blast of sudden wind that ripples outward from the center of the burst.,3
+Wall of Thorns,Conjuration,Grow a wall of brambles.,3
+Wall of Wind,Evocation,Create a wall of gusting winds that hinders movement and ranged attacks.,3
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,3
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,3
+Animal Form,Transmutation,Turn into a dangerous animal.,3
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,3
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,3
+Continual Flame,Evocation,A magical flame burns indefinitely.,3
+Darkvision,Divination,See in the dark.,3
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,3
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,3
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,3
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,3
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,3
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,3
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,3
+Heat Metal,Evocation,Make metal red hot.,3
+Humanoid Form,Transmutation,Take the shape of a humanoid.,3
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,3
+Iron Gut,Transmutation,Your mouth-- esophagus-- and stomach become incredibly elastic and tougher than metal.,3
+Jump,Transmutation,Make an impressive leap.,3
+Mending,Transmutation,Repair one non-magical item.,3
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,3
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,3
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,3
+Putrefy Food and Drink,Necromancy,HS You cause otherwise edible food to rot and spoil instantly-- and water and other liquids to become brackish and undrinkable.,3
+Quench,Abjuration,Put out fires and hurt fire creatures.,3
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,3
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,3
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,3
+Shocking Grasp,Evocation,Zap a creature with electricity.,3
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,3
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,3
+Sudden Blight,Necromancy,Decay living creatures and plants.,3
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,3
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,3
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,3
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,3
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,3
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,3
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,3
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,3
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,3
+Aerial Form,Transmutation,Turn into a flying combatant.,4
+Air Walk,Transmutation,Walk on air as though it were solid ground.,4
+Bestial Curse,Transmutation,Make a humanoid take on features of a beast.,4
+Countless Eyes,Divination,Cause magical eyes to appear all over a creature's body.,4
+Creation,Conjuration,Make a temporary object.,4
+Dinosaur Form,Transmutation,Turn into a dinosaur.,4
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,4
+Fly,Transmutation,Cause the target creature to gain a fly Speed.,4
+Freedom of Movement,Abjuration,A creature overcomes hindrances to its movement.,4
+Gaseous Form,Transmutation,Turn a willing creature into a flying cloud.,4
+Hallucinatory Terrain,Illusion,A natural environment appears to be another kind of terrain.,4
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,4
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,4
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,4
+Rusting Grasp,Transmutation,Rapidly rust metal.,4
+Shape Stone,Transmutation,Reshape a cube of stone.,4
+Solid Fog,Conjuration,Conjure heavy fog that obscures sight and is hard to move through.,4
+Speak with Plants,Divination,Communicate with plants and plant creatures.,4
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,4
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,4
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,4
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,4
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,4
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,4
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,4
+Animal Form,Transmutation,Turn into a dangerous animal.,4
+Barkskin,Abjuration,Target's skin is covered in protective bark.,4
+Breath of Drought,Evocation,You fill the area with an oppressive-- arid swelter that overwhelms creatures with heat exhaustion.,4
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,4
+Charm,Enchantment,A humanoid becomes more friendly to you.,4
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,4
+Continual Flame,Evocation,A magical flame burns indefinitely.,4
+Crashing Wave,Evocation,Smash a cone of water against foes.,4
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,4
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,4
+Darkness,Evocation,Suppress all light in an area.,4
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,4
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,4
+Enlarge,Transmutation,A creature grows in size.,4
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,4
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,4
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,4
+Fireball,Evocation,An explosion of fire in an area burns creatures.,4
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,4
+Fungal Hyphae,Necromancy,Thin hyphae grow from your feet and plunge into the earth.,4
+Fungal Infestation,Conjuration,Plant poisonous fungal growths in a creature.,4
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,4
+Heat Metal,Evocation,Make metal red hot.,4
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,4
+Insect Form,Transmutation,Turn into a dangerous giant insect.,4
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,4
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,4
+Pass Without Trace,Abjuration,Make your tracks hard to find.,4
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,4
+Pest Form,Transmutation,Turn into a nonthreatening animal.,4
+Phantom Steed,Conjuration,Conjure a magical horse.,4
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,4
+Quench,Abjuration,Put out fires and hurt fire creatures.,4
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,4
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,4
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,4
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,4
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,4
+Shocking Grasp,Evocation,Zap a creature with electricity.,4
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,4
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,4
+Status,Divination,Keep track of a willing creature's location and well-being.,4
+Sudden Blight,Necromancy,Decay living creatures and plants.,4
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,4
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,4
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,4
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,4
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,4
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,4
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,4
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,4
+Wall of Thorns,Conjuration,Grow a wall of brambles.,4
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,4
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,4
+Web,Conjuration,Form a web that keeps creatures from moving.,4
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,5
+Banishment,Abjuration,Send a creature back to its home plane.,5
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,5
+Chameleon Coat,Illusion,Camouflage creatures to match their environment.,5
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,5
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,5
+Control Water,Evocation,Raise or lower water in a large area.,5
+Death Ward,Abjuration,Protect a creature against negative energy.,5
+Elemental Form,Transmutation,Turn into an elemental.,5
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,5
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,5
+Lightning Storm,Evocation,Create clouds and repeatedly call down lightning bolts.,5
+Mariner's Curse,Necromancy,Infect a creature with the curse of the rolling sea.,5
+Moon Frenzy,Transmutation,Give willing creatures fangs and claws-- and send them into a frenzy.,5
+Passwall,Conjuration,Form an earthen tunnel through a wall.,5
+Pillars of Sand,Conjuration,Create pillars of sand.,5
+Plant Form,Transmutation,Turn into a dangerous plant creature.,5
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,5
+Summon Giant,Conjuration,Conjure a giant to fight on your behalf.,5
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,5
+Tree Stride,Conjuration,Teleport from tree to tree.,5
+Wall of Flesh,Necromancy,Spawn a wall of living flesh.,5
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,5
+Wall of Stone,Conjuration,Shape a wall of stone.,5
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,5
+Aerial Form,Transmutation,Turn into a flying combatant.,5
+Animal Form,Transmutation,Turn into a dangerous animal.,5
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,5
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,5
+Continual Flame,Evocation,A magical flame burns indefinitely.,5
+Crashing Wave,Evocation,Smash a cone of water against foes.,5
+Creation,Conjuration,Make a temporary object.,5
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,5
+Darkvision,Divination,See in the dark.,5
+Dinosaur Form,Transmutation,Turn into a dinosaur.,5
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,5
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,5
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,5
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,5
+Fireball,Evocation,An explosion of fire in an area burns creatures.,5
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,5
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,5
+Hallucinatory Terrain,Illusion,A natural environment appears to be another kind of terrain.,5
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,5
+Heat Metal,Evocation,Make metal red hot.,5
+Humanoid Form,Transmutation,Take the shape of a humanoid.,5
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,5
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,5
+Insect Form,Transmutation,Turn into a dangerous giant insect.,5
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,5
+Negate Aroma,Abjuration,Suppress a creature’s scent.,5
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,5
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,5
+Phantom Steed,Conjuration,Conjure a magical horse.,5
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,5
+Quench,Abjuration,Put out fires and hurt fire creatures.,5
+Rime Slick,Evocation,You call down a chill wind.,5
+Rusting Grasp,Transmutation,Rapidly rust metal.,5
+Safe Passage,Abjuration,Make an area safe to move through.,5
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,5
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,5
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,5
+Shifting Sand,Transmutation,You cause the surface to heave.,5
+Shocking Grasp,Evocation,Zap a creature with electricity.,5
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,5
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,5
+Spider Climb,Transmutation,Give a creature a climb Speed.,5
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,5
+Sudden Blight,Necromancy,Decay living creatures and plants.,5
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,5
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,5
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,5
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,5
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,5
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,5
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,5
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,5
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,5
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,5
+Wall of Thorns,Conjuration,Grow a wall of brambles.,5
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,5
+Baleful Polymorph,Transmutation,Transform a creature into a harmless animal.,6
+Blanket of Stars,Illusion,A cloak of darkness hides you in the dark and dazzles those who get too close.,6
+Blinding Fury,Enchantment,Curse a creature that attacks you-- making its victims become invisible to it.,6
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,6
+Dragon Form,Transmutation,Turn into a dragon.,6
+Field of Life,Necromancy,Create a positive energy field that heals those within.,6
+Fire Seeds,Evocation,Make four explosive acorns.,6
+Flesh to Stone,Transmutation,Turn a living creature into a stone statue.,6
+Halcyon Infusion,Divination,HR You infuse magical energy into your target-- opening up their mind to the pathways of magic and granting them the ability to use magic to affect the world around them.,6
+Purple Worm Sting,Necromancy,Damage a creature and infect it with purple worm venom.,6
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,6
+Stone Tell,Evocation,Speak to spirits within natural stone.,6
+Stone to Flesh,Transmutation,Turn a creature turned to stone back to flesh.,6
+Tangling Creepers,Conjuration,Entangle creatures in a burst and concentrate to lash out with immobilizing vines.,6
+True Seeing,Divination,See through illusions and transmutations.,6
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,6
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,6
+Aerial Form,Transmutation,Turn into a flying combatant.,6
+Barkskin,Abjuration,Target's skin is covered in protective bark.,6
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,6
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,6
+Chameleon Coat,Illusion,Camouflage creatures to match their environment.,6
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,6
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,6
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,6
+Continual Flame,Evocation,A magical flame burns indefinitely.,6
+Crashing Wave,Evocation,Smash a cone of water against foes.,6
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,6
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,6
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,6
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,6
+Elemental Form,Transmutation,Turn into an elemental.,6
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,6
+Enlarge,Transmutation,A creature grows in size.,6
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,6
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,6
+Feet to Fins,Transmutation,Turn a creature's feet into fins-- enabling it swim but slowing it on land.,6
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,6
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,6
+Fireball,Evocation,An explosion of fire in an area burns creatures.,6
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,6
+Fungal Hyphae,Necromancy,Thin hyphae grow from your feet and plunge into the earth.,6
+Fungal Infestation,Conjuration,Plant poisonous fungal growths in a creature.,6
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,6
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,6
+Heat Metal,Evocation,Make metal red hot.,6
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,6
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,6
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,6
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,6
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,6
+Lightning Storm,Evocation,Create clouds and repeatedly call down lightning bolts.,6
+Moon Frenzy,Transmutation,Give willing creatures fangs and claws-- and send them into a frenzy.,6
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,6
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,6
+Phantom Steed,Conjuration,Conjure a magical horse.,6
+Pillars of Sand,Conjuration,Create pillars of sand.,6
+Plant Form,Transmutation,Turn into a dangerous plant creature.,6
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,6
+Quench,Abjuration,Put out fires and hurt fire creatures.,6
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,6
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,6
+Remove Fear,Enchantment,Free a creature from its fright.,6
+Remove Paralysis,Necromancy,Free a creature from paralysis.,6
+Restoration,Necromancy,Reduce a condition or lessen a toxin.,6
+Restore Senses,Necromancy,Remove a blinding or deafening effect.,6
+Rusting Grasp,Transmutation,Rapidly rust metal.,6
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,6
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,6
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,6
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,6
+Shocking Grasp,Evocation,Zap a creature with electricity.,6
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,6
+Show the Way,Divination,You and affected allies gain preternatural knowledge of the path ahead-- allowing you to intuit the best way forward and avoid potential obstacles.,6
+Shrink,Transmutation,Reduce a willing creature to Tiny size.,6
+Slow,Transmutation,Make a creature slower-- reducing its actions.,6
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,6
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,6
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,6
+Sudden Blight,Necromancy,Decay living creatures and plants.,6
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,6
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,6
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,6
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,6
+Summon Giant,Conjuration,Conjure a giant to fight on your behalf.,6
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,6
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,6
+Tree Stride,Conjuration,Teleport from tree to tree.,6
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,6
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,6
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,6
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,6
+Wall of Thorns,Conjuration,Grow a wall of brambles.,6
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,6
+Blightburn Blast,Evocation,Inflict a creature with blightburn sickness.,7
+Control Sand,Evocation,Manipulate sand around you.,7
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,7
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,7
+Fiery Body,Transmutation,Turn your body into living flame.,7
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,7
+Mask of Terror,Illusion,A creature’s fearsome illusory appearance frightens observers.,7
+Plane Shift,Conjuration,Transport creatures to another plane of existence.,7
+Regenerate,Necromancy,Cause a creature to heal over time-- regrow organs-- and reattach body parts.,7
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,7
+Unfettered Pack,Abjuration,Let creatures avoid environmental hindrances.,7
+Volcanic Eruption,Evocation,Cause massive lava sprays that burn creatures and encase them in rock.,7
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,7
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,7
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,7
+Breath of Drought,Evocation,You fill the area with an oppressive-- arid swelter that overwhelms creatures with heat exhaustion.,7
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,7
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,7
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,7
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,7
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,7
+Continual Flame,Evocation,A magical flame burns indefinitely.,7
+Crashing Wave,Evocation,Smash a cone of water against foes.,7
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,7
+Dinosaur Form,Transmutation,Turn into a dinosaur.,7
+Elemental Form,Transmutation,Turn into an elemental.,7
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,7
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,7
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,7
+Fireball,Evocation,An explosion of fire in an area burns creatures.,7
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,7
+Fly,Transmutation,Cause the target creature to gain a fly Speed.,7
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,7
+Haste,Transmutation,Speed up a creature so it can attack or move more often.,7
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,7
+Heat Metal,Evocation,Make metal red hot.,7
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,7
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,7
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,7
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,7
+Lightning Storm,Evocation,Create clouds and repeatedly call down lightning bolts.,7
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,7
+Passwall,Conjuration,Form an earthen tunnel through a wall.,7
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,7
+Pillars of Sand,Conjuration,Create pillars of sand.,7
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,7
+Quench,Abjuration,Put out fires and hurt fire creatures.,7
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,7
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,7
+Rusting Grasp,Transmutation,Rapidly rust metal.,7
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,7
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,7
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,7
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,7
+Shifting Sand,Transmutation,You cause the surface to heave.,7
+Shocking Grasp,Evocation,Zap a creature with electricity.,7
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,7
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,7
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,7
+Sudden Blight,Necromancy,Decay living creatures and plants.,7
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,7
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,7
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,7
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,7
+Summon Giant,Conjuration,Conjure a giant to fight on your behalf.,7
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,7
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,7
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,7
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,7
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,7
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,7
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,7
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,7
+Wall of Stone,Conjuration,Shape a wall of stone.,7
+Wall of Thorns,Conjuration,Grow a wall of brambles.,7
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,7
+All is One-- One is All,Necromancy,R You meld the targets' matter and life force into one and then-- in an instant-- sift them back out into their component selves.,8
+Deluge,Evocation,You unleash a catastrophic downpour in the area that vanishes an instant later.,8
+Earthquake,Evocation,Shake the ground with a devastating earthquake.,8
+Horrid Wilting,Necromancy,Pull moisture from creatures-- damaging them.,8
+Moment of Renewal,Necromancy,Give a day's recovery in an instant.,8
+Monstrosity Form,Transmutation,Turn into a powerful monster.,8
+Polar Ray,Evocation,Bitter cold damages and drains a creature.,8
+Punishing Winds,Evocation,A cyclone inhibits fight and traps creatures.,8
+Wind Walk,Transmutation,Turn creatures into swift-moving clouds.,8
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,8
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,8
+Barkskin,Abjuration,Target's skin is covered in protective bark.,8
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,8
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,8
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,8
+Chameleon Coat,Illusion,Camouflage creatures to match their environment.,8
+Charm,Enchantment,A humanoid becomes more friendly to you.,8
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,8
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,8
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,8
+Continual Flame,Evocation,A magical flame burns indefinitely.,8
+Control Sand,Evocation,Manipulate sand around you.,8
+Crashing Wave,Evocation,Smash a cone of water against foes.,8
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,8
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,8
+Dragon Form,Transmutation,Turn into a dragon.,8
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,8
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,8
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,8
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,8
+Field of Life,Necromancy,Create a positive energy field that heals those within.,8
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,8
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,8
+Fire Seeds,Evocation,Make four explosive acorns.,8
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,8
+Fireball,Evocation,An explosion of fire in an area burns creatures.,8
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,8
+Fungal Infestation,Conjuration,Plant poisonous fungal growths in a creature.,8
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,8
+Halcyon Infusion,Divination,HR You infuse magical energy into your target-- opening up their mind to the pathways of magic and granting them the ability to use magic to affect the world around them.,8
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,8
+Heat Metal,Evocation,Make metal red hot.,8
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,8
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,8
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,8
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,8
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,8
+Lightning Storm,Evocation,Create clouds and repeatedly call down lightning bolts.,8
+Mask of Terror,Illusion,A creature’s fearsome illusory appearance frightens observers.,8
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,8
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,8
+Pillars of Sand,Conjuration,Create pillars of sand.,8
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,8
+Quench,Abjuration,Put out fires and hurt fire creatures.,8
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,8
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,8
+Rime Slick,Evocation,You call down a chill wind.,8
+Rusting Grasp,Transmutation,Rapidly rust metal.,8
+Safe Passage,Abjuration,Make an area safe to move through.,8
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,8
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,8
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,8
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,8
+Shocking Grasp,Evocation,Zap a creature with electricity.,8
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,8
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,8
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,8
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,8
+Sudden Blight,Necromancy,Decay living creatures and plants.,8
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,8
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,8
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,8
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,8
+Summon Giant,Conjuration,Conjure a giant to fight on your behalf.,8
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,8
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,8
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,8
+Tree Stride,Conjuration,Teleport from tree to tree.,8
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,8
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,8
+Volcanic Eruption,Evocation,Cause massive lava sprays that burn creatures and encase them in rock.,8
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,8
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,8
+Wall of Thorns,Conjuration,Grow a wall of brambles.,8
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,8
+Disjunction,Abjuration,Deactivate or destroy a magic item.,9
+Implosion,Evocation,Make a creature collapse in on itself.,9
+Massacre,Necromancy,Instantly kill multiple creatures.,9
+Meteor Swarm,Evocation,Call down four blazing meteors that explode.,9
+Nature's Enmity,Enchantment,Turn animals-- plants-- and weather against creatures of your choice.,9
+Shapechange,Transmutation,Transform into a form of your choice repeatedly.,9
+Storm of Vengeance,Evocation,Create a massive-- dangerous storm.,9
+Upheaval,Conjuration,The ground in the area shudders and crumbles as huge pillars of stone erupt into the air-- rending the terrain around them.,9
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,9
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,9
+Banishment,Abjuration,Send a creature back to its home plane.,9
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,9
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,9
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,9
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,9
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,9
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,9
+Continual Flame,Evocation,A magical flame burns indefinitely.,9
+Control Sand,Evocation,Manipulate sand around you.,9
+Crashing Wave,Evocation,Smash a cone of water against foes.,9
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,9
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,9
+Deluge,Evocation,You unleash a catastrophic downpour in the area that vanishes an instant later.,9
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,9
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,9
+Enhance Victuals,Transmutation,Improve food or drink and remove poisons.,9
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,9
+Field of Life,Necromancy,Create a positive energy field that heals those within.,9
+Fiery Body,Transmutation,Turn your body into living flame.,9
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,9
+Finger of Death,Necromancy,Point at a creature to deal negative damage and possibly kill it instantly.,9
+Fire Seeds,Evocation,Make four explosive acorns.,9
+Fireball,Evocation,An explosion of fire in an area burns creatures.,9
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,9
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,9
+Heal,Necromancy,Positive energy heals the living or harms the undead-- either a single creature or all in a burst.,9
+Heat Metal,Evocation,Make metal red hot.,9
+Horrid Wilting,Necromancy,Pull moisture from creatures-- damaging them.,9
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,9
+Hydraulic Torrent,Evocation,Force creatures back with a damaging line of water.,9
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,9
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,9
+Lightning Storm,Evocation,Create clouds and repeatedly call down lightning bolts.,9
+Monstrosity Form,Transmutation,Turn into a powerful monster.,9
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,9
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,9
+Pillars of Sand,Conjuration,Create pillars of sand.,9
+Polar Ray,Evocation,Bitter cold damages and drains a creature.,9
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,9
+Quench,Abjuration,Put out fires and hurt fire creatures.,9
+Ravening Maw,Necromancy,You evoke Zevgavizeb’s unceasing hunger and inflict it upon your target.,9
+Regenerate,Necromancy,Cause a creature to heal over time-- regrow organs-- and reattach body parts.,9
+Rusting Grasp,Transmutation,Rapidly rust metal.,9
+Scintillating Safeguard,Abjuration,Reactively protect multiple creatures from harm with a magic barrier.,9
+Searing Light,Evocation,A ray of burning light deals extra damage to undead and counteracts darkness.,9
+Shatter,Evocation,Shatter an object with a high-frequency sonic attack.,9
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,9
+Shifting Sand,Transmutation,You cause the surface to heave.,9
+Shocking Grasp,Evocation,Zap a creature with electricity.,9
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,9
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,9
+Spike Stones,Conjuration,Grow sharp spikes out of the ground.,9
+Sudden Blight,Necromancy,Decay living creatures and plants.,9
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,9
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,9
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,9
+Summon Fey,Conjuration,Conjure a fey to fight on your behalf.,9
+Summon Giant,Conjuration,Conjure a giant to fight on your behalf.,9
+Summon Plant or Fungus,Conjuration,Conjure a plant or fungus to fight on your behalf.,9
+Sunburst,Evocation,A globe of sunlight deals fire damage-- hurts undead-- and overcomes darkness.,9
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,9
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,9
+Tree Stride,Conjuration,Teleport from tree to tree.,9
+Unfettered Pack,Abjuration,Let creatures avoid environmental hindrances.,9
+Verdant Sprout,Conjuration,You imbue a single ordinary-- inexpensive plant seed with primal energy and throw it onto a surface-- where it gradually sprouts into a Medium plant.,9
+Vital Beacon,Necromancy,Radiate vitality that heals creatures that touch you.,9
+Volcanic Eruption,Evocation,Cause massive lava sprays that burn creatures and encase them in rock.,9
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,9
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,9
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,9
+Wall of Stone,Conjuration,Shape a wall of stone.,9
+Wall of Thorns,Conjuration,Grow a wall of brambles.,9
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,9

@@ -1,0 +1,122 @@
+Catfolk, Humanoid
+Dwarf, Humanoid
+Elf, Humanoid
+Gnome, Humanoid
+Goblin, Humanoid
+Half-Elf, Humanoid
+Halfling, Humanoid
+Half-Orc, Humanoid
+Hobgoblin, Humanoid
+Human, Humanoid
+Kobold, Humanoid
+Leshy
+Lizardfolk, Humanoid
+Orc, Humanoid
+Ratfolk, Humanoid
+Shoony, Humanoid
+Tengu, Humanoid
+Aberration
+Animal
+Astral
+Beast
+Celestial
+Construct
+Dragon
+Dream
+Elemental
+Ethereal
+Fey
+Fiend
+Fungus
+Giant
+Humanoid
+Monitor
+Negative
+Ooze
+Petitioner
+Plant
+Positive
+Spirit
+Time
+Undead
+Air
+Earth
+Fire
+Water
+Acid
+Cold
+Electricity
+Force
+Sonic
+Aasimar
+Aeon
+Alchemical
+Amphibious
+Anadi
+Angel
+Aquatic
+Archon
+Azata
+Boggard
+Caligni
+Changeling
+Charau-ka
+Couatl
+Daemon
+Demon
+Dero
+Devil
+Dhampir
+Dinosaur
+Drow
+Duergar
+Duskwalker
+Fetchling
+Genie
+Ghost
+Ghoul
+Gnoll
+Golem
+Gremlin
+Grippli
+Hag
+Ifrit
+Incorporeal
+Inevitable
+Lizardfolk
+Merfolk
+Mindless
+Morlock
+Mummy
+Mutant
+Nymph
+Oni
+Oread
+Protean
+Psychopomp
+Qlippoth
+Rakshasa
+Sea Devil
+Serpentfolk
+Skeleton
+Skulk
+Sonic
+Soulbound
+Spriggan
+Sprite
+Suli
+Swarm
+Sylph
+Tane
+Tiefling
+Titan
+Troll
+Undine
+Urdefhan
+Vampire
+Velstrac
+Werecreature
+Wight
+Wraith
+Xulgath
+Zombie
