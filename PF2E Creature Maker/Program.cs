@@ -46,6 +46,7 @@ namespace PF2E_Creature_Maker
     class Program
     {
         public static Creature _creature = new Creature();
+        public static Dictionary<Step, Creature> _creatureSaves = new Dictionary<Step, Creature>();
         static void Main()
         {
             Random random = new Random();
@@ -74,9 +75,6 @@ namespace PF2E_Creature_Maker
                 Step.End
             };
 
-            
-            Dictionary<Step, Creature> creatureSaves = new Dictionary<Step, Creature>();
-
             for (int step = 0; endSteps == false; step++)
             {
                 if (step >= 0 && step < stepOrder.Length)
@@ -86,16 +84,14 @@ namespace PF2E_Creature_Maker
 
                 if (step > 0)
                 {
-                    step = ContinueOrBack(stepOrder, step, creatureSaves);
-                    Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
+                    step = ContinueOrBack(stepOrder, step);
                 }
 
-                if (creatureSaves.ContainsKey(stepOrder[step]))
+                if (_creatureSaves.ContainsKey(stepOrder[step]))
                 {
-                    creatureSaves.Remove(stepOrder[step]);
+                    _creatureSaves.Remove(stepOrder[step]);
                 }
-                creatureSaves.Add(stepOrder[step], CopyCreature(_creature));
-                Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
+                _creatureSaves.Add(stepOrder[step], CopyCreature(_creature));
 
                 switch (stepOrder[step])
                 {
@@ -109,6 +105,10 @@ namespace PF2E_Creature_Maker
                             SizeStep(_creature, random);
                             break;
                         }
+                    case Step.Traits:
+                        {
+                            break;
+                        }
                     case Step.End:
                     default:
                         {
@@ -117,11 +117,9 @@ namespace PF2E_Creature_Maker
                         }
                 }
             }
-
-            Console.WriteLine("Creature Level: " + _creature.Level);
-            Console.WriteLine(_creature.Size);
         }
 
+        #region Method Region
         public static Creature CopyCreature(Creature creature)
         {
             Creature creatureCopy = new Creature
@@ -178,7 +176,7 @@ namespace PF2E_Creature_Maker
             }
 
             string[] validSizeOptions = new string[sizeOptionsArray.Length + 1];
-            
+
             for (int i = 0; i < validSizeOptions.Length; i++)
             {
                 if (i == validSizeOptions.Length - 1)
@@ -278,7 +276,7 @@ namespace PF2E_Creature_Maker
             } while (true);
         }
 
-        public static int ContinueOrBack(Step[] stepOrder, int step, Dictionary<Step, Creature> creatureSavesDictionary)
+        public static int ContinueOrBack(Step[] stepOrder, int step)
         {
             string userInput;
             do
@@ -292,13 +290,9 @@ namespace PF2E_Creature_Maker
                         Console.WriteLine("Cannot go back any further");
                     }
                     else
-                    {   
+                    {
                         step -= 1;
-
-                        Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
-                        _creature = CopyCreature(creatureSavesDictionary[stepOrder[step]]);
-                        Console.WriteLine("Creature's Strength is Extreme: " + _creature.IsStrengthExtreme);
-
+                        _creature = CopyCreature(_creatureSaves[stepOrder[step]]);
                         Console.WriteLine("Returning to {0} Step", stepOrder[step]);
                     }
                 }
@@ -374,7 +368,7 @@ namespace PF2E_Creature_Maker
             for (int i = 11; i <= creature.Level; i++)
             {
                 int[] extremeLevels = new int[] { 11, 15, 20 };
-                if(extremeLevels.Contains(i))
+                if (extremeLevels.Contains(i))
                 {
                     int removingDegree;
                     do
@@ -418,7 +412,7 @@ namespace PF2E_Creature_Maker
 
             return userInput;
         }
-        
+
         public static int DisadvantageRandom(Random random, int min, int max)
         {
             int[] randomInts = new int[2];
@@ -429,7 +423,7 @@ namespace PF2E_Creature_Maker
 
             return randomInts.Min();
         }
-        
+
         public static int PinkRandom(Random random, int min, int max)
         {
             int[] randomInts = new int[2];
@@ -448,7 +442,7 @@ namespace PF2E_Creature_Maker
             bool passable = true;
             int userInt = 0;
 
-            if(minMaxes.Length >= 1 || minMaxes.Length <= 2)
+            if (minMaxes.Length >= 1 || minMaxes.Length <= 2)
             {
                 do
                 {
@@ -510,5 +504,8 @@ namespace PF2E_Creature_Maker
                 }
             } while (true);
         }
+
+        #endregion
     }
+
 }
