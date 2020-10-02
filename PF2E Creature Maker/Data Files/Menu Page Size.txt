@@ -1,0 +1,6 @@
+Tiny;-1;
+Small;-1;
+Medium;-1;
+Large;1;5
+Huge;5;9
+Gargantuan;10;15

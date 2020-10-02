@@ -1,0 +1,8 @@
+Acid
+Cold
+Electricity
+Fire
+Force
+Negative
+Positive
+Sonic

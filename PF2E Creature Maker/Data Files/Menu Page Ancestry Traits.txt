@@ -1,0 +1,17 @@
+Catfolk, Humanoid
+Dwarf, Humanoid
+Elf, Humanoid
+Gnome, Humanoid
+Goblin, Humanoid
+Half-Elf, Humanoid
+Halfling, Humanoid
+Half-Orc, Humanoid
+Hobgoblin, Humanoid
+Human, Humanoid
+Kobold, Humanoid
+Leshy
+Lizardfolk, Humanoid
+Orc, Humanoid
+Ratfolk, Humanoid
+Shoony, Humanoid
+Tengu, Humanoid

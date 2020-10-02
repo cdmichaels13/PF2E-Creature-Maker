@@ -1,0 +1,840 @@
+Name,School,Description,Level
+Acid Splash,Evocationcation,Damage creatures with acid.,0
+Chill Touch,Necromancyromancy,Your touch hurts the living or disorients undead.,0
+Dancing Lights,Evocationcation,Create four floating lights you can move.,0
+Daze,Enchantmenthantment,Damage a creature's mind and possibly stun it.,0
+Detect Magic,Divinationination,Sense whether magic is nearby.,0
+Electric Arc,Evocationcation,Zap one or two creatures with lightning.,0
+Ghost Sound,Illusionusion,Make false sounds.,0
+Light,Evocationcation,Make an object glow.,0
+Mage Hand,Evocationcation,Command a floating hand to move an object.,0
+Message,Illusionusion,Speak a message to a distant creature-- who can reply.,0
+Prestidigitation,Evocationcation,Perform a minor magical trick.,0
+Produce Flame,Evocationcation,Kindle small flames to attack close or at range.,0
+Ray of Frost,Evocationcation,Damage a creature with cold.,0
+Read Aura,Divinationination,Detect if an object is magical-- and determine the school of its magic.,0
+Shield,Abjurationuration,A shield of magical force blocks attacks and magic missiles.,0
+Sigil,Transmutationnsmutation,Leave a magical mark.,0
+Tanglefoot,Conjurationjuration,Conjure a vine to entangle a creature.,0
+Telekinetic Projectile,Evocationcation,Fling an object at a creature.,0
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,1
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,1
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,1
+Air Bubble,Conjuration,React to create air for a creature to breathe.,1
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,1
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,1
+Animate Rope,Transmutation,Command a rope to move and tie as you wish.,1
+Ant Haul,Transmutation,Target can carry more.,1
+Anticipate Peril,Divination,You grant the target brief foresight.,1
+Befuddle,Enchantment,You sow seeds of confusion in your target’s mind-- causing their actions and thoughts to become clumsy.,1
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,1
+Charm,Enchantment,A humanoid becomes more friendly to you.,1
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,1
+Color Spray,Illusion,Swirling colors dazzle or stun creatures.,1
+Command,Enchantment,Bid a creature to approach-- run-- release something-- lie prone-- or stand up.,1
+Create Water,Conjuration,Conjure 2 gallons of water.,1
+Déjà Vu,Enchantment,Make a creature do the same thing again.,1
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,1
+Exchange Image,Illusion,Trade appearances with the target.,1
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,1
+Feather Fall,Abjuration,React to slow a creature’s fall.,1
+Fleet Step,Transmutation,Make your Speed much faster.,1
+Floating Disk,Conjuration,A disk of energy follows you-- carrying objects.,1
+Goblin Pox,Necromancy,Infect a creature with goblin pox.,1
+Grease,Conjuration,Coat a surface or object in slippery grease.,1
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,1
+Gust of Wind,Evocation,Wind blows out fires and knocks back objects and creatures.,1
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,1
+Illusory Disguise,Illusion,Make yourself look like a different creature.,1
+Illusory Object,Illusion,Form a convincing illusion of an object.,1
+Invisible Item,Illusion,Make an item disappear from view.,1
+Item Facade,Illusion,Disguise an item to look perfect or shoddy.,1
+Jump,Transmutation,Make an impressive leap.,1
+Lock,Abjuration,Make a lock hard to open.,1
+Longstrider,Transmutation,Increase your Speed for an hour.,1
+Mage Armor,Abjuration,Ward yourself with magical armor.,1
+Magic Aura,Illusion,Change how an item's magic appears to detecting spells.,1
+Magic Missile,Evocation,Pelt creatures with unerring bolts of magical force.,1
+Magic Weapon,Transmutation,Make a weapon temporarily magical.,1
+Mending,Transmutation,Repair one non-magical item.,1
+Message Rune,Divination,You record a message up to 5 minutes long and inscribe a special rune on any flat unattended surface within reach.,1
+Negate Aroma,Abjuration,Suppress a creature’s scent.,1
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,1
+Penumbral Shroud,Evocation,You envelop the target in a shroud of shadow.,1
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,1
+Pest Form,Transmutation,Turn into a nonthreatening animal.,1
+Pet Cache,Conjuration,Hide a familiar or animal companion in a pocket dimension.,1
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,1
+Ray of Enfeeblement,Necromancy,Sap a creature's strength.,1
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,1
+Share Lore,Divination,You share your knowledge with the touched creatures.,1
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,1
+Shocking Grasp,Evocation,Zap a creature with electricity.,1
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,1
+Sleep,Enchantment,Cause creatures in a small area to fall asleep.,1
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,1
+Spider Sting,Necromancy,Damage a creature and afflict it with spider venom.,1
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,1
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,1
+Temporary Tool,Conjuration,You conjure a temporary simple tool-- such as a shovel or rope into your hands.,1
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,1
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,1
+True Strike,Divination,Make your next attack especially accurate.,1
+Unseen Servant,Conjuration,Create an invisible creature to help you.,1
+Ventriloquism,Illusion,Throw your voice.,1
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,2
+Animated Assault,Evocation,Temporarily animate small objects to attack creatures in an area.,2
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,2
+Blur,Illusion,Cause a target's form to become blurry and hard to hit.,2
+Charitable Urge,Enchantment,Make a creature give away an object in its possession.,2
+Comprehend Language,Divination,A creature understands one language.,2
+Continual Flame,Evocation,A magical flame burns indefinitely.,2
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,2
+Darkness,Evocation,Suppress all light in an area.,2
+Darkvision,Divination,See in the dark.,2
+Deafness,Necromancy,Make a creature deaf.,2
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,2
+Dispel Magic,Abjuration,End a spell or suppress an item's magic.,2
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,2
+Enlarge,Transmutation,A creature grows in size.,2
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,2
+False Life,Necromancy,Gain temporary HP.,2
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,2
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,2
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,2
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,2
+Glitterdust,Evocation,Sparkling dust breaks invisibility and impedes vision.,2
+Heat Metal,Evocation,Make metal red hot.,2
+Hideous Laughter,Enchantment,Fits of laughter make a creature unable to take all its actions.,2
+Humanoid Form,Transmutation,Take the shape of a humanoid.,2
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,2
+Invisibility,Illusion,A creature can’t be seen until it attacks.,2
+Iron Gut,Transmutation,Your mouth-- esophagus-- and stomach become incredibly elastic and tougher than metal.,2
+Knock,Transmutation,Make a door-- lock-- or container easier to open-- and possibly open it immediately.,2
+Magic Mouth,Illusion,Make an illusory mouth appear to speak a message.,2
+Mirror Image,Illusion,Illusory duplicates of you cause attacks to miss.,2
+Misdirection,Illusion, Cause one creature’s auras to appear to be another’s.,2
+Obscuring Mist,Conjuration, Conceal creatures in a cloud of mist.,2
+Phantasmal Treasure,Illusion, Tempt a creature with an illusory reward.,2
+Phantom Steed,Conjuration,Conjure a magical horse.,2
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,2
+Rime Slick,Evocation,You call down a chill wind.,2
+Sea Surge,Evocation,SYou slap or stomp on a nearby solid or liquid surface-- sending a surge of water rushing away from you.,2
+See Invisibility,Divination,See invisible creatures and objects.,2
+Shrink,Transmutation,Reduce a willing creature to Tiny size.,2
+Slough Skin,Necromancy, You continually and harmlessly slough off the top layer of your skin while new skin regenerates immediately.,2
+Spectral Hand,Necromancy, Create a semicorporeal hand that touches creatures to target them with your spells.,2
+Spider Climb,Transmutation,Give a creature a climb Speed.,2
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,2
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,2
+Telekinetic Maneuver,Evocation, Disarm-- Shove-- or Trip a creature telekinetically.,2
+Touch of Idiocy,Enchantment, Dull a target's mind with a touch.,2
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,2
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,2
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,2
+Web,Conjuration,Form a web that keeps creatures from moving.,2
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,2
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,2
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,2
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,2
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,2
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,2
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,2
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,2
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,2
+Illusory Disguise,Illusion,Make yourself look like a different creature.,2
+Illusory Object,Illusion,Form a convincing illusion of an object.,2
+Item Facade,Illusion,Disguise an item to look perfect or shoddy.,2
+Lock,Abjuration,Make a lock hard to open.,2
+Longstrider,Transmutation,Increase your Speed for an hour.,2
+Mending,Transmutation,Repair one non-magical item.,2
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,2
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,2
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,2
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,2
+Shocking Grasp,Evocation,Zap a creature with electricity.,2
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,2
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,2
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,2
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,2
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,2
+Ventriloquism,Illusion,Throw your voice.,2
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,3
+Aqueous Orb,Conjuration, Roll a ball of water to put out fires and engulf creatures.,3
+Bind Undead,Necromancy, Take control of a mindless undead.,3
+Blindness,Necromancy, Strike a target blind.,3
+Clairaudience,Divination, Hear through an invisible magical sensor.,3
+Cozy Cabin,Conjuration, Conjure a temporary cabin sheltered from the elements.,3
+Crashing Wave,Evocation,Smash a cone of water against foes.,3
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,3
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,3
+Dream Message,Enchantment,Send a message that arrives in a dream.,3
+Earthbind,Transmutation, Bring a flying creature to the ground.,3
+Enthrall,Enchantment, Your speech makes creatures fascinated with you.,3
+Familiar's Face,Divination, Implant your senses in your animal companion or familiar.,3
+Feet to Fins,Transmutation,Turn a creature's feet into fins-- enabling it swim but slowing it on land.,3
+Fireball,Evocation,An explosion of fire in an area burns creatures.,3
+Ghostly Weapon,Transmutation, Make a weapon affect incorporeal creatures.,3
+Glyph of Warding,Abjuration, Store a spell in a symbol to make a trap.,3
+Gravity Well,Evocation, You create a sphere of altered gravity.,3
+Haste,Transmutation,Speed up a creature so it can attack or move more often.,3
+Hypnotic Pattern,Illusion, Shifting colors dazzle and fascinate creatures.,3
+Invisibility Sphere,Illusion,You and creatures near you become invisible as you explore.,3
+Levitate,Evocation, Float an object or creature a few feet of the ground.,3
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,3
+Locate,Divination,HLearn the direction to an object.,3
+Magical Fetters,Conjuration,SGhostly manacles launch from your outstretched hand and clasp around the target's limbs-- impeding its movements.,3
+Meld into Stone,Transmutation, Meld into a block of stone.,3
+Mind Reading,Divination,Read a creature's surface thoughts.,3
+Nondetection,Abjuration,Protect a creature or object from detection.,3
+Paralyze,Enchantment,Freeze a humanoid in place.,3
+Pillar of Water,Evocation,SYou create a large-- self-contained cylinder of still fresh water,3
+Pyrotechnics,Transmutation,SYou turn a fire into either a burst of blinding fireworks or a thick cloud of choking smoke,3
+Safe Passage,Abjuration,Make an area safe to move through.,3
+Secret Page,Illusion, Alter the appearance of a page.,3
+Shifting Sand,Transmutation,You cause the surface to heave.,3
+Shrink Item,Transmutation, Reduce an object to the size of a coin.,3
+Slow,Transmutation,Make a creature slower-- reducing its actions.,3
+Stinking Cloud,Conjuration, Form a cloud that sickens creatures.,3
+Unseasonable Squall,Evocation,SYou issue a blast of sudden wind that ripples outward from the center of the burst.,3
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,3
+Wall of Wind,Evocation, Create a wall of gusting winds that hinders movement and ranged attacks.,3
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,3
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,3
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,3
+Alarm,Abjuration,Be alerted if a creature enters a warded area.,3
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,3
+Animate Rope,Transmutation,Command a rope to move and tie as you wish.,3
+Anticipate Peril,Divination,You grant the target brief foresight.,3
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,3
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,3
+Comprehend Language,Divination,A creature understands one language.,3
+Continual Flame,Evocation,A magical flame burns indefinitely.,3
+Darkvision,Divination,See in the dark.,3
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,3
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,3
+False Life,Necromancy,Gain temporary HP.,3
+Fear,Enchantment,Frighten a creature-- possibly making it flee.,3
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,3
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,3
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,3
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,3
+Heat Metal,Evocation,Make metal red hot.,3
+Humanoid Form,Transmutation,Take the shape of a humanoid.,3
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,3
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,3
+Illusory Disguise,Illusion,Make yourself look like a different creature.,3
+Invisible Item,Illusion,Make an item disappear from view.,3
+Iron Gut,Transmutation,Your mouth-- esophagus-- and stomach become incredibly elastic and tougher than metal.,3
+Item Facade,Illusion,Disguise an item to look perfect or shoddy.,3
+Jump,Transmutation,Make an impressive leap.,3
+Magic Aura,Illusion,HChange how an item's magic appears to detecting spells.,3
+Magic Missile,Evocation,Pelt creatures with unerring bolts of magical force.,3
+Mending,Transmutation,Repair one non-magical item.,3
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,3
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,3
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,3
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,3
+Share Lore,Divination,You share your knowledge with the touched creatures.,3
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,3
+Shocking Grasp,Evocation,Zap a creature with electricity.,3
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,3
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,3
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,3
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,3
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,3
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,3
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,3
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,3
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,3
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,3
+Aerial Form,Transmutation,Turn into a flying combatant.,4
+Aromatic Lure,Enchantment,You override a target's olfactory senses-- luring them to a specific location through tantalizing false scents.,4
+Bestial Curse,Transmutation, Make a humanoid take on features of a beast.,4
+Blink,Conjuration,Flit between the planes-- vanishing and reappearing.,4
+Clairvoyance,Divination, See through an invisible magical sensor.,4
+Clownish Curse,Enchantment,SYou afflict the target with a curse that causes it to emit ridiculous noises as it moves.,4
+Confusion,Enchantment,Befuddle a creature-- making it act randomly.,4
+Countless Eyes,Divination, Cause magical eyes to appear all over a creature's body.,4
+Creation,Conjuration,Make a temporary object.,4
+Detect Scrying,Divination,HFind out if scrying effects are in the area.,4
+Dimension Door,Conjuration,Teleport yourself up to 120 feet.,4
+Dimensional Anchor,Abjuration, Keep a creature from teleporting or traveling to other planes.,4
+Discern Lies,Divination,Expertly detect lies and falsehoods.,4
+Dull Ambition,Enchantment, Curse a creature with an unfortunate lack of ambition.,4
+Enervation,Necromancy,Drain a creature's vigor.,4
+Favorable Review,Enchantment,You enchant a creature to ensure they have only good things to say about your show.,4
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,4
+Fly,Transmutation,Cause the target creature to gain a fly Speed.,4
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,4
+Freedom of Movement,Abjuration, A creature overcomes hindrances to its movement.,4
+Gaseous Form,Transmutation, Turn a willing creature into a flying cloud.,4
+Globe of Invulnerability,Abjuration,Magical sphere counteracts spells that would enter it.,4
+Hallucinatory Terrain,Illusion,natural environment appears to be another kind of terrain.,4
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,4
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,4
+Nightmare,Illusion, Plague a creature's dreams with disturbing nightmares.,4
+Outcast's Curse,Enchantment, Curse a creature to be off-putting and grating.,4
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,4
+Private Sanctum,Abjuration,Black fog prevents sensing-- scrying-- and mind-reading on anyone within.,4
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,4
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,4
+Resilient Sphere,Abjuration, Create a sphere of force that blocks anything that would come through.,4
+Rope Trick,Conjuration,Animate a rope that rises to an extradimensional hiding place.,4
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,4
+Shape Stone,Transmutation, Reshape a cube of stone.,4
+Solid Fog,Conjuration, Conjure heavy fog that obscures sight and is hard to move through.,4
+Spell Immunity,Abjuration, Name a spell to negate its effects on you.,4
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,4
+Suggestion,Enchantment,Suggest a course of action a creature must follow.,4
+Telepathy,Divination,Communicate telepathically with any creatures near you.,4
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,4
+Veil,Illusion,Disguise many creatures as other creatures.,4
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,4
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,4
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,4
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,4
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,4
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,4
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,4
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,4
+Animated Assault,Evocation,Temporarily animate small objects to attack creatures in an area.,4
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,4
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,4
+Charm,Enchantment,A humanoid becomes more friendly to you.,4
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,4
+Comprehend Language,Divination,A creature understands one language.,4
+Continual Flame,Evocation,A magical flame burns indefinitely.,4
+Crashing Wave,Evocation,Smash a cone of water against foes.,4
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,4
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,4
+Darkness,Evocation,Suppress all light in an area.,4
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,4
+Dream Message,Enchantment,Send a message that arrives in a dream.,4
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,4
+Enlarge,Transmutation,A creature grows in size.,4
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,4
+False Life,Necromancy,Gain temporary HP.,4
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,4
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,4
+Fireball,Evocation,An explosion of fire in an area burns creatures.,4
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,4
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,4
+Heat Metal,Evocation,Make metal red hot.,4
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,4
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,4
+Invisibility,Illusion,A creature can’t be seen until it attacks.,4
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,4
+Mage Armor,Abjuration,Ward yourself with magical armor.,4
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,4
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,4
+Pest Form,Transmutation,Turn into a nonthreatening animal.,4
+Phantom Steed,Conjuration,Conjure a magical horse.,4
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,4
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,4
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,4
+Shocking Grasp,Evocation,Zap a creature with electricity.,4
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,4
+Sleep,Enchantment,Cause creatures in a small area to fall asleep.,4
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,4
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,4
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,4
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,4
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,4
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,4
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,4
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,4
+Water Breathing,Transmutation,Allow creatures to breathe underwater.,4
+Water Walk,Transmutation,Buoy a creature so it can walk on water.,4
+Web,Conjuration,Form a web that keeps creatures from moving.,4
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,5
+Banishment,Abjuration,Send a creature back to its home plane.,5
+Black Tentacles,Conjuration, Tentacles in an area grab creatures.,5
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,5
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,5
+Chromatic Wall,Abjuration,A wall of light offers a unique protection based on its color.,5
+Cloak of Colors,Illusion, Bright colors dazzle creatures near the target-- and attacks cause blinding flashes of light.,5
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,5
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,5
+Control Water,Evocation, Raise or lower water in a large area.,5
+Crushing Despair,Enchantment,Make a creature sob uncontrollably.,5
+Drop Dead,Illusion,HThe target appears to die but actually turns invisible.,5
+Elemental Form,Transmutation,Turn into an elemental.,5
+False Vision,Illusion,Trick a scrying spell.,5
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,5
+Hallucination,Illusion,A creature believes one thing is another-- can’t detect something-- or sees something that’s not really there.,5
+Illusory Scene,Illusion,Create an imaginary scene containing multiple creatures and objects.,5
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,5
+Mariner's Curse,Necromancy, Infect a creature with the curse of the rolling sea.,5
+Mind Probe,Divination,Uncover knowledge and memories in a creature's mind.,5
+Passwall,Conjuration,HForm an earthen tunnel through a wall.,5
+Pillars of Sand,Conjuration,Create pillars of sand.,5
+Prying Eye,Divination, An invisible eye transmits what it sees to you.,5
+Secret Chest,Conjuration, Hide a container on the Ethereal Plane.,5
+Sending,Divination, Send a mental message to a creature anywhere on the planet and get a reply.,5
+Shadow Siphon,Illusion, React to lessen the damage from an enemy's spell by making it partially illusion.,5
+Shadow Walk,Conjuration,Travel rapidly via the Shadow Plane.,5
+Subconscious Suggestion,Enchantment,Plant a mental suggestion that must be followed when a trigger occurs.,5
+Summon Dragon,Conjuration,Conjure a dragon to fight on your behalf.,5
+Telekinetic Haul,Evocation, Move a large object.,5
+Telepathic Bond,Divination,Link minds with willing creatures to communicate telepathically at great distances.,5
+Tongues,Divination,HLet a creature understand and speak all languages.,5
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,5
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,5
+Wall of Stone,Conjuration,Shape a wall of stone.,5
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,5
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,5
+Aerial Form,Transmutation,Turn into a flying combatant.,5
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,5
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,5
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,5
+Animate Rope,Transmutation,Command a rope to move and tie as you wish.,5
+Anticipate Peril,Divination,You grant the target brief foresight.,5
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,5
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,5
+Command,Enchantment,Bid a creature to approach-- run-- release something-- lie prone-- or stand up.,5
+Continual Flame,Evocation,A magical flame burns indefinitely.,5
+Crashing Wave,Evocation,Smash a cone of water against foes.,5
+Creation,Conjuration,Make a temporary object.,5
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,5
+Darkvision,Divination,See in the dark.,5
+Dimension Door,Conjuration,Teleport yourself up to 120 feet.,5
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,5
+Endure Elements,Abjuration,Protect a creature from severe cold or heat.,5
+False Life,Necromancy,Gain temporary HP.,5
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,5
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,5
+Fireball,Evocation,An explosion of fire in an area burns creatures.,5
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,5
+Gentle Repose,Necromancy,A corpse doesn't decay and can't become undead.,5
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,5
+Hallucinatory Terrain,Illusion,natural environment appears to be another kind of terrain.,5
+Heat Metal,Evocation,Make metal red hot.,5
+Humanoid Form,Transmutation,Take the shape of a humanoid.,5
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,5
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,5
+Illusory Object,Illusion,Form a convincing illusion of an object.,5
+Invisibility Sphere,Illusion,You and creatures near you become invisible as you explore.,5
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,5
+Locate,Divination,HLearn the direction to an object.,5
+Magic Missile,Evocation,Pelt creatures with unerring bolts of magical force.,5
+Negate Aroma,Abjuration,Suppress a creature’s scent.,5
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,5
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,5
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,5
+Phantom Steed,Conjuration,Conjure a magical horse.,5
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,5
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,5
+Rime Slick,Evocation,You call down a chill wind.,5
+Safe Passage,Abjuration,Make an area safe to move through.,5
+See Invisibility,Divination,See invisible creatures and objects.,5
+Share Lore,Divination,You share your knowledge with the touched creatures.,5
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,5
+Shifting Sand,Transmutation,You cause the surface to heave.,5
+Shocking Grasp,Evocation,Zap a creature with electricity.,5
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,5
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,5
+Spider Climb,Transmutation,Give a creature a climb Speed.,5
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,5
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,5
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,5
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,5
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,5
+Thoughtful Gift,Conjuration,Teleport an item to an ally's grasp.,5
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,5
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,5
+Veil,Illusion,Disguise many creatures as other creatures.,5
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,5
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,5
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,5
+Baleful Polymorph,Transmutation, Transform a creature into a harmless animal.,6
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,6
+Collective Transposition,Conjuration,Teleport up to two creatures to new positions near you.,6
+Disintegrate,Evocation,Reduce a creature or object to dust.,6
+Dominate,Enchantment,humanoid must obey your orders.,6
+Dragon Form,Transmutation,Turn into a dragon.,6
+Feeblemind,Enchantment, Stupefy a creature permanently.,6
+Flesh to Stone,Transmutation, Turn a living creature into a stone statue.,6
+Halcyon Infusion,Divination,You infuse magical energy into your target-- opening up their mind to the pathways of magic and granting them the ability to use magic to affect the world around them.,6
+Mislead,Illusion, Turn invisible and create a duplicate of yourself who acts like you.,6
+Phantasmal Calamity,Illusion,Damage a creature mentally with visions of an apocalypse.,6
+Purple Worm Sting,Necromancy, Damage a creature and infect it with purple worm venom.,6
+Repulsion,Abjuration, Prevent creatures from approaching you.,6
+Scrying,Divination,Spy on a creature.,6
+Spellwrack,Abjuration, Curse a creature to be harmed when a spell is cast on it and lower the duration of its spells.,6
+Teleport,Conjuration,HTransport you and willing creatures a great distance.,6
+True Seeing,Divination, See through illusions and transmutations.,6
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,6
+Vibrant Pattern,Illusion, Make a pattern of lights that dazzles and blinds.,6
+Wall of Force,Evocation,Create an invisible and durable wall of magical force.,6
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,6
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,6
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,6
+Aerial Form,Transmutation,Turn into a flying combatant.,6
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,6
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,6
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,6
+Animated Assault,Evocation,Temporarily animate small objects to attack creatures in an area.,6
+Aromatic Lure,Enchantment,You override a target's olfactory senses-- luring them to a specific location through tantalizing false scents.,6
+Blink,Conjuration,Flit between the planes-- vanishing and reappearing.,6
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,6
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,6
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,6
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,6
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,6
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,6
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,6
+Continual Flame,Evocation,A magical flame burns indefinitely.,6
+Crashing Wave,Evocation,Smash a cone of water against foes.,6
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,6
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,6
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,6
+Detect Scrying,Divination,HFind out if scrying effects are in the area.,6
+Dismantle,Transmutation,Temporarily disassemble an object into its components.,6
+Elemental Form,Transmutation,Turn into an elemental.,6
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,6
+Enervation,Necromancy,Drain a creature's vigor.,6
+Enlarge,Transmutation,A creature grows in size.,6
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,6
+False Life,Necromancy,Gain temporary HP.,6
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,6
+Feet to Fins,Transmutation,Turn a creature's feet into fins-- enabling it swim but slowing it on land.,6
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,6
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,6
+Fireball,Evocation,An explosion of fire in an area burns creatures.,6
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,6
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,6
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,6
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,6
+Hallucination,Illusion,A creature believes one thing is another-- can’t detect something-- or sees something that’s not really there.,6
+Heat Metal,Evocation,Make metal red hot.,6
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,6
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,6
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,6
+Illusory Scene,Illusion,Create an imaginary scene containing multiple creatures and objects.,6
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,6
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,6
+Mage Armor,Abjuration,Ward yourself with magical armor.,6
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,6
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,6
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,6
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,6
+Phantom Steed,Conjuration,Conjure a magical horse.,6
+Pillars of Sand,Conjuration,Create pillars of sand.,6
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,6
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,6
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,6
+Scouring Sand,Evocation,You blast the area with grit that scours away soil and gets into creatures’ eyes.,6
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,6
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,6
+Shocking Grasp,Evocation,Zap a creature with electricity.,6
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,6
+Shrink,Transmutation,Reduce a willing creature to Tiny size.,6
+Slow,Transmutation,Make a creature slower-- reducing its actions.,6
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,6
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,6
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,6
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,6
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,6
+Summon Dragon,Conjuration,Conjure a dragon to fight on your behalf.,6
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,6
+Telepathy,Divination,Communicate telepathically with any creatures near you.,6
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,6
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,6
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,6
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,6
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,6
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,6
+Blightburn Blast,Evocation,SInflict a creature with blightburn sickness.,7
+Contingency,Abjuration,Set up a spell to trigger later under your choice of circumstances.,7
+Control Sand,Evocation,Manipulate sand around you.,7
+Dimensional Lock,Abjuration,Prevent teleportation and planar travel.,7
+Duplicate Foe,Conjuration,Create a temporary duplicate of an enemy that fights for you.,7
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,7
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,7
+Entrancing Eyes,Enchantment,SYour eyes glow with an entrancing radiance that captivates those who meet your gaze.,7
+Fiery Body,Transmutation,Turn your body into living flame.,7
+Force Cage,Evocation, Form a prison of pure magical force.,7
+Magnificent Mansion,Conjuration,Conjure a secure dwelling in a demiplane.,7
+Mask of Terror,Illusion,A creature’s fearsome illusory appearance frightens observers.,7
+Maze of Locked Doors,Conjuration,SThe target of your spell is drawn into a long-- twisting-- extradimensional hallway.,7
+Plane Shift,Conjuration,Transport creatures to another plane of existence.,7
+Power Word Blind,Enchantment,HUtter a word that blinds a creature.,7
+Prismatic Spray,Evocation, Shoot rainbow beams that have various effects on creatures in a cone.,7
+Project Image,Illusion,Make an illusion of yourself you can cast spells through.,7
+Reverse Gravity,Evocation,Flip the gravitational pull in an area.,7
+Spell Turning,Abjuration,Reflect spells back at their caster.,7
+PFS LimitedTime Beacon,Divination, You create a beacon in time-- intending to return to it if things go wrong.,7
+True Target,Divination, Make multiple attacks against a creature especially accurate.,7
+Warp Mind,Enchantment, Confuse a creature-- possibly permanently.,7
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,7
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,7
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,7
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,7
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,7
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,7
+Animate Rope,Transmutation,Command a rope to move and tie as you wish.,7
+Anticipate Peril,Divination,You grant the target brief foresight.,7
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,7
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,7
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,7
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,7
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,7
+Chromatic Wall,Abjuration,A wall of light offers a unique protection based on its color.,7
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,7
+Collective Transposition,Conjuration,Teleport up to two creatures to new positions near you.,7
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,7
+Continual Flame,Evocation,A magical flame burns indefinitely.,7
+Crashing Wave,Evocation,Smash a cone of water against foes.,7
+Crushing Despair,Enchantment,Make a creature sob uncontrollably.,7
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,7
+Disintegrate,Evocation,Reduce a creature or object to dust.,7
+Drop Dead,Illusion,HThe target appears to die but actually turns invisible.,7
+Elemental Form,Transmutation,Turn into an elemental.,7
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,7
+False Life,Necromancy,Gain temporary HP.,7
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,7
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,7
+Fireball,Evocation,An explosion of fire in an area burns creatures.,7
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,7
+Fly,Transmutation,Cause the target creature to gain a fly Speed.,7
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,7
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,7
+Haste,Transmutation,Speed up a creature so it can attack or move more often.,7
+Heat Metal,Evocation,Make metal red hot.,7
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,7
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,7
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,7
+Invisible Item,Illusion,Make an item disappear from view.,7
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,7
+Magic Missile,Evocation,Pelt creatures with unerring bolts of magical force.,7
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,7
+Paralyze,Enchantment,Freeze a humanoid in place.,7
+Passwall,Conjuration,HForm an earthen tunnel through a wall.,7
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,7
+Phantasmal Calamity,Illusion,Damage a creature mentally with visions of an apocalypse.,7
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,7
+Pillars of Sand,Conjuration,Create pillars of sand.,7
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,7
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,7
+Resist Energy,Abjuration,Protect a creature from one type of energy damage.,7
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,7
+Shifting Sand,Transmutation,You cause the surface to heave.,7
+Shocking Grasp,Evocation,Zap a creature with electricity.,7
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,7
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,7
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,7
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,7
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,7
+Summon Dragon,Conjuration,Conjure a dragon to fight on your behalf.,7
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,7
+Teleport,Conjuration,HTransport you and willing creatures a great distance.,7
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,7
+Tongues,Divination,HLet a creature understand and speak all languages.,7
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,7
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,7
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,7
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,7
+Veil,Illusion,Disguise many creatures as other creatures.,7
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,7
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,7
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,7
+Wall of Stone,Conjuration,Shape a wall of stone.,7
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,7
+All is One-- One is All,Necromancy,You meld the targets' matter and life force into one and then-- in an instant-- sift them back out into their component selves.,8
+Antimagic Field,Abjuration,Magic doesn't function in an area around you.,8
+Deluge,Evocation,You unleash a catastrophic downpour in the area that vanishes an instant later.,8
+Disappearance,Illusion, Make a creature invisible-- silent-- and undetectable by any and all senses.,8
+Discern Location,Divination,Discover a target's exact location within unlimited range.,8
+Dream Council,Illusion, Communicate through a shared dream.,8
+Earthquake,Evocation,Shake the ground with a devastating earthquake.,8
+Horrid Wilting,Necromancy,Pull moisture from creatures-- damaging them.,8
+Maze,Conjuration, Trap a creature in an extradimensional maze.,8
+Mind Blank,Abjuration,Protect a creature from mental magic and some divinations.,8
+Monstrosity Form,Transmutation,Turn into a powerful monster.,8
+Polar Ray,Evocation,Bitter cold damages and drains a creature.,8
+Power Word Stun,Enchantment,HUtter a word that stuns a creature.,8
+Prismatic Wall,Abjuration, Form a protective wall with seven chromatic layers.,8
+Prying Survey,Divination,You create eight invisible-- floating eyes-- each about 3 inches in diameter-- that scan the area around you-- transmitting rough impressions of the environment.,8
+Scintillating Pattern,Illusion, Cause an array of color that dazzles-- confuses-- and stuns.,8
+Uncontrollable Dance,Enchantment, Overcome a target with an all-consuming urge to dance.,8
+Undermine Reality,Illusion,SYou lash a target with tendrils of shadow that steal some of its substance-- making it quasi-real.,8
+Unrelenting Observation,Divination, You and other creatures use scrying to track a subject exactly.,8
+Acid Arrow,Evocation,Magical arrow deals acid damage persistently.,8
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,8
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,8
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,8
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,8
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,8
+Animated Assault,Evocation,Temporarily animate small objects to attack creatures in an area.,8
+Aromatic Lure,Enchantment,You override a target's olfactory senses-- luring them to a specific location through tantalizing false scents.,8
+Blink,Conjuration,Flit between the planes-- vanishing and reappearing.,8
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,8
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,8
+Blood Vendetta,Necromancy,Cause a creature that attacks you to start bleeding.,8
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,8
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,8
+Charm,Enchantment,A humanoid becomes more friendly to you.,8
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,8
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,8
+Collective Transposition,Conjuration,Teleport up to two creatures to new positions near you.,8
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,8
+Confusion,Enchantment,Befuddle a creature-- making it act randomly.,8
+Contingency,Abjuration,Set up a spell to trigger later under your choice of circumstances.,8
+Continual Flame,Evocation,A magical flame burns indefinitely.,8
+Control Sand,Evocation,Manipulate sand around you.,8
+Crashing Wave,Evocation,Smash a cone of water against foes.,8
+Create Food,Conjuration,Conjure food that can feed multiple creatures.,8
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,8
+Disintegrate,Evocation,Reduce a creature or object to dust.,8
+Dragon Form,Transmutation,Turn into a dragon.,8
+Duplicate Foe,Conjuration,Create a temporary duplicate of an enemy that fights for you.,8
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,8
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,8
+Enervation,Necromancy,Drain a creature's vigor.,8
+Expeditious Excavation,Transmutation,You remove loose dirt-- dust-- gravel-- sand-- and the like from the area.,8
+False Life,Necromancy,Gain temporary HP.,8
+Favorable Review,Enchantment,You enchant a creature to ensure they have only good things to say about your show.,8
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,8
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,8
+Fire Shield,Evocation,Flames protect you from cold and harm those that touch you.,8
+Fireball,Evocation,An explosion of fire in an area burns creatures.,8
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,8
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,8
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,8
+Halcyon Infusion,Divination,You infuse magical energy into your target-- opening up their mind to the pathways of magic and granting them the ability to use magic to affect the world around them.,8
+Hallucination,Illusion,A creature believes one thing is another-- can’t detect something-- or sees something that’s not really there.,8
+Heat Metal,Evocation,Make metal red hot.,8
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,8
+Ice Storm,Evocation,Call a storm cloud that pelts creatures with hail.,8
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,8
+Illusory Scene,Illusion,Create an imaginary scene containing multiple creatures and objects.,8
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,8
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,8
+Mage Armor,Abjuration,Ward yourself with magical armor.,8
+Mask of Terror,Illusion,A creature’s fearsome illusory appearance frightens observers.,8
+Necrotic Radiation,Necromancy,You imbue the touched object or space with slow-acting necrotic radiation.,8
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,8
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,8
+Phantasmal Calamity,Illusion,Damage a creature mentally with visions of an apocalypse.,8
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,8
+Pillars of Sand,Conjuration,Create pillars of sand.,8
+Power Word Blind,Enchantment,HUtter a word that blinds a creature.,8
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,8
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,8
+Reflective Scales,Abjuration,You grow a set of colored glowing scales or scaled armor that stores energy before releasing it in a final burst.,8
+Rime Slick,Evocation,You call down a chill wind.,8
+Safe Passage,Abjuration,Make an area safe to move through.,8
+Seal Fate,Necromancy,Curse a creature to be harmed by a certain type of damage.,8
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,8
+Shocking Grasp,Evocation,Zap a creature with electricity.,8
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,8
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,8
+Stoneskin,Abjuration,Harden a creature's skin into durable stone.,8
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,8
+Suggestion,Enchantment,Suggest a course of action a creature must follow.,8
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,8
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,8
+Summon Dragon,Conjuration,Conjure a dragon to fight on your behalf.,8
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,8
+Teleport,Conjuration,HTransport you and willing creatures a great distance.,8
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,8
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,8
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,8
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,8
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,8
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,8
+Wall of Force,Evocation,Create an invisible and durable wall of magical force.,8
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,8
+Astral Labyrinth,Abjuration,You connect the entire area with an invisible maze of astral energy that interferes with dimensional and mental magic.,9
+Disjunction,Abjuration,Deactivate or destroy a magic item.,9
+Foresight,Divination, Sense when a creature is in danger and React to protect it with good fortune.,9
+Implosion,Evocation,Make a creature collapse in on itself.,9
+Massacre,Necromancy,Instantly kill multiple creatures.,9
+Meteor Swarm,Evocation,Call down four blazing meteors that explode.,9
+Power Word Kill,Enchantment,HUtter a word that slays a creature.,9
+Prismatic Sphere,Abjuration, Form a protective sphere composed of seven chromatic layers.,9
+Resplendent Mansion,Conjuration, Conjure a mansion that lasts for a day.,9
+Shapechange,Transmutation, Transform into a form of your choice repeatedly.,9
+Telepathic Demand,Enchantment, Send a mental message that impels a creature toward a course of action.,9
+Upheaval,Conjuration,SThe ground in the area shudders and crumbles as huge pillars of stone erupt into the air-- rending the terrain around them.,9
+Weird,Illusion, Frighten-- deal mental damage-- and possibly kill large numbers of creatures.,9
+Acid Storm,Evocation,You evoke a storm of acid rain that pelts the area for the spell’s duration.,9
+Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,9
+Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,9
+Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,9
+Agonizing Despair,Enchantment,Mentally damage and frighten a creature.,9
+Animate Dead,Necromancy,Animate an undead creature to fight on your behalf.,9
+Animate Rope,Transmutation,Command a rope to move and tie as you wish.,9
+Anticipate Peril,Divination,You grant the target brief foresight.,9
+Banishment,Abjuration,Send a creature back to its home plane.,9
+Blister,Necromancy,Grow large blisters on a creature and pop them to spray acid.,9
+Blood Feast,Necromancy,Your head splits vertically into an enormous maw-- which feasts upon the target's blood.,9
+Burning Hands,Evocation,A small cone of flame rushes from your hands.,9
+Chain Lightning,Evocation,Lightning jumps from creature to creature.,9
+Chilling Spray,Evocation,Icy shards fly out from you in a cone.,9
+Cloudkill,Necromancy,Poison creatures in a cloud that moves away from you.,9
+Collective Transposition,Conjuration,Teleport up to two creatures to new positions near you.,9
+Cone of Cold,Evocation,Bitter cold damages creatures in a cone.,9
+Contingency,Abjuration,Set up a spell to trigger later under your choice of circumstances.,9
+Continual Flame,Evocation,A magical flame burns indefinitely.,9
+Control Sand,Evocation,Manipulate sand around you.,9
+Crashing Wave,Evocation,Smash a cone of water against foes.,9
+Cup of Dust,Necromancy,You curse the target with a thirst no drink can quench.,9
+Curse of Lost Time,Transmutation,Artificially erode or age a target.,9
+Deluge,Evocation,You unleash a catastrophic downpour in the area that vanishes an instant later.,9
+Disintegrate,Evocation,Reduce a creature or object to dust.,9
+Duplicate Foe,Conjuration,Create a temporary duplicate of an enemy that fights for you.,9
+Eclipse Burst,Necromancy,A globe of darkness deals cold damage-- hurts the living-- and overcomes light.,9
+Endure,Enchantment,You invigorate the touched creature’s mind and urge it to press on.,9
+Energy Aegis,Abjuration,A creature gains resistance to acid-- cold-- electricity-- fire-- force-- and sonic.,9
+False Life,Necromancy,Gain temporary HP.,9
+Feast of Ashes,Necromancy,You curse the target with a hunger no food can sate.,9
+Fiery Body,Transmutation,Turn your body into living flame.,9
+Final Sacrifice,Evocation,Channel energy to blow up your minion.,9
+Fireball,Evocation,An explosion of fire in an area burns creatures.,9
+Flaming Sphere,Evocation,A ball of fire rolls about at your command.,9
+Forgotten Lines,Divination,HRS Restore destroyed or censored text.,9
+Grim Tendrils,Necromancy,Creatures in a line take negative damage and bleed.,9
+Grisly Growths,Transmutation,A creature grows excess limbs and organs-- sickening those who witness the transformation.,9
+Heat Metal,Evocation,Make metal red hot.,9
+Horrid Wilting,Necromancy,Pull moisture from creatures-- damaging them.,9
+Hydraulic Push,Evocation,Damage and push a creature with a blast of water.,9
+Illusory Creature,Illusion,Form a convincing illusion of a creature.,9
+Impaling Spike,Conjuration,Skewer a creature with a cold iron spike.,9
+Lightning Bolt,Evocation,Lightning strikes all creatures in a line.,9
+Magic Missile,Evocation,Pelt creatures with unerring bolts of magical force.,9
+Monstrosity Form,Transmutation,Turn into a powerful monster.,9
+Noxious Vapors,Evocation,Form a toxic cloud that poisons and sickens.,9
+Personal Rain Cloud,Evocation,You conjure a 5-foot-wide rain cloud that follows the target wherever it goes.,9
+Phantasmal Calamity,Illusion,Damage a creature mentally with visions of an apocalypse.,9
+Phantasmal Killer,Illusion,Place a fearsome image in a creature's mind to scare and possibly kill it.,9
+Pillars of Sand,Conjuration,Create pillars of sand.,9
+Polar Ray,Evocation,Bitter cold damages and drains a creature.,9
+Power Word Blind,Enchantment,HUtter a word that blinds a creature.,9
+Power Word Stun,Enchantment,HUtter a word that stuns a creature.,9
+Project Image,Illusion,Make an illusion of yourself you can cast spells through.,9
+Pummeling Rubble,Evocation,Hurl a cone of rocks to batter creatures.,9
+Rebounding Barrier,Abjuration,You swiftly raise a reflective barrier-- reducing physical damage and rebounding it onto your attacker.,9
+Shattering Gem,Abjuration,A large gem floats around the target in an erratic pattern.,9
+Shifting Sand,Transmutation,You cause the surface to heave.,9
+Shocking Grasp,Evocation,Zap a creature with electricity.,9
+Shockwave,Evocation,You create a wave of energy that ripples through the earth.,9
+Snowball,Evocation,You throw a magically propelled and chilled ball of dense snow.,9
+Subconscious Suggestion,Enchantment,Plant a mental suggestion that must be followed when a trigger occurs.,9
+Sudden Bolt,Evocation,You call down a small bolt of lightning on the target,9
+Summon Animal,Conjuration,Conjure an animal to fight on your behalf.,9
+Summon Construct,Conjuration,Conjure a construct to fight on your behalf.,9
+Summon Dragon,Conjuration,Conjure a dragon to fight on your behalf.,9
+Summon Elemental,Conjuration,Conjure an elemental to fight on your behalf.,9
+Teleport,Conjuration,HTransport you and willing creatures a great distance.,9
+Tether,Abjuration,You use magical chains-- vines-- or other tethers to bind your target to you.,9
+Transmute Rock and Mud,Transmutation,Turn an area of rock into mud or vice versa.,9
+Vampiric Exsanguination,Necromancy,Draw blood and life force from creatures in a cone.,9
+Vampiric Maiden,Necromancy,A ghostly iron maiden harms a creature and transfers its vitality to you.,9
+Vampiric Touch,Necromancy,Deal negative damage and gain temporary HP with a touch.,9
+Vomit Swarm,Evocation,Vermin erupt in a cone from your mouth-- biting and stinging creatures.,9
+Wall of Fire,Evocation,Create a blazing wall burns creatures that pass through.,9
+Wall of Ice,Evocation,Sculpt a foot-thick wall of ice that blocks sight and can chill creatures.,9
+Wall of Stone,Conjuration,Shape a wall of stone.,9
+Weapon Storm,Evocation,Multiply a weapon you hold and attack many creatures with it.,9
