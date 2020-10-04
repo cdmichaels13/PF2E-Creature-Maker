@@ -42,6 +42,13 @@ namespace PF2E_Creature_Maker
         Gear,
         End
     }
+    
+    public enum CreatureType
+    {
+        NPC,
+        Monster,
+        Any
+    }
 
     class Program
     {
@@ -97,16 +104,17 @@ namespace PF2E_Creature_Maker
                 {
                     case Step.Level:
                         {
-                            partyLevel = LevelStep(random, _creature);
+                            partyLevel = ExecuteStep.LevelStep(random, _creature);
                             break;
                         }
                     case Step.Size:
                         {
-                            SizeStep(_creature, random);
+                            ExecuteStep.SizeStep(_creature, random);
                             break;
                         }
                     case Step.Traits:
                         {
+                            ExecuteStep.TraitsStep(_creature, random);
                             break;
                         }
                     case Step.End:
@@ -124,11 +132,11 @@ namespace PF2E_Creature_Maker
         {
             Creature creatureCopy = new Creature
             {
-                IsStrengthExtreme = creature.IsStrengthExtreme,
-                SaveNumber = creature.SaveNumber,
                 Level = creature.Level,
                 Name = creature.Name,
                 Size = creature.Size,
+                IsStrengthExtreme = creature.IsStrengthExtreme,
+                Type = creature.Type,
                 DegreeList = CopyListValues(creature.DegreeList)
             };
 
@@ -138,118 +146,6 @@ namespace PF2E_Creature_Maker
             }
 
             return creatureCopy;
-        }
-
-        public static void SizeStep(Creature creature, Random random)
-        {
-            string[] sizeOptions = File.ReadAllLines("Data Files\\Menu Page Size.txt");
-            List<string[]> sizeOptionsSplit = new List<string[]>();
-
-            foreach (string sizeOption in sizeOptions)
-            {
-                sizeOptionsSplit.Add(sizeOption.Split(';'));
-            }
-
-            SizeOption[] sizeOptionsArray = new SizeOption[sizeOptions.Length];
-            int mediumSizeIndex = 0;
-            for (int i = 0; i < sizeOptionsArray.Length; i++)
-            {
-                sizeOptionsArray[i] = new SizeOption
-                {
-                    _name = sizeOptionsSplit[i][0],
-                    _minLevel = int.Parse(sizeOptionsSplit[i][1])
-                };
-                if (sizeOptionsSplit[i][2] != "" && sizeOptionsSplit[i][2] != null)
-                {
-                    sizeOptionsArray[i]._maxExStrForSizeAndLevel = int.Parse(sizeOptionsSplit[i][2]);
-                }
-                if (sizeOptionsArray[i]._name == "Medium")
-                {
-                    mediumSizeIndex = i;
-                }
-            }
-
-            Console.WriteLine("Please type one of the following sizes or press Enter to randomly pick: ");
-            foreach (SizeOption option in sizeOptionsArray)
-            {
-                Console.WriteLine(option._name + " ");
-            }
-
-            string[] validSizeOptions = new string[sizeOptionsArray.Length + 1];
-
-            for (int i = 0; i < validSizeOptions.Length; i++)
-            {
-                if (i == validSizeOptions.Length - 1)
-                {
-                    validSizeOptions[i] = "";
-                }
-                else
-                {
-                    validSizeOptions[i] = sizeOptionsArray[i]._name;
-                }
-            }
-
-            string userInput;
-            bool tooLarge;
-            do
-            {
-                tooLarge = false;
-                userInput = GetValidString(validSizeOptions);
-
-                if (userInput == "")
-                {
-                    SizeOption randomSize;
-                    do
-                    {
-                        randomSize = sizeOptionsArray[WeightedRandom(random, 0, sizeOptionsArray.Length - 1, mediumSizeIndex, weight: 2)];
-                    } while (creature.Level < randomSize._minLevel);
-                    creature.Size = randomSize._name;
-                }
-                else
-                {
-                    for (int i = 0; i < sizeOptionsArray.Length; i++)
-                    {
-                        if (userInput.ToLower() == sizeOptionsArray[i]._name.ToLower())
-                        {
-                            if (creature.Level < sizeOptionsArray[i]._minLevel)
-                            {
-                                Console.WriteLine("Creatures of this level aren't usually so large. Are you sure? Y/N");
-                                userInput = GetValidString("Y", "N");
-                                if (userInput.ToUpper() == "N")
-                                {
-                                    tooLarge = true;
-                                    Console.WriteLine("Please enter a smaller size: ");
-                                }
-                            }
-                            else
-                            {
-                                creature.Size = sizeOptionsArray[i]._name;
-                            }
-                        }
-                    }
-                }
-            } while (tooLarge == true);
-
-            Console.WriteLine("Creature Size: " + creature.Size);
-
-            for (int i = 0; i < sizeOptionsArray.Length; i++)
-            {
-                if (sizeOptionsArray[i]._name.ToLower() == creature.Size.ToLower())
-                {
-                    if (creature.Level <= sizeOptionsArray[i]._maxExStrForSizeAndLevel)
-                    {
-                        creature.IsStrengthExtreme = true;
-                    }
-                    break;
-                }
-            }
-
-            Console.WriteLine("Creature's Strength is Extreme: " + creature.IsStrengthExtreme);
-        }
-
-        public static void AbilityScoresStep()
-        {
-
         }
 
         public static int WeightedRandom(Random random, int min, int max, int heavyValue, int weight)
@@ -311,77 +207,6 @@ namespace PF2E_Creature_Maker
             }
 
             return returningList;
-        }
-
-        public static int LevelStep(Random random, Creature creature)
-        {
-            string userInput;
-            int partyLevel = GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
-
-            bool passable = true;
-
-            int creatureLevel = 0;
-
-            do
-            {
-                userInput = "";
-                Console.WriteLine("Enter the creature's level or enter PARTY, NPC, or MONSTER to generate randomly based on the entry");
-                do
-                {
-                    string levelSelectionStyle = Console.ReadLine();
-                    passable = true;
-                    switch (levelSelectionStyle.ToUpper())
-                    {
-                        case "PARTY":
-                            creatureLevel = PinkRandom(random, partyLevel - 7, partyLevel + 7);
-                            break;
-                        case "NPC":
-                            creatureLevel = DisadvantageRandom(random, -1, 11);
-                            break;
-                        case "MONSTER":
-                            creatureLevel = DisadvantageRandom(random, -1, 25);
-                            break;
-                        default:
-                            try
-                            {
-                                creatureLevel = int.Parse(levelSelectionStyle);
-                            }
-                            catch
-                            {
-                                passable = false;
-                                Console.WriteLine("Invalid entry");
-                            }
-                            break;
-                    }
-                } while (passable == false);
-
-                if (creatureLevel < partyLevel - 7 || creatureLevel > partyLevel + 7)
-                {
-                    Console.WriteLine("Creature level is {0}, which is out of normal PC encounter range. Proceed anyway? Y/N", creatureLevel);
-                    userInput = GetValidString("Y", "N").ToUpper();
-                }
-            } while (userInput == "N");
-
-            Console.WriteLine("Creature Level: " + creatureLevel);
-            creature.Level = creatureLevel;
-
-            for (int i = 11; i <= creature.Level; i++)
-            {
-                int[] extremeLevels = new int[] { 11, 15, 20 };
-                if (extremeLevels.Contains(i))
-                {
-                    int removingDegree;
-                    do
-                    {
-                        removingDegree = random.Next(0, creature.DegreeList.Count);
-                    } while (creature.DegreeList[removingDegree] == Degree.ex);
-
-                    creature.DegreeList.RemoveAt(removingDegree);
-                    creature.DegreeList.Add(Degree.ex);
-                }
-            }
-
-            return partyLevel;
         }
 
         public static string GetValidString(params string[] valids)

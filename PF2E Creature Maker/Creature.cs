@@ -7,10 +7,10 @@ namespace PF2E_Creature_Maker
     public class Creature
     {
         public int Level = 0;
-        public int SaveNumber = 0;
         public string Name = "";
         public string Size = "";
         public bool IsStrengthExtreme = false;
+        public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
         public AbilityScore[] AbilityScores;
 
