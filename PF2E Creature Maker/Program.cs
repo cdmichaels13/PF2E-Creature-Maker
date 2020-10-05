@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using System.IO.Pipes;
 
 namespace PF2E_Creature_Maker
 {
@@ -23,7 +24,7 @@ namespace PF2E_Creature_Maker
 
     public enum Step
     {
-        Start,
+        NPCorMonster,
         Level,
         Size,
         Traits,
@@ -63,6 +64,7 @@ namespace PF2E_Creature_Maker
 
             Step[] stepOrder = new Step[]
             {
+                Step.NPCorMonster,
                 Step.Level,
                 Step.Size,
                 Step.Traits,
@@ -102,6 +104,24 @@ namespace PF2E_Creature_Maker
 
                 switch (stepOrder[step])
                 {
+                    case Step.NPCorMonster:
+                        {
+                            Console.WriteLine("Is this creature an NPC, Monster, or either?");
+                            string userInput = GetValidString("NPC", "Monster", "either");
+                            switch(userInput.ToUpper())
+                            {
+                                case "NPC":
+                                    _creature.Type = CreatureType.NPC;
+                                    break;
+                                case "Monster":
+                                    _creature.Type = CreatureType.Monster;
+                                    break;
+                                case "Either":
+                                    _creature.Type = CreatureType.Any;
+                                    break;
+                            }
+                            break;
+                        }
                     case Step.Level:
                         {
                             partyLevel = ExecuteStep.LevelStep(random, _creature);
@@ -114,13 +134,24 @@ namespace PF2E_Creature_Maker
                         }
                     case Step.Traits:
                         {
-                            ExecuteStep.TraitsStep(_creature, random);
+                            string userInput = "";
+                            do
+                            {
+                                ExecuteStep.TraitsStep(_creature, random);
+                                Console.WriteLine("Would you like to add any more traits? Y/N");
+                                userInput = GetValidString("Y", "N");
+                            } while (userInput.ToUpper() == "Y");
                             break;
                         }
                     case Step.End:
+                        {
+                            ExecuteStep.EndStep(_creature);
+                            endSteps = true;
+                            break;
+                        }
                     default:
                         {
-                            endSteps = true;
+                            //endSteps = true;
                             break;
                         }
                 }
@@ -143,6 +174,23 @@ namespace PF2E_Creature_Maker
             for (int i = 0; i < creature.AbilityScores.Length; i++)
             {
                 creatureCopy.AbilityScores[i]._abilityBonus = creature.AbilityScores[i]._abilityBonus;
+            }
+
+            creatureCopy.traitPool.AllPossibleTraits.Clear();
+            creatureCopy.traitPool.SelectedTraits.Clear();
+            creatureCopy.traitPool.HumanoidIndexes.Clear();
+
+            foreach (string trait in creature.traitPool.AllPossibleTraits)
+            {
+                creatureCopy.traitPool.AllPossibleTraits.Add(trait);
+            }
+            foreach (string trait in creature.traitPool.SelectedTraits)
+            {
+                creatureCopy.traitPool.SelectedTraits.Add(trait);
+            }
+            foreach (int index in creature.traitPool.HumanoidIndexes)
+            {
+                creatureCopy.traitPool.HumanoidIndexes.Add(index);
             }
 
             return creatureCopy;
@@ -328,6 +376,11 @@ namespace PF2E_Creature_Maker
                     Console.WriteLine("Invalid input. Please try again");
                 }
             } while (true);
+        }
+
+        public static string CapitalizeString(string stringToCapitalize)
+        {
+            return stringToCapitalize.ToUpper()[0] + stringToCapitalize.ToLower().Substring(1);
         }
 
         #endregion

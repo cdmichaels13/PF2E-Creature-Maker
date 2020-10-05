@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 
 namespace PF2E_Creature_Maker
@@ -11,39 +12,111 @@ namespace PF2E_Creature_Maker
     {
         public static void TraitsStep(Creature creature, Random random)
         {
-            string[] creatureTraits = File.ReadAllLines(@"Data Files\Menu Page All Creature Traits.txt");
-            string[] creatureTraitsWithoutHumanoidTag = new string[creatureTraits.Length];
-            List<int> humanoidIndexes = new List<int>();
-            for (int i = 0; i < creatureTraits.Length; i++)
+            if (creature.Type == CreatureType.NPC)
             {
-                creatureTraitsWithoutHumanoidTag[i] = creatureTraits[i];
-                if (creatureTraitsWithoutHumanoidTag[i].Contains(','))
+                for (int i = creature.traitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
                 {
-                    humanoidIndexes.Add(i);
-                    int commaIndex = creatureTraitsWithoutHumanoidTag[i].IndexOf(',');
-                    creatureTraitsWithoutHumanoidTag[i] = creatureTraitsWithoutHumanoidTag[i].Substring(0, commaIndex);
+                    if (!creature.traitPool.HumanoidIndexes.Contains(i))
+                    {
+                        creature.traitPool.AllPossibleTraits.RemoveAt(i);
+                    }
                 }
+            }
+            if (creature.Type == CreatureType.Monster)
+            {
+                for (int i = creature.traitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
+                {
+                    if (creature.traitPool.HumanoidIndexes.Contains(i))
+                    {
+                        creature.traitPool.AllPossibleTraits.RemoveAt(i);
+                    }
+                }
+            }
+
+            foreach (string trait in creature.traitPool.AllPossibleTraits)
+            {
+                Console.WriteLine(trait);
             }
 
             Console.WriteLine("Randomly select trait? Y/N");
             string userInput = Program.GetValidString("Y", "N");
 
+            string selectedTrait = "";
+
             switch (userInput.ToUpper())
             {
                 case "Y":
-                    random.Next(creatureTraitsWithoutHumanoidTag.Length);
-                    break;
+                    {
+                        int traitIndex = random.Next(creature.traitPool.AllPossibleTraits.Count);
+                        selectedTrait = creature.traitPool.AllPossibleTraits[traitIndex];
+                        break;
+                    }
                 case "N":
-                    break;
+                    {
+                        Console.WriteLine("Please enter a trait from the list below:");
+                        string[] validTraits = creature.traitPool.AllPossibleTraits.ToArray();
+                        foreach (string trait in validTraits)
+                        {
+                            Console.WriteLine(trait);
+                        }
+                        selectedTrait = Program.GetValidString(validTraits);
+                        break;
+                    }
                 default:
                     Console.WriteLine("No correct user input detected");
                     break;
             }
 
-            foreach (string trait in creatureTraitsWithoutHumanoidTag)
+            List<string> queuedTraits = new List<string>();
+
+            do
             {
-                Console.WriteLine(trait);
-            }
+                if (queuedTraits.Any())
+                {
+                    selectedTrait = queuedTraits.First();
+                    queuedTraits.RemoveAt(0);
+                }
+
+                selectedTrait = Program.CapitalizeString(selectedTrait.Trim());
+
+                string[] traitPackages = File.ReadAllLines(@"Data Files\Trait Packages.txt");
+                string traitRuleIfExists = "";
+                foreach (string traitLine in traitPackages)
+                {
+                    string traitName = traitLine.Substring(0, traitLine.IndexOf(':')).Trim();
+                    string traitRule = traitLine.Substring(traitLine.IndexOf(':') + 2).Trim();
+                    if (Program.CapitalizeString(traitName) == selectedTrait)
+                    {
+                        traitRuleIfExists = traitRule;
+                        break;
+                    }
+                }
+
+                if (traitRuleIfExists != "")
+                {
+                    creature.traitPool.SelectedTraits.Add(selectedTrait + ": " + traitRuleIfExists);
+                }
+                else
+                {
+                    creature.traitPool.SelectedTraits.Add(selectedTrait);
+                }
+
+                if (creature.traitPool.AllPossibleTraits.Contains(selectedTrait))
+                {
+                    creature.traitPool.AllPossibleTraits.Remove(selectedTrait);
+                }
+
+                foreach (string trait in creature.traitPool.AllPossibleTraits)
+                {
+                    if (traitRuleIfExists != "" && traitRuleIfExists.ToLower().Contains(trait.ToLower() + " trait"))
+                    {
+                        queuedTraits.Add(trait);
+                    }
+                }
+
+                Console.WriteLine(creature.traitPool.SelectedTraits.Last());
+            } while (queuedTraits.Any());
+            
         }
         public static void SizeStep(Creature creature, Random random)
         {
@@ -164,7 +237,8 @@ namespace PF2E_Creature_Maker
             do
             {
                 userInput = "";
-                Console.WriteLine("Enter the creature's level or enter PARTY, NPC, or MONSTER to generate randomly based on the entry");
+                Console.WriteLine("Enter the creature's level or enter PARTY to randomly select a level based on the party's level" +
+                    "\nJust press Enter to randomly select level based on whether the creature is an NPC or a Monster");
                 do
                 {
                     string levelSelectionStyle = Console.ReadLine();
@@ -174,13 +248,15 @@ namespace PF2E_Creature_Maker
                         case "PARTY":
                             creatureLevel = Program.PinkRandom(random, partyLevel - 7, partyLevel + 7);
                             break;
-                        case "NPC":
-                            creature.Type = CreatureType.NPC;
-                            creatureLevel = Program.DisadvantageRandom(random, -1, 11);
-                            break;
-                        case "MONSTER":
-                            creature.Type = CreatureType.Monster;
-                            creatureLevel = Program.DisadvantageRandom(random, -1, 25);
+                        case "":
+                            if (creature.Type == CreatureType.NPC)
+                            {
+                                creatureLevel = Program.DisadvantageRandom(random, -1, 11);
+                            }
+                            else
+                            {
+                                creatureLevel = Program.DisadvantageRandom(random, -1, 25);
+                            }
                             break;
                         default:
                             try
@@ -223,6 +299,29 @@ namespace PF2E_Creature_Maker
             }
 
             return partyLevel;
+        }
+
+        public static void EndStep(Creature creature)
+        {
+            Console.WriteLine("__Final Creature__" +
+                "\nName: " + creature.Name + 
+                "\nLevel: " + creature.Level +
+                "\nSize: " + creature.Size);
+
+            foreach (AbilityScore score in creature.AbilityScores)
+            {
+                Console.Write(score._abilityName + " = " + score._abilityBonus + " ");
+                if (score == creature.AbilityScores.Last())
+                {
+                    Console.WriteLine("");
+                }
+            }
+
+            Console.WriteLine("Traits:");
+            foreach (string trait in creature.traitPool.SelectedTraits)
+            {
+                Console.WriteLine(trait);
+            }
         }
     }
 }

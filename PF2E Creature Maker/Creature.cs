@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace PF2E_Creature_Maker
@@ -13,6 +14,7 @@ namespace PF2E_Creature_Maker
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
         public AbilityScore[] AbilityScores;
+        public TraitPool traitPool = new TraitPool();
 
         public Creature()
         {
