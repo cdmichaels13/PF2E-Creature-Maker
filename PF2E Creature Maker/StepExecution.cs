@@ -1,15 +1,74 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
-using System.Reflection;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace PF2E_Creature_Maker
 {
     public class ExecuteStep
     {
+        public static void HitPointStep(Creature creature, Random random)
+        {
+            Console.WriteLine("Should creature have regeneration? Y/N, or Enter to pick randomly");
+            string userInput = Program.GetValidString("Y", "N", "");
+            if (userInput == "" && random.Next(10) == 0)
+            {
+                userInput = "Y";
+            }
+            if (userInput.ToUpper() == "Y")
+            {
+                string[] strikeDamageFileLines = File.ReadAllLines(Program.FilePathByName("Strike Damage"));
+                foreach (string line in strikeDamageFileLines)
+                {
+                    string[] splitLine = line.Split(',');
+                    if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                    {
+                        int[] parenthesesIndexes = new int[] { splitLine[2].IndexOf('('), splitLine[2].IndexOf(')') };
+                        creature.Regeneration = int.Parse(splitLine[2].Substring(parenthesesIndexes[0] + 1, parenthesesIndexes[1] - parenthesesIndexes[0] - 1));
+                    }
+                }
+            }
+
+            string[] hitPointsTable = File.ReadAllLines(Program.FilePathByName("Hit Points"));
+            foreach (string line in hitPointsTable)
+            {
+                string[] splitLine = line.Split(',');
+                if (creature.Level == int.Parse(splitLine[0]))
+                {
+                    Dictionary<Degree, string> lineDegreeValues = new Dictionary<Degree, string>
+                    {
+                        {Degree.high, splitLine[1] },
+                        {Degree.mod, splitLine[2] },
+                        {Degree.low, splitLine[3] }
+                    };
+
+                    Degree chosenDegree;
+                    do
+                    {
+                        chosenDegree = creature.DegreeList.ElementAt(random.Next(creature.DegreeList.Count));
+                    } while (!lineDegreeValues.ContainsKey(chosenDegree));
+                    creature.DegreeList.Remove(chosenDegree);
+
+                    string hpRange = lineDegreeValues[chosenDegree];
+                    if (hpRange.Contains('-'))
+                    {
+                        string[] hpRangeSplit = hpRange.Split('-');
+                        int[] minMaxHP = new int[] { int.Parse(hpRangeSplit[1]), int.Parse(hpRangeSplit[0]) };
+                        creature.HitPoints = Program.PinkRandom(random, minMaxHP[0], minMaxHP[1]);
+                    }
+                    else
+                    {
+                        creature.HitPoints = int.Parse(hpRange);
+                    }
+
+                    creature.HitPoints -= (creature.Regeneration * 2);
+
+                    break;
+                }
+            }
+        }
         public static void TraitsStep(Creature creature, Random random)
         {
             if (creature.Type == CreatureType.NPC)
@@ -33,25 +92,20 @@ namespace PF2E_Creature_Maker
                 }
             }
 
-            foreach (string trait in creature.traitPool.AllPossibleTraits)
-            {
-                Console.WriteLine(trait);
-            }
-
-            Console.WriteLine("Randomly select trait? Y/N");
-            string userInput = Program.GetValidString("Y", "N");
+            Console.WriteLine("Press Enter to randomly select trait, or enter SELECT");
+            string userInput = Program.GetValidString("SELECT", "");
 
             string selectedTrait = "";
 
             switch (userInput.ToUpper())
             {
-                case "Y":
+                case "":
                     {
                         int traitIndex = random.Next(creature.traitPool.AllPossibleTraits.Count);
                         selectedTrait = creature.traitPool.AllPossibleTraits[traitIndex];
                         break;
                     }
-                case "N":
+                case "SELECT":
                     {
                         Console.WriteLine("Please enter a trait from the list below:");
                         string[] validTraits = creature.traitPool.AllPossibleTraits.ToArray();
@@ -79,7 +133,7 @@ namespace PF2E_Creature_Maker
 
                 selectedTrait = Program.CapitalizeString(selectedTrait.Trim());
 
-                string[] traitPackages = File.ReadAllLines(@"Data Files\Trait Packages.txt");
+                string[] traitPackages = File.ReadAllLines(Program.FilePathByName("Trait Packages"));
                 string traitRuleIfExists = "";
                 foreach (string traitLine in traitPackages)
                 {
@@ -120,7 +174,7 @@ namespace PF2E_Creature_Maker
         }
         public static void SizeStep(Creature creature, Random random)
         {
-            string[] sizeOptions = File.ReadAllLines("Data Files\\Menu Page Size.txt");
+            string[] sizeOptions = File.ReadAllLines(Program.FilePathByName("Menu Page Size"));
             List<string[]> sizeOptionsSplit = new List<string[]>();
 
             foreach (string sizeOption in sizeOptions)
@@ -306,12 +360,17 @@ namespace PF2E_Creature_Maker
             Console.WriteLine("__Final Creature__" +
                 "\nName: " + creature.Name + 
                 "\nLevel: " + creature.Level +
-                "\nSize: " + creature.Size);
-
-            foreach (AbilityScore score in creature.AbilityScores)
+                "\nSize: " + creature.Size + 
+                "\nHit Points: " + creature.HitPoints);
+            if (creature.Regeneration != 0)
             {
-                Console.Write(score._abilityName + " = " + score._abilityBonus + " ");
-                if (score == creature.AbilityScores.Last())
+                Console.WriteLine("Regeneration: " + creature.Regeneration);
+            }
+
+            foreach (KeyValuePair<AbilityScoreEnum, int> ability in creature.AbilityScoreDictionary)
+            {
+                Console.Write(ability.Key + " = " + ability.Value + " ");
+                if (ability.Key == creature.AbilityScoreDictionary.Last().Key)
                 {
                     Console.WriteLine("");
                 }

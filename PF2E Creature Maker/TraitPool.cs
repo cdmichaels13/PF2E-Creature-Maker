@@ -12,7 +12,7 @@ namespace PF2E_Creature_Maker
         public List<int> HumanoidIndexes = new List<int>();
         public TraitPool()
         {
-            string[] creatureTraits = File.ReadAllLines(@"Data Files\Menu Page All Creature Traits.txt");
+            string[] creatureTraits = File.ReadAllLines(Program.FilePathByName("Menu Page All Creature Traits"));
             string[] creatureTraitsWithoutHumanoidTag = new string[creatureTraits.Length];
 
             for (int i = 0; i < creatureTraits.Length; i++)

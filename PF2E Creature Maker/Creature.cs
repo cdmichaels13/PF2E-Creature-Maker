@@ -10,11 +10,20 @@ namespace PF2E_Creature_Maker
         public int Level = 0;
         public string Name = "";
         public string Size = "";
+        public int HitPoints = 0;
+        public int Regeneration = 0;
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
-        public AbilityScore[] AbilityScores;
         public TraitPool traitPool = new TraitPool();
+        public Dictionary<AbilityScoreEnum, int> AbilityScoreDictionary = new Dictionary<AbilityScoreEnum, int>
+        {
+            {AbilityScoreEnum.Strength, 0 },
+            {AbilityScoreEnum.Dexterity, 0 },
+            {AbilityScoreEnum.Intelligence, 0 },
+            {AbilityScoreEnum.Wisdom, 0 },
+            {AbilityScoreEnum.Charisma, 0 }
+        };
 
         public Creature()
         {
@@ -32,16 +41,13 @@ namespace PF2E_Creature_Maker
             {
                 DegreeList.Add(Degree.high);
             }
+        }
 
-            AbilityScores = new AbilityScore[5];
-
-            for (int i = 0; i < AbilityScores.Length; i++)
-            {
-                AbilityScores[i] = new AbilityScore();
-                AbilityScores[i]._abilityBonus = 0;
-                string[] abilityNames = new string[] { "Strength", "Dexterity", "Intelligence", "Wisdom", "Charisma" };
-                AbilityScores[i]._abilityName = abilityNames[i];
-            }
+        public Degree SelectAndRemoveDegree(int index, Degree[] validDegrees)
+        {
+            Degree selectedDegree = DegreeList[index];
+            DegreeList.Remove(selectedDegree);
+            return selectedDegree;
         }
     }
 }

@@ -51,6 +51,15 @@ namespace PF2E_Creature_Maker
         Any
     }
 
+    public enum AbilityScoreEnum
+    {
+        Strength,
+        Dexterity,
+        Intelligence,
+        Wisdom,
+        Charisma
+    }
+
     class Program
     {
         public static Creature _creature = new Creature();
@@ -106,8 +115,8 @@ namespace PF2E_Creature_Maker
                 {
                     case Step.NPCorMonster:
                         {
-                            Console.WriteLine("Is this creature an NPC, Monster, or either?");
-                            string userInput = GetValidString("NPC", "Monster", "either");
+                            Console.WriteLine("Enter NPC or Monster to select a creature type, or press Enter to randomly select");
+                            string userInput = GetValidString("NPC", "Monster", "");
                             switch(userInput.ToUpper())
                             {
                                 case "NPC":
@@ -116,7 +125,7 @@ namespace PF2E_Creature_Maker
                                 case "Monster":
                                     _creature.Type = CreatureType.Monster;
                                     break;
-                                case "Either":
+                                case "":
                                     _creature.Type = CreatureType.Any;
                                     break;
                             }
@@ -138,9 +147,14 @@ namespace PF2E_Creature_Maker
                             do
                             {
                                 ExecuteStep.TraitsStep(_creature, random);
-                                Console.WriteLine("Would you like to add any more traits? Y/N");
-                                userInput = GetValidString("Y", "N");
-                            } while (userInput.ToUpper() == "Y");
+                                Console.WriteLine("Press enter to continue or ADD to add another trait");
+                                userInput = GetValidString("", "ADD");
+                            } while (userInput.ToUpper() == "ADD");
+                            break;
+                        }
+                    case Step.Hit_Points:
+                        {
+                            ExecuteStep.HitPointStep(_creature, random);
                             break;
                         }
                     case Step.End:
@@ -159,6 +173,16 @@ namespace PF2E_Creature_Maker
         }
 
         #region Method Region
+        public static string FilePathByName(string fileName)
+        {
+            return @"Data Files\" + fileName + ".txt";
+        }
+
+        public static string CorrectedDash(string numberString)
+        {
+            return numberString.Replace('–', '-');
+        }
+        
         public static Creature CopyCreature(Creature creature)
         {
             Creature creatureCopy = new Creature
@@ -166,14 +190,16 @@ namespace PF2E_Creature_Maker
                 Level = creature.Level,
                 Name = creature.Name,
                 Size = creature.Size,
+                HitPoints = creature.HitPoints,
+                Regeneration = creature.Regeneration,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
                 DegreeList = CopyListValues(creature.DegreeList)
             };
 
-            for (int i = 0; i < creature.AbilityScores.Length; i++)
+            foreach (AbilityScoreEnum ability in creature.AbilityScoreDictionary.Keys)
             {
-                creatureCopy.AbilityScores[i]._abilityBonus = creature.AbilityScores[i]._abilityBonus;
+                creatureCopy.AbilityScoreDictionary[ability] = creature.AbilityScoreDictionary[ability];
             }
 
             creatureCopy.traitPool.AllPossibleTraits.Clear();
