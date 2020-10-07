@@ -5,6 +5,13 @@ using System.Linq;
 
 namespace PF2E_Creature_Maker
 {
+    public enum ResistOrWeak
+    {
+        Resistance,
+        Weakness,
+        Both,
+        None
+    }
     public class Creature
     {
         public int Level = 0;
@@ -12,6 +19,8 @@ namespace PF2E_Creature_Maker
         public string Size = "";
         public int HitPoints = 0;
         public int Regeneration = 0;
+        public int ResistWeakValue = 0;
+        public ResistOrWeak ResistOrWeakType = ResistOrWeak.None;
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
@@ -41,13 +50,6 @@ namespace PF2E_Creature_Maker
             {
                 DegreeList.Add(Degree.high);
             }
-        }
-
-        public Degree SelectAndRemoveDegree(int index, Degree[] validDegrees)
-        {
-            Degree selectedDegree = DegreeList[index];
-            DegreeList.Remove(selectedDegree);
-            return selectedDegree;
         }
     }
 }

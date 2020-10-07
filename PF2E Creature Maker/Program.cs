@@ -67,8 +67,6 @@ namespace PF2E_Creature_Maker
         static void Main()
         {
             Random random = new Random();
-
-            int partyLevel;
             bool endSteps = false;
 
             Step[] stepOrder = new Step[]
@@ -92,6 +90,8 @@ namespace PF2E_Creature_Maker
                 Step.Gear,
                 Step.End
             };
+
+            int partyLevel = Program.GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
 
             for (int step = 0; endSteps == false; step++)
             {
@@ -133,7 +133,7 @@ namespace PF2E_Creature_Maker
                         }
                     case Step.Level:
                         {
-                            partyLevel = ExecuteStep.LevelStep(random, _creature);
+                            ExecuteStep.LevelStep(random, _creature, partyLevel);
                             break;
                         }
                     case Step.Size:
@@ -155,6 +155,16 @@ namespace PF2E_Creature_Maker
                     case Step.Hit_Points:
                         {
                             ExecuteStep.HitPointStep(_creature, random);
+                            break;
+                        }
+                    case Step.Resistances_Weaknesses:
+                        {
+                            Console.WriteLine("Press Enter to continue or NO to skip this step");
+                            string userInput = GetValidString("", "NO");
+                            if (userInput.ToUpper() != "NO")
+                            {
+                                ExecuteStep.ResistanceWeaknessStep(_creature, random);
+                            }
                             break;
                         }
                     case Step.End:
@@ -192,6 +202,7 @@ namespace PF2E_Creature_Maker
                 Size = creature.Size,
                 HitPoints = creature.HitPoints,
                 Regeneration = creature.Regeneration,
+                ResistOrWeakType = creature.ResistOrWeakType,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
                 DegreeList = CopyListValues(creature.DegreeList)
