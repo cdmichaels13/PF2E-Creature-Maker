@@ -10,9 +10,9 @@ namespace PF2E_Creature_Maker
     {
         bad,
         low,
-        mod,
+        moderate,
         high,
-        ex
+        extreme
     }
 
     public enum MinMax
@@ -167,6 +167,16 @@ namespace PF2E_Creature_Maker
                             }
                             break;
                         }
+                    case Step.Skills:
+                        {
+                            int sixSkills = 0;
+                            do
+                            {
+                                ExecuteStep.SkillStep(_creature, random);
+                                sixSkills++;
+                            } while (_creature.SkillPool.SelectedSkills.Count < 6 && sixSkills < 6);
+                            break;
+                        }
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
@@ -175,6 +185,7 @@ namespace PF2E_Creature_Maker
                         }
                     default:
                         {
+                            Console.WriteLine("Step incomplete");
                             //endSteps = true;
                             break;
                         }
@@ -213,21 +224,33 @@ namespace PF2E_Creature_Maker
                 creatureCopy.AbilityScoreDictionary[ability] = creature.AbilityScoreDictionary[ability];
             }
 
-            creatureCopy.traitPool.AllPossibleTraits.Clear();
-            creatureCopy.traitPool.SelectedTraits.Clear();
-            creatureCopy.traitPool.HumanoidIndexes.Clear();
+            creatureCopy.TraitPool.AllPossibleTraits.Clear();
+            creatureCopy.TraitPool.SelectedTraits.Clear();
+            creatureCopy.TraitPool.HumanoidIndexes.Clear();
 
-            foreach (string trait in creature.traitPool.AllPossibleTraits)
+            foreach (string trait in creature.TraitPool.AllPossibleTraits)
             {
-                creatureCopy.traitPool.AllPossibleTraits.Add(trait);
+                creatureCopy.TraitPool.AllPossibleTraits.Add(trait);
             }
-            foreach (string trait in creature.traitPool.SelectedTraits)
+            foreach (string trait in creature.TraitPool.SelectedTraits)
             {
-                creatureCopy.traitPool.SelectedTraits.Add(trait);
+                creatureCopy.TraitPool.SelectedTraits.Add(trait);
             }
-            foreach (int index in creature.traitPool.HumanoidIndexes)
+            foreach (int index in creature.TraitPool.HumanoidIndexes)
             {
-                creatureCopy.traitPool.HumanoidIndexes.Add(index);
+                creatureCopy.TraitPool.HumanoidIndexes.Add(index);
+            }
+
+            creatureCopy.SkillPool.PossibleSkills.Clear();
+            creatureCopy.SkillPool.SelectedSkills.Clear();
+
+            foreach (string skill in creature.SkillPool.PossibleSkills)
+            {
+                creatureCopy.SkillPool.PossibleSkills.Add(skill);
+            }
+            foreach (Skill skill in creature.SkillPool.SelectedSkills)
+            {
+                creatureCopy.SkillPool.SelectedSkills.Add(skill);
             }
 
             return creatureCopy;

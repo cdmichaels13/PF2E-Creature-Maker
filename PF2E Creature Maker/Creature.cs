@@ -21,10 +21,11 @@ namespace PF2E_Creature_Maker
         public int Regeneration = 0;
         public int ResistWeakValue = 0;
         public ResistOrWeak ResistOrWeakType = ResistOrWeak.None;
+        public SkillPool SkillPool = new SkillPool();
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
-        public TraitPool traitPool = new TraitPool();
+        public TraitPool TraitPool = new TraitPool();
         public Dictionary<AbilityScoreEnum, int> AbilityScoreDictionary = new Dictionary<AbilityScoreEnum, int>
         {
             {AbilityScoreEnum.Strength, 0 },
@@ -44,7 +45,7 @@ namespace PF2E_Creature_Maker
             }
             for (int i = 0; i < 10; i++)
             {
-                DegreeList.Add(Degree.mod);
+                DegreeList.Add(Degree.moderate);
             }
             for (int i = 0; i < 5; i++)
             {

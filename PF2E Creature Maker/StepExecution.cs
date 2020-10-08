@@ -9,6 +9,17 @@ namespace PF2E_Creature_Maker
 {
     public class ExecuteStep
     {
+        public static bool IsDegreeThere(Creature creature, Degree degree)
+        {
+            bool degreeThere = true;
+
+            if (!creature.DegreeList.Contains(degree))
+            {
+                degreeThere = false;
+            }
+
+            return degreeThere;
+        }
         public static void LevelStep(Random random, Creature creature, int partyLevel)
         {
             string userInput;
@@ -72,10 +83,10 @@ namespace PF2E_Creature_Maker
                     do
                     {
                         removingDegree = random.Next(0, creature.DegreeList.Count);
-                    } while (creature.DegreeList[removingDegree] == Degree.ex);
+                    } while (creature.DegreeList[removingDegree] == Degree.extreme);
 
                     creature.DegreeList.RemoveAt(removingDegree);
-                    creature.DegreeList.Add(Degree.ex);
+                    creature.DegreeList.Add(Degree.extreme);
                 }
             }
         }
@@ -189,21 +200,21 @@ namespace PF2E_Creature_Maker
         {
             if (creature.Type == CreatureType.NPC)
             {
-                for (int i = creature.traitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
+                for (int i = creature.TraitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
                 {
-                    if (!creature.traitPool.HumanoidIndexes.Contains(i))
+                    if (!creature.TraitPool.HumanoidIndexes.Contains(i))
                     {
-                        creature.traitPool.AllPossibleTraits.RemoveAt(i);
+                        creature.TraitPool.AllPossibleTraits.RemoveAt(i);
                     }
                 }
             }
             if (creature.Type == CreatureType.Monster)
             {
-                for (int i = creature.traitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
+                for (int i = creature.TraitPool.AllPossibleTraits.Count - 1; i >= 0; i--)
                 {
-                    if (creature.traitPool.HumanoidIndexes.Contains(i))
+                    if (creature.TraitPool.HumanoidIndexes.Contains(i))
                     {
-                        creature.traitPool.AllPossibleTraits.RemoveAt(i);
+                        creature.TraitPool.AllPossibleTraits.RemoveAt(i);
                     }
                 }
             }
@@ -217,14 +228,14 @@ namespace PF2E_Creature_Maker
             {
                 case "":
                     {
-                        int traitIndex = random.Next(creature.traitPool.AllPossibleTraits.Count);
-                        selectedTrait = creature.traitPool.AllPossibleTraits[traitIndex];
+                        int traitIndex = random.Next(creature.TraitPool.AllPossibleTraits.Count);
+                        selectedTrait = creature.TraitPool.AllPossibleTraits[traitIndex];
                         break;
                     }
                 case "SELECT":
                     {
                         Console.WriteLine("Please enter a trait from the list below:");
-                        string[] validTraits = creature.traitPool.AllPossibleTraits.ToArray();
+                        string[] validTraits = creature.TraitPool.AllPossibleTraits.ToArray();
                         foreach (string trait in validTraits)
                         {
                             Console.WriteLine(trait);
@@ -264,19 +275,19 @@ namespace PF2E_Creature_Maker
 
                 if (traitRuleIfExists != "")
                 {
-                    creature.traitPool.SelectedTraits.Add(selectedTrait + ": " + traitRuleIfExists);
+                    creature.TraitPool.SelectedTraits.Add(selectedTrait + ": " + traitRuleIfExists);
                 }
                 else
                 {
-                    creature.traitPool.SelectedTraits.Add(selectedTrait);
+                    creature.TraitPool.SelectedTraits.Add(selectedTrait);
                 }
 
-                if (creature.traitPool.AllPossibleTraits.Contains(selectedTrait))
+                if (creature.TraitPool.AllPossibleTraits.Contains(selectedTrait))
                 {
-                    creature.traitPool.AllPossibleTraits.Remove(selectedTrait);
+                    creature.TraitPool.AllPossibleTraits.Remove(selectedTrait);
                 }
 
-                foreach (string trait in creature.traitPool.AllPossibleTraits)
+                foreach (string trait in creature.TraitPool.AllPossibleTraits)
                 {
                     if (traitRuleIfExists != "" && traitRuleIfExists.ToLower().Contains(trait.ToLower() + " trait"))
                     {
@@ -284,7 +295,7 @@ namespace PF2E_Creature_Maker
                     }
                 }
 
-                Console.WriteLine(creature.traitPool.SelectedTraits.Last());
+                Console.WriteLine(creature.TraitPool.SelectedTraits.Last());
             } while (queuedTraits.Any());
 
         }
@@ -319,44 +330,55 @@ namespace PF2E_Creature_Maker
                     Dictionary<Degree, string> lineDegreeValues = new Dictionary<Degree, string>
                     {
                         {Degree.high, splitLine[1] },
-                        {Degree.mod, splitLine[2] },
+                        {Degree.moderate, splitLine[2] },
                         {Degree.low, splitLine[3] }
                     };
 
                     Degree chosenDegree;
+                    bool isDegreeThere;
 
-                    Console.WriteLine("Press Enter to randomly determine HP or enter LOW, MOD, or HIGH");
-                    string hpDegreeInput = Program.GetValidString("", "LOW", "MOD", "HIGH");
-                    switch(hpDegreeInput.ToUpper())
+                    do
                     {
-                        case "LOW":
-                            {
-                                chosenDegree = Degree.low;
-                                break;
-                            }
-                        case "MOD":
-                            {
-                                chosenDegree = Degree.mod;
-                                break;
-                            }
-                        case "HIGH":
-                            {
-                                chosenDegree = Degree.high;
-                                break;
-                            }
-                        case "":
-                            {
-                                do
+                        Console.WriteLine("Press Enter to randomly determine HP or enter LOW, MOD, or HIGH");
+                        string hpDegreeInput = Program.GetValidString("", "LOW", "MOD", "HIGH");
+                        switch (hpDegreeInput.ToUpper())
+                        {
+                            case "LOW":
                                 {
-                                    chosenDegree = creature.DegreeList.ElementAt(random.Next(creature.DegreeList.Count));
-                                } while (!lineDegreeValues.ContainsKey(chosenDegree));
+                                    chosenDegree = Degree.low;
+                                    break;
+                                }
+                            case "MOD":
+                                {
+                                    chosenDegree = Degree.moderate;
+                                    break;
+                                }
+                            case "HIGH":
+                                {
+                                    chosenDegree = Degree.high;
+                                    break;
+                                }
+                            case "":
+                                {
+                                    do
+                                    {
+                                        chosenDegree = creature.DegreeList.ElementAt(random.Next(creature.DegreeList.Count));
+                                    } while (!lineDegreeValues.ContainsKey(chosenDegree));
+                                    break;
+                                }
+                            default:
+                                Console.WriteLine("Broken at hpDegreeInput interpretation, continued with Degree.mod");
+                                chosenDegree = Degree.moderate;
                                 break;
-                            }
-                        default:
-                            Console.WriteLine("Broken at hpDegreeInput interpretation, continued with Degree.mod");
-                            chosenDegree = Degree.mod;
-                            break;
-                    }
+                        }
+
+                        isDegreeThere = IsDegreeThere(creature, chosenDegree);
+                        if (isDegreeThere == false && hpDegreeInput != "")
+                        {
+                            Console.WriteLine("You've chosen too many {0} values for this creature. Please select a different value", chosenDegree);
+                        }
+
+                    } while (isDegreeThere == false);
                     
                     creature.DegreeList.Remove(chosenDegree);
 
@@ -381,8 +403,10 @@ namespace PF2E_Creature_Maker
 
         public static void ResistanceWeaknessStep(Creature creature, Random random)
         {
+            //TODO add IsDegreeThere loop
+
             Degree selectedDegree;
-            Degree[] acceptableDegrees = new Degree[] { Degree.low, Degree.mod, Degree.high };
+            Degree[] acceptableDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high };
 
             Console.WriteLine("Press Enter to randomly determine Resistance/Weakness values or RESISTANCE, WEAKNESS, or BOTH");
             string degreeInput = Program.GetValidString("", "RESISTANCE", "WEAKNESS", "BOTH");
@@ -395,7 +419,7 @@ namespace PF2E_Creature_Maker
                     }
                 case "BOTH":
                     {
-                        selectedDegree = Degree.mod;
+                        selectedDegree = Degree.moderate;
                         break;
                     }
                 case "RESISTANCE":
@@ -414,7 +438,7 @@ namespace PF2E_Creature_Maker
                 default:
                     {
                         Console.WriteLine("degreeInput broken");
-                        selectedDegree = Degree.mod;
+                        selectedDegree = Degree.moderate;
                         break;
                     }
             }
@@ -428,7 +452,7 @@ namespace PF2E_Creature_Maker
                         creature.ResistOrWeakType = ResistOrWeak.Weakness;
                         break;
                     }
-                case Degree.mod:
+                case Degree.moderate:
                     {
                         creature.ResistOrWeakType = ResistOrWeak.Both;
                         break;
@@ -449,6 +473,136 @@ namespace PF2E_Creature_Maker
                     int maxValue = int.Parse(splitLine[1]);
                     int minValue = int.Parse(splitLine[2]);
                     creature.ResistWeakValue = Program.PinkRandom(random, minValue, maxValue);
+                    break;
+                }
+            }
+        }
+
+        public static void SkillStep(Creature creature, Random random)
+        {
+            //TODO add IsDegreeThere loop
+
+            Skill skillStruct = new Skill();
+            Console.WriteLine("Press Enter to randomly select a skill or type one of the following skills:");
+            string[] validSkills = new string[creature.SkillPool.PossibleSkills.Count];
+            for (int i = 0; i < validSkills.Length; i++)
+            {
+                validSkills[i] = creature.SkillPool.PossibleSkills[i];
+                Console.WriteLine(validSkills[i]);
+            }
+            string userInput = Console.ReadLine();
+            string selectedSkill;
+            if (userInput == "")
+            {
+                selectedSkill = validSkills[random.Next(validSkills.Length)];
+            }
+            else
+            {
+                selectedSkill = Program.GetValidString(validSkills);
+            }
+
+            foreach (string skill in creature.SkillPool.PossibleSkills)
+            {
+                if (skill.ToLower().Contains(selectedSkill.ToLower()))
+                {
+                    creature.SkillPool.PossibleSkills.Remove(skill);
+                    break;
+                }
+            }
+
+            skillStruct.skillName = Program.CapitalizeString(selectedSkill);
+
+            Degree[] validDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            Console.WriteLine("Press Enter to randomly select degree of skill bonus or LOW, MOD, HIGH, or EX");
+            string[] validDegreePlusEnter = new string[] { "LOW", "MOD", "HIGH", "EX", "" };
+            userInput = Program.GetValidString(validDegreePlusEnter);
+            Degree selectedDegree = Degree.moderate;
+            if (userInput == "")
+            {
+                selectedDegree = validDegrees[random.Next(validDegrees.Length)];
+            }
+            else
+            {
+                switch (userInput.ToUpper())
+                {
+                    case "LOW":
+                        {
+                            selectedDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            selectedDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            selectedDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            selectedDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            }
+
+            creature.DegreeList.Remove(selectedDegree);
+
+            string[] skillBonusFile = File.ReadAllLines(Program.FilePathByName("Skill Bonuses"));
+            foreach (string line in skillBonusFile)
+            {
+                string[] splitLine = line.Split(',');
+                int[] splitLineParsed = new int[splitLine.Length];
+                for (int i = 0; i < splitLineParsed.Length; i++)
+                {
+                    splitLineParsed[i] = int.Parse(Program.CorrectedDash(splitLine[i]));
+                }
+
+                if (splitLineParsed[0] == creature.Level)
+                {
+                    int bonusIndex = 0;
+                    switch(selectedDegree)
+                    {
+                        case Degree.low:
+                            {
+                                bonusIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                bonusIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                bonusIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                bonusIndex = 1;
+                                break;
+                            }
+                        default:
+                            {
+                                Console.WriteLine("Couldn't match selectedDegree to a corresponding index");
+                                break;
+                            }
+                    }
+
+                    int selectedBonus = splitLineParsed[bonusIndex] - creature.Level;
+
+                    if (selectedBonus > 0)
+                    {
+                        skillStruct.skillBonus = "+";
+                    }
+                     
+                    skillStruct.skillBonus += selectedBonus;
+
+                    creature.SkillPool.SelectedSkills.Add(skillStruct);
+                    
                     break;
                 }
             }
@@ -475,17 +629,24 @@ namespace PF2E_Creature_Maker
                 Console.WriteLine("Weakness: " + creature.ResistWeakValue);
             }
 
+            Console.WriteLine("\n_Skills_");
+            foreach (Skill skill in creature.SkillPool.SelectedSkills)
+            {
+                Console.Write("{0}: {1}  ", skill.skillName, skill.skillBonus);
+            }
+            Console.WriteLine();
+
             foreach (KeyValuePair<AbilityScoreEnum, int> ability in creature.AbilityScoreDictionary)
             {
-                Console.Write(ability.Key + " = " + ability.Value + " ");
+                Console.Write(ability.Key + " = " + ability.Value + "  ");
                 if (ability.Key == creature.AbilityScoreDictionary.Last().Key)
                 {
                     Console.WriteLine("");
                 }
             }
 
-            Console.WriteLine("Traits:");
-            foreach (string trait in creature.traitPool.SelectedTraits)
+            Console.WriteLine("\n_Traits_");
+            foreach (string trait in creature.TraitPool.SelectedTraits)
             {
                 Console.WriteLine(trait);
             }
