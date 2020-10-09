@@ -12,6 +12,13 @@ namespace PF2E_Creature_Maker
         Both,
         None
     }
+
+    public enum SaveName
+    {
+        Fortitude,
+        Reflex,
+        Will
+    }
     public class Creature
     {
         public int Level = 0;
@@ -22,7 +29,16 @@ namespace PF2E_Creature_Maker
         public int ResistWeakValue = 0;
         public ResistOrWeak ResistOrWeakType = ResistOrWeak.None;
         public SkillPool SkillPool = new SkillPool();
+        public Dictionary<SaveName, int> SavingThrows = new Dictionary<SaveName, int>
+        {
+            { SaveName.Fortitude, 0 },
+            { SaveName.Reflex, 0 },
+            { SaveName.Will, 0 }
+        };
         public int ArmorClass = 0;
+        public int StrikeAttack = 0;
+        public string StrikeDamage = "";
+        public int Perception = 0;
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;

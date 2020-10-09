@@ -694,6 +694,509 @@ namespace PF2E_Creature_Maker
             }
         }
 
+        public static void StrikeAttackStep(Creature creature, Random random)
+        {
+            Console.WriteLine("Press Enter to randomly determine Strike Attack Bonus or LOW, MOD, HIGH, EX");
+            Degree chosenDegree = Degree.moderate;
+            Degree[] validDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            string strikeInput;
+            do
+            {
+                strikeInput = Program.GetValidString("", "LOW", "MOD", "HIGH", "EX");
+                switch (strikeInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                            } while (!creature.DegreeList.Contains(chosenDegree));
+                            break;
+                        }
+                    case "LOW":
+                        {
+                            chosenDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            chosenDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            chosenDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            chosenDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, chosenDegree));
+
+            creature.DegreeList.Remove(chosenDegree);
+
+            string[] strikeAttackFile = File.ReadAllLines(Program.FilePathByName("Strike Attack Bonus"));
+            foreach (string line in strikeAttackFile)
+            {
+                string[] splitLine = line.Split(',');
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch (chosenDegree)
+                    {
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    creature.StrikeAttack = int.Parse(Program.CorrectedDash(splitLine[degreeIndex])) - creature.Level;
+                    Console.WriteLine("{0} Strike Attack Bonus: {1}", chosenDegree, creature.StrikeAttack);
+                    break;
+                }
+            }
+        }
+
+
+        public static void StrikeDamageStep(Creature creature, Random random)
+        {
+            Console.WriteLine("Press Enter to randomly determine Strike Damage or LOW, MOD, HIGH, EX");
+            Degree chosenDegree = Degree.moderate;
+            Degree[] validDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            string damageInput;
+            do
+            {
+                damageInput = Program.GetValidString("", "LOW", "MOD", "HIGH", "EX");
+                switch (damageInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                            } while (!creature.DegreeList.Contains(chosenDegree));
+                            break;
+                        }
+                    case "LOW":
+                        {
+                            chosenDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            chosenDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            chosenDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            chosenDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, chosenDegree));
+
+            creature.DegreeList.Remove(chosenDegree);
+
+            string[] damageFile = File.ReadAllLines(Program.FilePathByName("Strike Damage"));
+            foreach (string line in damageFile)
+            {
+                string[] splitLine = line.Split(',');
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch (chosenDegree)
+                    {
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    creature.StrikeDamage = Program.CorrectedDash(splitLine[degreeIndex]);
+                    Console.WriteLine("{0} Strike Damage: {1}", chosenDegree, creature.StrikeDamage);
+                    break;
+                }
+            }
+        }
+
+        public static void AbilityScoreStep(Creature creature, Random random, AbilityScoreEnum ability)
+        {
+            Degree chosenDegree = Degree.moderate;
+            if (ability == AbilityScoreEnum.Strength && creature.IsStrengthExtreme)
+            {
+                Console.WriteLine("This creature's size makes its Strength extreme");
+                chosenDegree = Degree.extreme;
+
+                Degree removingDegree = Degree.moderate;
+                for (int i = 0;; i++)
+                {
+                    switch(i)
+                    {
+                        case 0:
+                            {
+                                removingDegree = Degree.extreme;
+                                break;
+                            }
+                        case 1:
+                            {
+                                removingDegree = Degree.high;
+                                break;
+                            }
+                        case 2:
+                            {
+                                removingDegree = Degree.moderate;
+                                break;
+                            }
+                        case 3:
+                            {
+                                removingDegree = Degree.low;
+                                break;
+                            }
+                        case 4:
+                            {
+                                removingDegree = Degree.bad;
+                                break;
+                            }
+                    }
+                    if (creature.DegreeList.Contains(removingDegree))
+                    {
+                        creature.DegreeList.Remove(removingDegree);
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                Degree[] validDegrees = new Degree[] { Degree.bad, Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+                if (creature.Level < 1)
+                {
+                    Console.WriteLine("For {0}, press Enter to randomly determine its score or BAD, LOW, MOD, HIGH", ability);
+                    validDegrees = new Degree[] { Degree.bad, Degree.low, Degree.moderate, Degree.high };
+                }
+                else
+                {
+                    Console.WriteLine("For {0}, press Enter to randomly determine its score or BAD, LOW, MOD, HIGH, EX", ability);
+                }
+
+                string scoreInput;
+                do
+                {
+                    if (creature.Level < 1)
+                    {
+                        scoreInput = Program.GetValidString("", "BAD", "LOW", "MOD", "HIGH");
+                    }
+                    else
+                    {
+                        scoreInput = Program.GetValidString("", "BAD", "LOW", "MOD", "HIGH", "EX");
+                    }
+                    switch (scoreInput.ToUpper())
+                    {
+                        case "":
+                            {
+                                do
+                                {
+                                    chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                                } while (!creature.DegreeList.Contains(chosenDegree));
+                                break;
+                            }
+                        case "BAD":
+                            {
+                                chosenDegree = Degree.bad;
+                                break;
+                            }
+                        case "LOW":
+                            {
+                                chosenDegree = Degree.low;
+                                break;
+                            }
+                        case "MOD":
+                            {
+                                chosenDegree = Degree.moderate;
+                                break;
+                            }
+                        case "HIGH":
+                            {
+                                chosenDegree = Degree.high;
+                                break;
+                            }
+                        case "EX":
+                            {
+                                chosenDegree = Degree.extreme;
+                                break;
+                            }
+                    }
+                } while (DegreeIsMissing(creature, chosenDegree));
+
+                creature.DegreeList.Remove(chosenDegree);
+            }
+
+            string[] abilityScoreFile = File.ReadAllLines(Program.FilePathByName("Ability Modifier Scales"));
+            foreach (string line in abilityScoreFile)
+            {
+                string[] splitLine = line.Split(',');
+                bool skipParse = false;
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch (chosenDegree)
+                    {
+                        case Degree.bad:
+                            {
+                                creature.AbilityScoreDictionary[ability] = random.Next(-5, -1);
+                                skipParse = true;
+                                break;
+                            }
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    if (!skipParse)
+                    {
+                        creature.AbilityScoreDictionary[ability] = int.Parse(Program.CorrectedDash(splitLine[degreeIndex]));
+                    }
+                    Console.WriteLine("{0} {1} Score: {2}", chosenDegree, ability, creature.AbilityScoreDictionary[ability]);
+                    break;
+                }
+            }
+        }
+
+        public static void PerceptionStep(Creature creature, Random random)
+        {
+            Console.WriteLine("Press Enter to randomly determine Perception or BAD, LOW, MOD, HIGH, EX");
+            Degree chosenDegree = Degree.moderate;
+            Degree[] validDegrees = new Degree[] { Degree.bad, Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            string perceptionInput;
+            do
+            {
+                perceptionInput = Program.GetValidString("", "BAD", "LOW", "MOD", "HIGH", "EX");
+                switch (perceptionInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                            } while (!creature.DegreeList.Contains(chosenDegree));
+                            break;
+                        }
+                    case "BAD":
+                        {
+                            chosenDegree = Degree.bad;
+                            break;
+                        }
+                    case "LOW":
+                        {
+                            chosenDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            chosenDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            chosenDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            chosenDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, chosenDegree));
+
+            creature.DegreeList.Remove(chosenDegree);
+
+            string[] perceptionFile = File.ReadAllLines(Program.FilePathByName("Perception Bonuses"));
+            foreach (string line in perceptionFile)
+            {
+                string[] splitLine = line.Split(',');
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch (chosenDegree)
+                    {
+                        case Degree.bad:
+                            {
+                                degreeIndex = 5;
+                                break;
+                            }
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    creature.Perception = int.Parse(Program.CorrectedDash(splitLine[degreeIndex])) - creature.Level;
+                    Console.WriteLine("{0} Perception Bonus: +{1}", chosenDegree, creature.Perception);
+                    break;
+                }
+            }
+        }
+
+        public static void SavesStep(Creature creature, Random random, SaveName save)
+        {
+            Console.WriteLine("For {0}, press Enter to randomly determine bonus or BAD, LOW, MOD, HIGH, EX", save);
+            Degree chosenDegree = Degree.moderate;
+            Degree[] validDegrees = new Degree[] { Degree.bad, Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            string saveInput;
+            do
+            {
+                saveInput = Program.GetValidString("", "BAD", "LOW", "MOD", "HIGH", "EX");
+                switch (saveInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                            } while (!creature.DegreeList.Contains(chosenDegree));
+                            break;
+                        }
+                    case "BAD":
+                        {
+                            chosenDegree = Degree.bad;
+                            break;
+                        }
+                    case "LOW":
+                        {
+                            chosenDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            chosenDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            chosenDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            chosenDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, chosenDegree));
+
+            creature.DegreeList.Remove(chosenDegree);
+
+            string[] savingThrowFile = File.ReadAllLines(Program.FilePathByName("Saving Throws"));
+            foreach (string line in savingThrowFile)
+            {
+                string[] splitLine = line.Split(',');
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch (chosenDegree)
+                    {
+                        case Degree.bad:
+                            {
+                                degreeIndex = 5;
+                                break;
+                            }
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    creature.SavingThrows[save] = int.Parse(Program.CorrectedDash(splitLine[degreeIndex])) - creature.Level;
+                    Console.WriteLine("{0} {1} Bonus: +{2}", chosenDegree, save, creature.SavingThrows[save]);
+                    break;
+                }
+            }
+        }
+
         public static void EndStep(Creature creature)
         {
             Console.WriteLine("__Final Creature__" +
@@ -715,7 +1218,34 @@ namespace PF2E_Creature_Maker
                 Console.WriteLine("Weakness: " + creature.ResistWeakValue);
             }
 
-            Console.WriteLine("Armor Class: " + creature.ArmorClass);
+            Console.WriteLine("Armor Class: " + creature.ArmorClass + 
+                "\nStrike Attack Bonus: +" + creature.StrikeAttack + 
+                "\nStrike Damage: " + creature.StrikeDamage + 
+                "\nPerception Bonus: +" + creature.Perception);
+
+            Console.WriteLine("\n_Ability Scores_");
+            foreach (var ability in creature.AbilityScoreDictionary)
+            {
+                Console.Write(ability.Key + ": ");
+                if (ability.Value > 0)
+                {
+                    Console.Write("+");
+                }
+                Console.Write(ability.Value + "  ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("\n_Saving Throws_");
+            foreach (var save in creature.SavingThrows)
+            {
+                Console.Write(save.Key + ": ");
+                if (save.Value > 0)
+                {
+                    Console.Write("+");
+                }
+                Console.Write(save.Value + "  ");
+            }
+            Console.WriteLine();
 
             Console.WriteLine("\n_Skills_");
             foreach (Skill skill in creature.SkillPool.SelectedSkills)

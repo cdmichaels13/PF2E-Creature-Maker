@@ -182,6 +182,39 @@ namespace PF2E_Creature_Maker
                             ExecuteStep.ArmorClassStep(_creature, random);
                             break;
                         }
+                    case Step.Strike_Attack_Bonus:
+                        {
+                            ExecuteStep.StrikeAttackStep(_creature, random);
+                            break;
+                        }
+                    case Step.Strike_Damage:
+                        {
+                            ExecuteStep.StrikeDamageStep(_creature, random);
+                            break;
+                        }
+                    case Step.Ability_Scores:
+                        {
+                            AbilityScoreEnum[] abilities = new AbilityScoreEnum[] { AbilityScoreEnum.Strength, AbilityScoreEnum.Dexterity, AbilityScoreEnum.Intelligence, AbilityScoreEnum.Wisdom, AbilityScoreEnum.Charisma };
+                            foreach (AbilityScoreEnum ability in abilities)
+                            {
+                                ExecuteStep.AbilityScoreStep(_creature, random, ability);
+                            }
+                            break;
+                        }
+                    case Step.Perception:
+                        {
+                            ExecuteStep.PerceptionStep(_creature, random);
+                            break;
+                        }
+                    case Step.Saves:
+                        {
+                            SaveName[] saves = new SaveName[] { SaveName.Fortitude, SaveName.Reflex, SaveName.Will };
+                            foreach (SaveName save in saves)
+                            {
+                                ExecuteStep.SavesStep(_creature, random, save);
+                            }
+                            break;
+                        }
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
@@ -220,6 +253,9 @@ namespace PF2E_Creature_Maker
                 Regeneration = creature.Regeneration,
                 ResistOrWeakType = creature.ResistOrWeakType,
                 ArmorClass = creature.ArmorClass,
+                StrikeAttack = creature.StrikeAttack,
+                StrikeDamage = creature.StrikeDamage,
+                Perception = creature.Perception,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
                 DegreeList = CopyListValues(creature.DegreeList)
@@ -228,6 +264,11 @@ namespace PF2E_Creature_Maker
             foreach (AbilityScoreEnum ability in creature.AbilityScoreDictionary.Keys)
             {
                 creatureCopy.AbilityScoreDictionary[ability] = creature.AbilityScoreDictionary[ability];
+            }
+
+            foreach (SaveName save in creature.SavingThrows.Keys)
+            {
+                creatureCopy.SavingThrows[save] = creature.SavingThrows[save];
             }
 
             creatureCopy.TraitPool.AllPossibleTraits.Clear();
