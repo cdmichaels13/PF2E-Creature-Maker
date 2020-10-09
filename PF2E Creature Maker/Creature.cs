@@ -22,6 +22,7 @@ namespace PF2E_Creature_Maker
         public int ResistWeakValue = 0;
         public ResistOrWeak ResistOrWeakType = ResistOrWeak.None;
         public SkillPool SkillPool = new SkillPool();
+        public int ArmorClass = 0;
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;

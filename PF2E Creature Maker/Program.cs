@@ -177,6 +177,11 @@ namespace PF2E_Creature_Maker
                             } while (_creature.SkillPool.SelectedSkills.Count < 6 && sixSkills < 6);
                             break;
                         }
+                    case Step.Armor_Class:
+                        {
+                            ExecuteStep.ArmorClassStep(_creature, random);
+                            break;
+                        }
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
@@ -214,6 +219,7 @@ namespace PF2E_Creature_Maker
                 HitPoints = creature.HitPoints,
                 Regeneration = creature.Regeneration,
                 ResistOrWeakType = creature.ResistOrWeakType,
+                ArmorClass = creature.ArmorClass,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
                 DegreeList = CopyListValues(creature.DegreeList)

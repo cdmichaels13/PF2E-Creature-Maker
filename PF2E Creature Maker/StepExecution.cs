@@ -9,17 +9,6 @@ namespace PF2E_Creature_Maker
 {
     public class ExecuteStep
     {
-        public static bool IsDegreeThere(Creature creature, Degree degree)
-        {
-            bool degreeThere = true;
-
-            if (!creature.DegreeList.Contains(degree))
-            {
-                degreeThere = false;
-            }
-
-            return degreeThere;
-        }
         public static void LevelStep(Random random, Creature creature, int partyLevel)
         {
             string userInput;
@@ -84,6 +73,8 @@ namespace PF2E_Creature_Maker
                     {
                         removingDegree = random.Next(0, creature.DegreeList.Count);
                     } while (creature.DegreeList[removingDegree] == Degree.extreme);
+
+                    Console.WriteLine("Since this creature is at least Level {0}, replacing a {1} degree with extreme", i, creature.DegreeList[removingDegree]);
 
                     creature.DegreeList.RemoveAt(removingDegree);
                     creature.DegreeList.Add(Degree.extreme);
@@ -317,6 +308,7 @@ namespace PF2E_Creature_Maker
                     {
                         int[] parenthesesIndexes = new int[] { splitLine[2].IndexOf('('), splitLine[2].IndexOf(')') };
                         creature.Regeneration = int.Parse(splitLine[2].Substring(parenthesesIndexes[0] + 1, parenthesesIndexes[1] - parenthesesIndexes[0] - 1));
+                        Console.WriteLine("Regeneration: " + creature.Regeneration);
                     }
                 }
             }
@@ -335,7 +327,6 @@ namespace PF2E_Creature_Maker
                     };
 
                     Degree chosenDegree;
-                    bool isDegreeThere;
 
                     do
                     {
@@ -363,7 +354,8 @@ namespace PF2E_Creature_Maker
                                     do
                                     {
                                         chosenDegree = creature.DegreeList.ElementAt(random.Next(creature.DegreeList.Count));
-                                    } while (!lineDegreeValues.ContainsKey(chosenDegree));
+                                    } while (!lineDegreeValues.ContainsKey(chosenDegree) || !creature.DegreeList.Contains(chosenDegree));
+                                    Console.WriteLine("Random degree: " + chosenDegree);
                                     break;
                                 }
                             default:
@@ -371,15 +363,8 @@ namespace PF2E_Creature_Maker
                                 chosenDegree = Degree.moderate;
                                 break;
                         }
+                    } while (DegreeIsMissing(creature, chosenDegree));
 
-                        isDegreeThere = IsDegreeThere(creature, chosenDegree);
-                        if (isDegreeThere == false && hpDegreeInput != "")
-                        {
-                            Console.WriteLine("You've chosen too many {0} values for this creature. Please select a different value", chosenDegree);
-                        }
-
-                    } while (isDegreeThere == false);
-                    
                     creature.DegreeList.Remove(chosenDegree);
 
                     string hpRange = lineDegreeValues[chosenDegree];
@@ -395,6 +380,7 @@ namespace PF2E_Creature_Maker
                     }
 
                     creature.HitPoints -= (creature.Regeneration * 2);
+                    Console.WriteLine("Hit Points: " + creature.HitPoints);
 
                     break;
                 }
@@ -403,45 +389,47 @@ namespace PF2E_Creature_Maker
 
         public static void ResistanceWeaknessStep(Creature creature, Random random)
         {
-            //TODO add IsDegreeThere loop
-
             Degree selectedDegree;
             Degree[] acceptableDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high };
 
             Console.WriteLine("Press Enter to randomly determine Resistance/Weakness values or RESISTANCE, WEAKNESS, or BOTH");
-            string degreeInput = Program.GetValidString("", "RESISTANCE", "WEAKNESS", "BOTH");
-            switch(degreeInput.ToUpper())
+
+            do
             {
-                case "WEAKNESS":
-                    {
-                        selectedDegree = Degree.low;
-                        break;
-                    }
-                case "BOTH":
-                    {
-                        selectedDegree = Degree.moderate;
-                        break;
-                    }
-                case "RESISTANCE":
-                    {
-                        selectedDegree = Degree.high;
-                        break;
-                    }
-                case "":
-                    {
-                        do
+                string degreeInput = Program.GetValidString("", "RESISTANCE", "WEAKNESS", "BOTH");
+                switch (degreeInput.ToUpper())
+                {
+                    case "WEAKNESS":
                         {
-                            selectedDegree = creature.DegreeList[random.Next(creature.DegreeList.Count)];
-                        } while (!acceptableDegrees.Contains(selectedDegree));
-                        break;
-                    }
-                default:
-                    {
-                        Console.WriteLine("degreeInput broken");
-                        selectedDegree = Degree.moderate;
-                        break;
-                    }
-            }
+                            selectedDegree = Degree.low;
+                            break;
+                        }
+                    case "BOTH":
+                        {
+                            selectedDegree = Degree.moderate;
+                            break;
+                        }
+                    case "RESISTANCE":
+                        {
+                            selectedDegree = Degree.high;
+                            break;
+                        }
+                    case "":
+                        {
+                            do
+                            {
+                                selectedDegree = creature.DegreeList[random.Next(creature.DegreeList.Count)];
+                            } while (!acceptableDegrees.Contains(selectedDegree) || !creature.DegreeList.Contains(selectedDegree));
+                            break;
+                        }
+                    default:
+                        {
+                            Console.WriteLine("degreeInput broken");
+                            selectedDegree = Degree.moderate;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, selectedDegree));
             
             creature.DegreeList.Remove(selectedDegree);
 
@@ -476,12 +464,19 @@ namespace PF2E_Creature_Maker
                     break;
                 }
             }
+
+            if (creature.ResistOrWeakType == ResistOrWeak.None)
+            {
+                Console.WriteLine("No Resistances or Weaknesses");
+            }
+            else
+            {
+                Console.WriteLine(creature.ResistOrWeakType + ": " + creature.ResistWeakValue);
+            }
         }
 
         public static void SkillStep(Creature creature, Random random)
         {
-            //TODO add IsDegreeThere loop
-
             Skill skillStruct = new Skill();
             Console.WriteLine("Press Enter to randomly select a skill or type one of the following skills:");
             string[] validSkills = new string[creature.SkillPool.PossibleSkills.Count];
@@ -495,6 +490,7 @@ namespace PF2E_Creature_Maker
             if (userInput == "")
             {
                 selectedSkill = validSkills[random.Next(validSkills.Length)];
+                Console.WriteLine("Random skill: " + Program.CapitalizeString(selectedSkill));
             }
             else
             {
@@ -515,38 +511,46 @@ namespace PF2E_Creature_Maker
             Degree[] validDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high, Degree.extreme };
             Console.WriteLine("Press Enter to randomly select degree of skill bonus or LOW, MOD, HIGH, or EX");
             string[] validDegreePlusEnter = new string[] { "LOW", "MOD", "HIGH", "EX", "" };
-            userInput = Program.GetValidString(validDegreePlusEnter);
             Degree selectedDegree = Degree.moderate;
-            if (userInput == "")
+
+            do
             {
-                selectedDegree = validDegrees[random.Next(validDegrees.Length)];
-            }
-            else
-            {
-                switch (userInput.ToUpper())
+                userInput = Program.GetValidString(validDegreePlusEnter);
+                if (userInput == "")
                 {
-                    case "LOW":
-                        {
-                            selectedDegree = Degree.low;
-                            break;
-                        }
-                    case "MOD":
-                        {
-                            selectedDegree = Degree.moderate;
-                            break;
-                        }
-                    case "HIGH":
-                        {
-                            selectedDegree = Degree.high;
-                            break;
-                        }
-                    case "EX":
-                        {
-                            selectedDegree = Degree.extreme;
-                            break;
-                        }
+                    do
+                    {
+                        selectedDegree = validDegrees[random.Next(validDegrees.Length)];
+                    } while (!creature.DegreeList.Contains(selectedDegree));
+                    Console.WriteLine("Random degree: " + selectedDegree);
                 }
-            }
+                else
+                {
+                    switch (userInput.ToUpper())
+                    {
+                        case "LOW":
+                            {
+                                selectedDegree = Degree.low;
+                                break;
+                            }
+                        case "MOD":
+                            {
+                                selectedDegree = Degree.moderate;
+                                break;
+                            }
+                        case "HIGH":
+                            {
+                                selectedDegree = Degree.high;
+                                break;
+                            }
+                        case "EX":
+                            {
+                                selectedDegree = Degree.extreme;
+                                break;
+                            }
+                    }
+                }
+            } while (DegreeIsMissing(creature, selectedDegree));
 
             creature.DegreeList.Remove(selectedDegree);
 
@@ -602,7 +606,89 @@ namespace PF2E_Creature_Maker
                     skillStruct.skillBonus += selectedBonus;
 
                     creature.SkillPool.SelectedSkills.Add(skillStruct);
-                    
+                    Console.WriteLine("Bonus: " + creature.SkillPool.SelectedSkills.Last().skillBonus);
+
+                    break;
+                }
+            }
+        }
+
+        public static void ArmorClassStep(Creature creature, Random random)
+        {
+            Console.WriteLine("Press Enter to randomly determine AC or LOW, MOD, HIGH, EX");
+            Degree chosenDegree = Degree.moderate;
+            Degree[] validDegrees = new Degree[] { Degree.low, Degree.moderate, Degree.high, Degree.extreme };
+            string armorInput;
+            do
+            {
+                armorInput = Program.GetValidString("", "LOW", "MOD", "HIGH", "EX");
+                switch (armorInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                chosenDegree = validDegrees[random.Next(validDegrees.Length)];
+                            } while (!creature.DegreeList.Contains(chosenDegree));
+                            break;
+                        }
+                    case "LOW":
+                        {
+                            chosenDegree = Degree.low;
+                            break;
+                        }
+                    case "MOD":
+                        {
+                            chosenDegree = Degree.moderate;
+                            break;
+                        }
+                    case "HIGH":
+                        {
+                            chosenDegree = Degree.high;
+                            break;
+                        }
+                    case "EX":
+                        {
+                            chosenDegree = Degree.extreme;
+                            break;
+                        }
+                }
+            } while (DegreeIsMissing(creature, chosenDegree));
+
+            creature.DegreeList.Remove(chosenDegree);
+
+            string[] armorFile = File.ReadAllLines(Program.FilePathByName("Armor Class"));
+            foreach (string line in armorFile)
+            {
+                string[] splitLine = line.Split(',');
+                if (int.Parse(Program.CorrectedDash(splitLine[0])) == creature.Level)
+                {
+                    int degreeIndex = 0;
+                    switch(chosenDegree)
+                    {
+                        case Degree.low:
+                            {
+                                degreeIndex = 4;
+                                break;
+                            }
+                        case Degree.moderate:
+                            {
+                                degreeIndex = 3;
+                                break;
+                            }
+                        case Degree.high:
+                            {
+                                degreeIndex = 2;
+                                break;
+                            }
+                        case Degree.extreme:
+                            {
+                                degreeIndex = 1;
+                                break;
+                            }
+                    }
+                    creature.ArmorClass = int.Parse(Program.CorrectedDash(splitLine[degreeIndex])) - creature.Level;
+                    Console.WriteLine("{0} Armor Class: {1}", chosenDegree, creature.ArmorClass);
                     break;
                 }
             }
@@ -629,6 +715,8 @@ namespace PF2E_Creature_Maker
                 Console.WriteLine("Weakness: " + creature.ResistWeakValue);
             }
 
+            Console.WriteLine("Armor Class: " + creature.ArmorClass);
+
             Console.WriteLine("\n_Skills_");
             foreach (Skill skill in creature.SkillPool.SelectedSkills)
             {
@@ -650,6 +738,19 @@ namespace PF2E_Creature_Maker
             {
                 Console.WriteLine(trait);
             }
+        }
+
+        public static bool DegreeIsMissing(Creature creature, Degree degree)
+        {
+            bool degreeMissing = false;
+
+            if (!creature.DegreeList.Contains(degree))
+            {
+                degreeMissing = true;
+                Console.WriteLine("You've chosen too many {0} values for this creature. Please select a different value", degree);
+            }
+
+            return degreeMissing;
         }
     }
 }
