@@ -5,6 +5,13 @@ using System.Linq;
 
 namespace PF2E_Creature_Maker
 {
+    public struct Spell
+    {
+        public string name;
+        public string description;
+        public string school;
+        public int level;
+    }
     public enum ResistOrWeak
     {
         Resistance,
@@ -39,6 +46,8 @@ namespace PF2E_Creature_Maker
         public int StrikeAttack = 0;
         public string StrikeDamage = "";
         public int Perception = 0;
+        public bool HasSpells = true;
+        public List<Spell> Spells = new List<Spell>();
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;

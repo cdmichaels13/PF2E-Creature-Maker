@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -1197,6 +1198,102 @@ namespace PF2E_Creature_Maker
             }
         }
 
+        public static void SpellsStep(Creature creature, Random random, string spellType)
+        {
+            bool forceSchool = true;
+            Console.WriteLine("Choosing spells of type {0}", spellType);
+            string[] spellSchools = new string[] { "Abjuration", "Conjuration", "Necromancy", "Transmutation", "Enchantment", "Divination", "Illusion", "Evocation" };
+
+            Console.WriteLine("Press Enter to randomly pick a school of magic, or type one of the following:");
+            foreach (string school in spellSchools)
+            {
+                Console.WriteLine(school);
+            }
+
+            string[] validSchoolSelection = new string[spellSchools.Length + 1];
+            for (int i = 0; i < validSchoolSelection.Length; i++)
+            {
+                if (i == 0)
+                {
+                    validSchoolSelection[i] = "";
+                }
+                else
+                {
+                    validSchoolSelection[i] = spellSchools[i - 1];
+                }
+            }
+
+            string schoolSelection = Program.GetValidString(validSchoolSelection);
+            if (schoolSelection == "")
+            {
+                schoolSelection = spellSchools[random.Next(spellSchools.Length)];
+                Console.WriteLine(schoolSelection);
+            }
+
+            string[] schoolSpellFile = File.ReadAllLines(Program.FilePathByName(spellType + " Spells"));
+            List<string[]> availableSpellLines = new List<string[]>();
+            List<Spell> allSpells = new List<Spell>();
+            
+            for (int i = 1; i < schoolSpellFile.Length; i++)
+            {
+                string[] splitLine = schoolSpellFile[i].Split(',');
+                Spell newSpell = new Spell();
+                newSpell.name = splitLine[0];
+                newSpell.school = splitLine[1];
+                newSpell.description = splitLine[2];
+                newSpell.level = int.Parse(splitLine[3]);
+                allSpells.Add(newSpell);
+            }
+
+            List<Spell> availableCantrips = new List<Spell>();
+            foreach (Spell spell in allSpells)
+            {
+                if (spell.level == 0)
+                {
+                    availableCantrips.Add(spell);
+                }
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                Spell chosenSpell = new Spell();
+                Console.WriteLine("Press Enter to randomly select a cantrip or SELECT to choose from a list");
+                string userInput = Program.GetValidString("", "SELECT");
+                switch(userInput.ToUpper())
+                {
+                    case "":
+                        {
+                            do
+                            {
+                                forceSchool = true;
+                                chosenSpell = availableCantrips[random.Next(availableCantrips.Count)];
+                                if (random.Next(2) == 1)
+                                {
+                                    forceSchool = false;
+                                }
+                            } while (chosenSpell.school != schoolSelection && forceSchool);
+                            break;
+                        }
+                    case "SELECT":
+                        {
+                            List<string> validSpells = new List<string>();
+                            foreach (Spell spell in availableCantrips)
+                            {
+                                Console.WriteLine(spell.name);
+                                validSpells.Add(spell.name);
+                            }
+                            string chosenSpellName = Program.GetValidString(validSpells.ToArray());
+                            chosenSpell = availableCantrips.FirstOrDefault(Spell => Spell.name.ToLower() == chosenSpellName.ToLower());
+                            break;
+                        }
+                }
+
+                creature.Spells.Add(chosenSpell);
+                availableCantrips.Remove(chosenSpell);
+                Console.WriteLine("Selected the {0} spell", chosenSpell.name);
+            }
+        }
+
         public static void EndStep(Creature creature)
         {
             Console.WriteLine("__Final Creature__" +
@@ -1267,6 +1364,12 @@ namespace PF2E_Creature_Maker
             foreach (string trait in creature.TraitPool.SelectedTraits)
             {
                 Console.WriteLine(trait);
+            }
+
+            Console.WriteLine("\n_Spells_");
+            foreach (var spell in creature.Spells)
+            {
+                Console.WriteLine(spell.name + " at level " + spell.level);
             }
         }
 

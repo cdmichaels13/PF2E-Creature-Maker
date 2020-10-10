@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.IO.Pipes;
+using Microsoft.VisualBasic.CompilerServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace PF2E_Creature_Maker
 {
@@ -215,6 +217,49 @@ namespace PF2E_Creature_Maker
                             }
                             break;
                         }
+                    case Step.Spells:
+                        {
+                            string[] spellTypes = new string[] { "Arcane", "Occult", "Primal", "Divine", "Focus", "NONE" };
+                            Console.WriteLine("Press Enter to randomly select this creature's magic type or one of the following types:");
+                            foreach (string type in spellTypes)
+                            {
+                                Console.WriteLine(type);
+                            }
+                            string[] validInputs = new string[spellTypes.Length + 1];
+                            for (int i = 0; i < validInputs.Length; i++)
+                            {
+                                if (i == 0)
+
+                                {
+                                    validInputs[i] = "";
+                                }
+                                else
+                                {
+                                    validInputs[i] = spellTypes[i - 1];
+                                }
+                            }
+                            string typeInput = GetValidString(validInputs);
+                            if (typeInput == "")
+                            {
+                                if (random.Next(2) == 1)
+                                {
+                                    typeInput = spellTypes[random.Next(spellTypes.Length)];
+                                }
+                                else
+                                {
+                                    _creature.HasSpells = false;
+                                }
+                            }
+                            if (typeInput.ToUpper() == "NONE")
+                            {
+                                _creature.HasSpells = false;
+                            }
+                            if (_creature.HasSpells)
+                            {
+                                ExecuteStep.SpellsStep(_creature, random, CapitalizeString(typeInput));
+                            }
+                            break;
+                        }
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
@@ -256,9 +301,10 @@ namespace PF2E_Creature_Maker
                 StrikeAttack = creature.StrikeAttack,
                 StrikeDamage = creature.StrikeDamage,
                 Perception = creature.Perception,
+                HasSpells = creature.HasSpells,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
-                DegreeList = CopyListValues(creature.DegreeList)
+                DegreeList = CopyDegreeList(creature.DegreeList)
             };
 
             foreach (AbilityScoreEnum ability in creature.AbilityScoreDictionary.Keys)
@@ -298,6 +344,11 @@ namespace PF2E_Creature_Maker
             foreach (Skill skill in creature.SkillPool.SelectedSkills)
             {
                 creatureCopy.SkillPool.SelectedSkills.Add(skill);
+            }
+
+            foreach (Spell spell in creature.Spells)
+            {
+                creatureCopy.Spells.Add(spell);
             }
 
             return creatureCopy;
@@ -352,7 +403,7 @@ namespace PF2E_Creature_Maker
             return step;
         }
 
-        public static List<Degree> CopyListValues(List<Degree> copiedList)
+        public static List<Degree> CopyDegreeList(List<Degree> copiedList)
         {
             List<Degree> returningList = new List<Degree>();
 
