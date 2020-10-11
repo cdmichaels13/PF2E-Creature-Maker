@@ -1229,6 +1229,7 @@ namespace PF2E_Creature_Maker
                 schoolSelection = spellSchools[random.Next(spellSchools.Length)];
                 Console.WriteLine(schoolSelection);
             }
+            schoolSelection = Program.CapitalizeString(schoolSelection);
 
             string[] schoolSpellFile = File.ReadAllLines(Program.FilePathByName(spellType + " Spells"));
             List<string[]> availableSpellLines = new List<string[]>();
@@ -1254,9 +1255,9 @@ namespace PF2E_Creature_Maker
                 }
             }
 
+            Spell chosenSpell = new Spell();
             for (int i = 0; i < 5; i++)
             {
-                Spell chosenSpell = new Spell();
                 Console.WriteLine("Press Enter to randomly select a cantrip or SELECT to choose from a list");
                 string userInput = Program.GetValidString("", "SELECT");
                 switch(userInput.ToUpper())
@@ -1271,7 +1272,7 @@ namespace PF2E_Creature_Maker
                                 {
                                     forceSchool = false;
                                 }
-                            } while (chosenSpell.school != schoolSelection && forceSchool);
+                            } while (!chosenSpell.school.ToLower().Contains(schoolSelection.ToLower()) && forceSchool);
                             break;
                         }
                     case "SELECT":
@@ -1291,6 +1292,90 @@ namespace PF2E_Creature_Maker
                 creature.Spells.Add(chosenSpell);
                 availableCantrips.Remove(chosenSpell);
                 Console.WriteLine("Selected the {0} spell", chosenSpell.name);
+            }
+
+            int distanceFromTopSpells = 0;
+            for (int spellLevelSelection = Convert.ToInt32(Math.Round(Convert.ToDouble(creature.Level / 2), MidpointRounding.ToPositiveInfinity)); spellLevelSelection > 0; spellLevelSelection--)
+            {
+                Console.WriteLine("spellLevelSelection = " + spellLevelSelection);
+
+                List<Spell> spellsOfLevel = new List<Spell>();
+                foreach (Spell spell in allSpells)
+                {
+                    if (spell.level == spellLevelSelection)
+                    {
+                        spellsOfLevel.Add(spell);
+                    }
+                }
+
+                int uniqueSpellsOfLevel = 0;
+                int copiesOfUniques = 1;
+                switch(distanceFromTopSpells)
+                {
+                    case 0:
+                        uniqueSpellsOfLevel = 3;
+                        break;
+                    case 1:
+                        uniqueSpellsOfLevel = 2;
+                        copiesOfUniques = 2;
+                        break;
+                    default:
+                        uniqueSpellsOfLevel = 1;
+                        copiesOfUniques = 4;
+                        break;
+                }
+
+                for (; uniqueSpellsOfLevel > 0; uniqueSpellsOfLevel--)
+                {
+                    Console.WriteLine("Press Enter to randomly select a spell of Level {0} or SELECT to choose for yourself", spellLevelSelection);
+                    string userInput = Program.GetValidString("", "SELECT");
+                    if (userInput == "")
+                    {
+                        do
+                        {
+                            forceSchool = true;
+                            if (random.Next(2) == 1)
+                            {
+                                forceSchool = false;
+                            }
+                            chosenSpell = spellsOfLevel[random.Next(spellsOfLevel.Count)];
+                        } while ((chosenSpell.school != schoolSelection && forceSchool) || creature.Spells.Contains(chosenSpell));
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nSpells of {0} school first:\n", schoolSelection);
+                        foreach (Spell spell in spellsOfLevel)
+                        {
+                            if (spell.school.ToLower().Contains(schoolSelection.ToLower()))
+                            {
+                                Console.WriteLine(spell.name);
+                            }
+                        }
+                        Console.WriteLine("\nOther spells:\n");
+                        foreach (Spell spell in spellsOfLevel)
+                        {
+                            if (!spell.school.ToLower().Contains(schoolSelection.ToLower()))
+                            {
+                                Console.WriteLine(spell.name);
+                            }
+                        }
+                        List<string> validSpellNames = new List<string>();
+                        foreach (Spell spell in spellsOfLevel)
+                        {
+                            validSpellNames.Add(spell.name);
+                        }
+                        string spellNameString = Program.GetValidString(validSpellNames.ToArray());
+                        chosenSpell = spellsOfLevel.FirstOrDefault(Spell => Spell.name.ToLower() == spellNameString.ToLower());
+                    }
+
+                    for (int uniques = copiesOfUniques; uniques > 0; uniques--)
+                    {
+                        creature.Spells.Add(chosenSpell);
+                        Console.WriteLine("Added spell {0} at Level {1}", chosenSpell.name, chosenSpell.level);
+                    }
+                }
+
+                distanceFromTopSpells++;
             }
         }
 
