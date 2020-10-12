@@ -1,0 +1,1414 @@
+Name,Level,Price,Rarity,Traits,Category,Subcategory,Bulk
+Holly and Mistletoe,0,—,Common,—,Adventuring Gear,—,—
+Bedroll,0,1 cp,Common,—,Adventuring Gear,—,L
+Candle,0,1 cp,Common,—,Adventuring Gear,—,—
+Chalk,0,1 cp,Common,—,Adventuring Gear,—,—
+Mug,0,1 cp,Common,—,Adventuring Gear,—,—
+Oil,0,1 cp,Common,—,Adventuring Gear,—,—
+Piton,0,1 cp,Common,—,Adventuring Gear,—,—
+Sack,0,1 cp,Common,—,Adventuring Gear,—,L
+Sheath,0,1 cp,Common,—,Adventuring Gear,—,—
+Ten-Foot Pole,0,1 cp,Common,—,Adventuring Gear,—,1
+Torch,0,1 cp,Common,—,Adventuring Gear,—,L
+Soap,0,2 cp,Common,—,Adventuring Gear,—,—
+Ladder,0,3 cp,Common,—,Adventuring Gear,—,3
+Belt Pouch,0,4 cp,Common,—,Adventuring Gear,—,—
+Flint and Steel,0,5 cp,Common,—,Adventuring Gear,—,—
+Vial,0,5 cp,Common,—,Adventuring Gear,—,—
+Waterskin,0,5 cp,Common,—,Adventuring Gear,—,L
+Signal Whistle,0,8 cp,Common,—,Adventuring Gear,—,—
+Backpack,0,1 sp,Common,—,Adventuring Gear,—,—
+Bandolier,0,1 sp,Common,—,Adventuring Gear,—,—
+Basic Crafter's Book,0,1 sp,Common,—,Adventuring Gear,—,L
+Clothing (Explorer's),0,1 sp,Common,—,Adventuring Gear,—,L
+Clothing (Ordinary),0,1 sp,Common,—,Adventuring Gear,—,—
+Disguise Kit (Replacement Cosmetics),0,1 sp,Common,—,Adventuring Gear,—,L
+Grappling Hook,0,1 sp,Common,—,Adventuring Gear,—,L
+Hammer,0,1 sp,Common,—,Adventuring Gear,—,L
+Religious Symbol (Wooden),0,1 sp,Common,—,Adventuring Gear,—,L
+Satchel,0,1 sp,Common,—,Adventuring Gear,—,—
+Scroll Case,0,1 sp,Common,—,Adventuring Gear,—,—
+Writing Set (Extra Ink and Paper),0,1 sp,Common,—,Adventuring Gear,—,L
+Lock (Poor),0,2 sp,Common,—,Adventuring Gear,—,—
+Merchant's Scale,0,2 sp,Common,—,Adventuring Gear,—,L
+Saddlebags,0,2 sp,Common,—,Adventuring Gear,—,—
+Caltrops,0,3 sp,Common,—,Adventuring Gear,—,L
+Manacles (Poor),0,3 sp,Common,—,Adventuring Gear,—,—
+Thieves' Tools (Replacement Picks),0,3 sp,Common,—,Adventuring Gear,—,L
+Clothing (Winter),0,4 sp,Common,—,Adventuring Gear,—,L
+Rations,0,4 sp,Common,—,Adventuring Gear,—,L
+Tool (Short),0,4 sp,Common,—,Adventuring Gear,—,L
+Climbing Kit,0,5 sp,Common,—,Adventuring Gear,—,1
+Crowbar,0,5 sp,Common,—,Adventuring Gear,—,L
+Dueling Cape,0,5 sp,Common,—,Adventuring Gear,—,L
+Material Component Pouch,0,5 sp,Common,—,Adventuring Gear,—,L
+Parrying Scabbard,0,5 sp,Common,—,Adventuring Gear,—,L
+Rope,0,5 sp,Common,—,Adventuring Gear,—,L
+Chest,0,6 sp,Common,—,Adventuring Gear,—,2
+Adventurer's Pack,0,7 sp,Common,—,Adventuring Gear,—,1
+Lantern (Hooded),0,7 sp,Common,—,Adventuring Gear,—,L
+Fishing Tackle,0,8 sp,Common,—,Adventuring Gear,—,1
+Musical Instrument (Handheld),0,8 sp,Common,—,Adventuring Gear,—,1
+Tent (Pup),0,8 sp,Common,—,Adventuring Gear,—,L
+Brass Ear,0,1 gp,Common,—,Adventuring Gear,—,—
+Compass,0,1 gp,Common,—,Adventuring Gear,—,L
+Cookware,0,1 gp,Common,—,Adventuring Gear,—,2
+Formula Book (Blank),0,1 gp,Common,—,Adventuring Gear,—,L
+Lantern (Bull's-Eye),0,1 gp,Common,—,Adventuring Gear,—,1
+Mirror,0,1 gp,Common,—,Adventuring Gear,—,—
+Net,0,1 gp,Common,—,Adventuring Gear,—,1
+Religious Text,0,1 gp,Common,—,Adventuring Gear,—,L
+Spellbook (Blank),0,1 gp,Common,—,Adventuring Gear,—,L
+Tool (Long),0,1 gp,Common,—,Adventuring Gear,—,1
+Writing Set,0,1 gp,Common,—,Adventuring Gear,—,L
+Armored Skirt,0,2 gp,Common,—,Adventuring Gear,—,1
+Clothing (Fine),0,2 gp,Common,—,Adventuring Gear,—,L
+Disguise Kit,0,2 gp,Common,—,Adventuring Gear,—,L
+Jellyfish Lamp,0,2 gp,Common,—,Adventuring Gear,—,L
+Musical Instrument (Heavy),0,2 gp,Common,—,Adventuring Gear,—,16
+Religious Symbol (Silver),0,2 gp,Common,—,Adventuring Gear,—,L
+Repair Kit,0,2 gp,Common,—,Adventuring Gear,—,1
+Alchemist's Tools,0,3 gp,Common,—,Adventuring Gear,—,1
+Cart,0,3 gp,Common,—,Vehicles,—,L
+Hourglass,0,3 gp,Common,—,Adventuring Gear,—,L
+Thieves' Tools,0,3 gp,Common,—,Adventuring Gear,—,L
+Artisan's Tools,0,4 gp,Common,—,Adventuring Gear,—,2
+Chain,0,4 gp,Common,—,Adventuring Gear,—,1
+Tack,0,4 gp,Common,—,Adventuring Gear,—,1
+Alchemist's Lab,0,5 gp,Common,—,Adventuring Gear,—,6
+Healer's Tools,0,5 gp,Common,—,Adventuring Gear,—,1
+Snare Kit,0,5 gp,Common,—,Adventuring Gear,—,2
+Swim Fins,0,5 gp,Common,—,Adventuring Gear,—,L
+Tent (Four-Person),0,5 gp,Common,—,Adventuring Gear,—,1
+Cold Iron Chunk,0,10 gp,Common,Precious,Materials,—,L
+Light Chariot,0,10 gp,Common,—,Vehicles,—,L
+Silver Chunk,0,10 gp,Common,Precious,Materials,—,L
+Glider,0,15 gp,Uncommon,—,Vehicles,—,L
+Rowboat,0,15 gp,Common,—,Vehicles,—,L
+Spyglass,0,20 gp,Common,—,Adventuring Gear,—,L
+Magnifying Glass,0,40 gp,Common,—,Adventuring Gear,—,—
+Cold Iron Ingot,0,100 gp,Common,Precious,Materials,—,1
+Silver Ingot,0,100 gp,Common,Precious,Materials,—,1
+Adamantine Chunk,0,500 gp,Uncommon,Precious,Materials,—,L
+Darkwood Branch,0,500 gp,Uncommon,Precious,Materials,—,L
+Mithral Chunk,0,500 gp,Uncommon,Precious,Materials,—,L
+Sovereign Steel Chunk,0,700 gp,Rare,Precious,Materials,—,L
+Orichalcum Chunk,0,1000 gp,Rare,Precious,Materials,—,L
+Adamantine Ingot,0,5000 gp,Uncommon,Precious,Materials,—,1
+Darkwood Lumber,0,5000 gp,Uncommon,Precious,Materials,—,1
+Mithral Ingot,0,5000 gp,Uncommon,Precious,Materials,—,1
+Sovereign Steel Ingot,0,7000 gp,Rare,Precious,Materials,—,L
+Orichalcum Ingot,0,10000 gp,Rare,Precious,Materials,—,1
+Unarmored,0,—,Common,—,Armor,Base Armor,—
+Explorer's Clothing,0,1 sp,Common,Comfort,Armor,Base Armor,L
+Padded Armor,0,2 sp,Common,Comfort,Armor,Base Armor,L
+Hide Armor,0,2 gp,Common,—,Armor,Base Armor,2
+Leather Armor,0,2 gp,Common,—,Armor,Base Armor,1
+Studded Leather Armor,0,3 gp,Common,—,Armor,Base Armor,1
+Scale Mail,0,4 gp,Common,—,Armor,Base Armor,2
+Chain Shirt,0,5 gp,Common,Flexible Noisy,Armor,Base Armor,1
+Chain Mail,0,6 gp,Common,Flexible Noisy,Armor,Base Armor,2
+Breastplate,0,8 gp,Common,—,Armor,Base Armor,2
+Buckler,0,1 gp,Common,—,Shields,Base Shields,L
+Wooden Shield,0,1 gp,Common,—,Shields,Base Shields,1
+Steel Shield,0,2 gp,Common,—,Shields,Base Shields,1
+Tower Shield,0,10 gp,Common,—,Shields,Base Shields,4
+Alchemical Bomb,0,—,Common,—,Weapons,Base Weapons,L
+Fist,0,—,Common,Agile Finesse Nonlethal Unarmed,Weapons,Base Weapons,—
+Shield Bash,0,—,Common,—,Weapons,Base Weapons,—
+Club,0,—,Common,Thrown,Weapons,Base Weapons,1
+Exquisite Sword Cane Sheath,0,—,Common,Agile Finesse Parry Twin,Weapons,Base Weapons,L
+Sling,0,—,Common,Propulsive,Weapons,Base Weapons,L
+Staff,0,—,Common,Two-Hand,Weapons,Base Weapons,1
+Dart,0,1 cp,Common,Agile Thrown,Weapons,Base Weapons,L
+Shuriken,0,1 cp,Uncommon,Agile Monk Thrown,Weapons,Base Weapons,—
+Sling Bullets,0,1 cp,Common,—,Weapons,Base Weapons,L
+Blowgun Darts,0,5 cp,Common,—,Weapons,Base Weapons,L
+Arrows,0,1 sp,Common,—,Weapons,Base Weapons,L
+Blowgun,0,1 sp,Common,Agile Nonlethal,Weapons,Base Weapons,L
+Bolts,0,1 sp,Common,—,Weapons,Base Weapons,L
+Dogslicer,0,1 sp,Uncommon,Agile Backstabber Finesse Goblin,Weapons,Base Weapons,L
+Javelin,0,1 sp,Common,Thrown,Weapons,Base Weapons,L
+Juggling Club,0,1 sp,Uncommon,Agile Nonlethal Thrown,Weapons,Base Weapons,L
+Monkey's Fist,0,1 sp,Common,Finesse Monk Nonlethal,Weapons,Base Weapons,—
+Sap,0,1 sp,Common,Agile Nonlethal,Weapons,Base Weapons,L
+Scourge,0,1 sp,Common,Agile Disarm Finesse Nonlethal Sweep,Weapons,Base Weapons,1
+Spear,0,1 sp,Common,Thrown,Weapons,Base Weapons,1
+Whip,0,1 sp,Common,Disarm Finesse Nonlethal Reach Trip,Weapons,Base Weapons,1
+Bo Staff,0,2 sp,Common,Monk Parry Reach Trip,Weapons,Base Weapons,2
+Dagger,0,2 sp,Common,Agile Finesse Thrown Versatile,Weapons,Base Weapons,L
+Gauntlet,0,2 sp,Common,Agile Free-Hand,Weapons,Base Weapons,L
+Nunchaku,0,2 sp,Uncommon,Backswing Disarm Finesse Monk,Weapons,Base Weapons,L
+Poi,0,2 sp,Uncommon,Agile Backswing Finesse Nonlethal,Weapons,Base Weapons,L
+Sickle,0,2 sp,Common,Agile Finesse Trip,Weapons,Base Weapons,L
+Tekko-kagi,0,2 sp,Uncommon,Agile Disarm Finesse Parry Trip,Weapons,Base Weapons,L
+Katar,0,3 sp,Uncommon,Agile Deadly Monk,Weapons,Base Weapons,L
+Light Hammer,0,3 sp,Common,Agile Thrown,Weapons,Base Weapons,L
+Spiked Gauntlet,0,3 sp,Common,Agile Free-Hand,Weapons,Base Weapons,L
+Throwing Knife,0,3 sp,Uncommon,Agile Finesse Thrown Twin,Weapons,Base Weapons,L
+War Razor,0,3 sp,Common,Agile Backstabber Deadly Finesse,Weapons,Base Weapons,L
+Hatchet,0,4 sp,Common,Agile Sweep Thrown,Weapons,Base Weapons,L
+Light Mace,0,4 sp,Common,Agile Finesse Shove,Weapons,Base Weapons,L
+Light Pick,0,4 sp,Common,Agile Fatal,Weapons,Base Weapons,L
+Bola,0,5 sp,Common,Nonlethal Ranged Trip Thrown,Weapons,Base Weapons,L
+Longspear,0,5 sp,Common,Reach,Weapons,Base Weapons,2
+Main-gauche,0,5 sp,Common,Agile Disarm Finesse Parry Versatile,Weapons,Base Weapons,L
+Scorpion Whip,0,5 sp,Uncommon,Disarm Finesse Reach Trip,Weapons,Base Weapons,L
+Shears,0,5 sp,Uncommon,Deadly Finesse Versatile,Weapons,Base Weapons,L
+Shield Boss,0,5 sp,Common,Attached,Weapons,Base Weapons,—
+Shield Spikes,0,5 sp,Common,Attached,Weapons,Base Weapons,—
+Kukri,0,6 sp,Uncommon,Agile Finesse Trip,Weapons,Base Weapons,L
+Mambele,0,6 sp,Uncommon,Deadly Disarm Thrown,Weapons,Base Weapons,1
+Sai,0,6 sp,Uncommon,Agile Disarm Finesse Monk Versatile,Weapons,Base Weapons,L
+Machete,0,7 sp,Common,Deadly Sweep,Weapons,Base Weapons,L
+Orc Knuckle Dagger,0,7 sp,Uncommon,Agile Disarm Orc,Weapons,Base Weapons,L
+Pick,0,7 sp,Common,Fatal,Weapons,Base Weapons,1
+Horsechopper,0,9 sp,Uncommon,Goblin Reach Trip Versatile,Weapons,Base Weapons,2
+Nine-Ring Sword,0,9 sp,Uncommon,Disarm,Weapons,Base Weapons,1
+Shortsword,0,9 sp,Common,Agile Finesse Versatile,Weapons,Base Weapons,L
+Battle Axe,0,1 gp,Common,Sweep,Weapons,Base Weapons,1
+Filcher's Fork,0,1 gp,Uncommon,Agile Backstabber Deadly Finesse Halfling Thrown,Weapons,Base Weapons,L
+Flail,0,1 gp,Common,Disarm Sweep Trip,Weapons,Base Weapons,1
+Gaff,0,1 gp,Common,Trip Versatile,Weapons,Base Weapons,1
+Greatclub,0,1 gp,Common,Backswing Shove,Weapons,Base Weapons,2
+Kama,0,1 gp,Uncommon,Agile Monk Trip,Weapons,Base Weapons,L
+Lance,0,1 gp,Common,Deadly Jousting Reach,Weapons,Base Weapons,2
+Longsword,0,1 gp,Common,Versatile,Weapons,Base Weapons,1
+Mace,0,1 gp,Common,Shove,Weapons,Base Weapons,1
+Morningstar,0,1 gp,Common,Versatile,Weapons,Base Weapons,1
+Nightstick,0,1 gp,Uncommon,Agile Finesse Nonlethal Parry,Weapons,Base Weapons,L
+Ogre Hook,0,1 gp,Uncommon,Deadly Trip,Weapons,Base Weapons,2
+Scimitar,0,1 gp,Common,Forceful Sweep,Weapons,Base Weapons,1
+Trident,0,1 gp,Common,Thrown,Weapons,Base Weapons,1
+Wakizashi,0,1 gp,Uncommon,Agile Deadly Finesse Versatile,Weapons,Base Weapons,L
+Warhammer,0,1 gp,Common,Shove,Weapons,Base Weapons,1
+Fighting Fan,0,1.1 gp,Uncommon,Agile Backstabber Deadly Finesse Monk,Weapons,Base Weapons,L
+Fauchard,0,1.4 gp,Common,Deadly Reach Sweep Trip,Weapons,Base Weapons,2
+Bladed Diabolo,0,2 gp,Uncommon,Backswing Disarm Finesse Thrown Trip,Weapons,Base Weapons,L
+Clan Dagger,0,2 gp,Uncommon,Agile Dwarf Parry Versatile,Weapons,Base Weapons,L
+Claw Blade,0,2 gp,Uncommon,Agile Catfolk Deadly Disarm Finesse Versatile,Weapons,Base Weapons,L
+Glaive,0,2 gp,Common,Deadly Forceful Reach,Weapons,Base Weapons,2
+Gnome Hooked Hammer,0,2 gp,Uncommon,Gnome Trip Two-Hand Versatile,Weapons,Base Weapons,1
+Greataxe,0,2 gp,Common,Sweep,Weapons,Base Weapons,2
+Greatpick,0,2 gp,Common,Fatal,Weapons,Base Weapons,2
+Greatsword,0,2 gp,Common,Versatile,Weapons,Base Weapons,2
+Guisarme,0,2 gp,Common,Reach Trip,Weapons,Base Weapons,2
+Halberd,0,2 gp,Common,Reach Versatile,Weapons,Base Weapons,2
+Katana,0,2 gp,Uncommon,Deadly Two-Hand Versatile,Weapons,Base Weapons,1
+Khakkara,0,2 gp,Uncommon,Shove Two-Hand Versatile,Weapons,Base Weapons,1
+Khopesh,0,2 gp,Uncommon,Trip,Weapons,Base Weapons,1
+Orc Necksplitter,0,2 gp,Uncommon,Forceful Orc Sweep,Weapons,Base Weapons,1
+Ranseur,0,2 gp,Common,Disarm Reach,Weapons,Base Weapons,2
+Rapier,0,2 gp,Common,Deadly Disarm Finesse,Weapons,Base Weapons,1
+Scythe,0,2 gp,Common,Deadly Trip,Weapons,Base Weapons,2
+Starknife,0,2 gp,Common,Agile Deadly Finesse Thrown Versatile,Weapons,Base Weapons,L
+Temple Sword,0,2 gp,Uncommon,Monk Trip,Weapons,Base Weapons,1
+Urumi,0,2 gp,Uncommon,Deadly Sweep,Weapons,Base Weapons,2
+War Flail,0,2 gp,Common,Disarm Sweep Trip,Weapons,Base Weapons,2
+Bladed Hoop,0,2.5 gp,Uncommon,Finesse Sweep Two-Hand,Weapons,Base Weapons,1
+Bladed Scarf,0,3 gp,Uncommon,Disarm Reach Sweep Trip,Weapons,Base Weapons,1
+Crossbow,0,3 gp,Common,—,Weapons,Base Weapons,1
+Dwarven War Axe,0,3 gp,Uncommon,Dwarf Sweep Two-Hand,Weapons,Base Weapons,2
+Falchion,0,3 gp,Common,Forceful Sweep,Weapons,Base Weapons,2
+Gnome Flickmace,0,3 gp,Uncommon,Gnome Reach,Weapons,Base Weapons,2
+Hand Crossbow,0,3 gp,Common,—,Weapons,Base Weapons,L
+Maul,0,3 gp,Common,Shove,Weapons,Base Weapons,2
+Meteor Hammer,0,3 gp,Common,Backswing Disarm Reach Trip,Weapons,Base Weapons,2
+Naginata,0,3 gp,Uncommon,Deadly Reach Versatile,Weapons,Base Weapons,2
+Shortbow,0,3 gp,Common,Deadly,Weapons,Base Weapons,1
+Spiked Chain,0,3 gp,Uncommon,Disarm Finesse Trip,Weapons,Base Weapons,1
+Bastard Sword,0,4 gp,Common,Two-Hand,Weapons,Base Weapons,1
+Elven Curve Blade,0,4 gp,Uncommon,Elf Finesse Forceful,Weapons,Base Weapons,2
+Heavy Crossbow,0,4 gp,Common,—,Weapons,Base Weapons,2
+Rhoka Sword,0,4 gp,Uncommon,Deadly Two-Hand,Weapons,Base Weapons,2
+Tengu Gale Blade,0,4 gp,Uncommon,Agile Disarm Finesse Tengu,Weapons,Base Weapons,L
+Aklys,0,5 gp,Uncommon,Ranged Trip Tethered Thrown Trip,Weapons,Base Weapons,1
+Fire Poi,0,5 gp,Uncommon,Agile Backswing Finesse Twin,Weapons,Base Weapons,L
+Halfling Sling Staff,0,5 gp,Uncommon,Halfling Propulsive,Weapons,Base Weapons,1
+Sawtooth Saber,0,5 gp,Uncommon,Agile Finesse Twin,Weapons,Base Weapons,L
+Sword Cane,0,5 gp,Common,Agile Concealable Finesse,Weapons,Base Weapons,1
+Longbow,0,6 gp,Common,Deadly Volley,Weapons,Base Weapons,2
+Daikyu,0,8 gp,Uncommon,—,Weapons,Base Weapons,2
+Composite Shortbow,0,14 gp,Common,Deadly Propulsive,Weapons,Base Weapons,1
+Composite Longbow,0,20 gp,Common,Deadly Propulsive Volley,Weapons,Base Weapons,2
+Alchemical Crossbow,0,25 gp,Uncommon,Alchemical,Weapons,Base Weapons,1
+Alcohol,0,1 cp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Bloodeye Coffee,0,5 sp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Flayleaf,0,1 gp,Common,Alchemical Consumable Drug Ingested Inhaled Poison,Alchemical Items,Drugs,L
+Tindertwig,1,2 sp,Common,Alchemical Consumable Fire,Alchemical Items,Alchemical Tools,—
+Addiction Suppressant (Lesser),1,2 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Lock (Simple),1,2 gp,Common,—,Adventuring Gear,—,—
+Refined Pesh,1,2 gp,Common,Alchemical Consumable Drug Ingested Inhaled Poison,Alchemical Items,Drugs,L
+Snake Oil,1,2 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Acid Flask (Lesser),1,3 gp,Common,Acid Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Alarm Snare,1,3 gp,Common,Auditory Consumable Mechanical Snare Trap,Snares,—,—
+Alchemist's Fire (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Antidote (Lesser),1,3 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antiplague (Lesser),1,3 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Arsenic,1,3 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Blight Bomb (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Poison Splash,Alchemical Items,Alchemical Bombs,L
+Blindpepper Tube,1,3 gp,Uncommon,Alchemical Consumable Visual,Alchemical Items,Alchemical Tools,L
+Bottled Lightning (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Electricity Splash,Alchemical Items,Alchemical Bombs,L
+Caltrop Snare,1,3 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Cheetah's Elixir (Lesser),1,3 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Dread Ampoule (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Emotion Fear Mental Poison Splash,Alchemical Items,Alchemical Bombs,L
+Dust Pods,1,3 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Elixir of Life (Minor),1,3 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Feather Token (Ladder),1,3 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Forensic Dye,1,3 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Frost Vial (Lesser),1,3 gp,Common,Alchemical Bomb Cold Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Gecko Potion,1,3 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Ghost Charge (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Positive Splash,Alchemical Items,Alchemical Bombs,L
+Ghost Ink,1,3 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Grolna,1,3 gp,Uncommon,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Hampering Snare,1,3 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Holy Water,1,3 gp,Common,Consumable Divine Good Splash,Consumables,Other Consumables,L
+Lastwall Soup,1,3 gp,Uncommon,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Leaper's Elixir (Lesser),1,3 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Manacles (Simple),1,3 gp,Common,—,Adventuring Gear,—,—
+Marking Snare,1,3 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Nectar of Purification,1,3 gp,Common,Consumable Magical Necromancy Oil,Consumables,Oils,L
+Owlbear Claw,1,3 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Peshpine Grenade (Lesser),1,3 gp,Uncommon,Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Potion of Expeditious Retreat,1,3 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Predictable Silver Piece,1,3 gp,Common,Divination Magical,Held Items,—,—
+Ration Tonic,1,3 gp,Common,Conjuration Consumable Magical Potion,Consumables,Potions,L
+Runestone,1,3 gp,Common,Consumable Magical,Consumables,Other Consumables,L
+Shining Ammunition,1,3 gp,Common,Consumable Evocation Light Magical,Consumables,Ammunition,—
+Signaling Snare,1,3 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Smokestick (Lesser),1,3 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Spear Frog Poison,1,3 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Spike Snare,1,3 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Sunrod,1,3 gp,Common,Alchemical Consumable Light,Alchemical Items,Alchemical Tools,L
+Tanglefoot Bag (Lesser),1,3 gp,Common,Alchemical Bomb Consumable,Alchemical Items,Alchemical Bombs,L
+Thunderstone (Lesser),1,3 gp,Common,Alchemical Bomb Consumable Sonic Splash,Alchemical Items,Alchemical Bombs,L
+Unholy Water,1,3 gp,Common,Consumable Divine Evil Splash,Consumables,Other Consumables,L
+1st-Level Scroll,1,4 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Bestial Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Blood Sap,1,4 gp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Cognitive Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Drakeheart Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Eagle Eye Elixir (Lesser),1,4 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Energy Mutagen (Lesser),1,4 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Giant Centipede Venom,1,4 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Healing Potion (Minor),1,4 gp,Common,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Juggernaut Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Oil of Unlife (Minor),1,4 gp,Common,Consumable Magical Necromancy Negative Oil,Consumables,Oils,L
+Potency Crystal,1,4 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Potion of Retaliation (Minor),1,4 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Potion of Shared Memories,1,4 gp,Common,Consumable Divination Magical Mental Potion,Consumables,Potions,L
+Quicksilver Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Serene Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Shielding Salve,1,4 gp,Common,Abjuration Consumable Magical Oil,Consumables,Oils,L
+Silvertongue Mutagen (Lesser),1,4 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Vaccine (Minor),1,4 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Wolf Fang,1,4 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Dwarven Daisy (Lesser),1,6 gp,Uncommon,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Aeon Stone (Dull Gray),1,9 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Polytool,1,10 gp,Uncommon,Agile Modular,Weapons,Base Weapons,1
+Scrollstaff,1,12 gp,Uncommon,Magical Transmutation,Weapons,Specific Magic Weapons,1
+Slippery Ribbon,1,12 gp,Uncommon,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Walking Cauldron,1,12 gp,Common,Invested Magical Transmutation,Other,Magic Pots,4
+Splint Mail,1,13 gp,Common,—,Armor,Base Armor,3
+Everburning Torch,1,15 gp,Common,Evocation Light Magical,Held Items,—,L
+Ring of Discretion,1,15 gp,Uncommon,Illusion Invested Magical Visual,Worn Items,Other Worn Items,—
+Half Plate,1,18 gp,Common,—,Armor,Base Armor,3
+Aldori Dueling Sword,1,20 gp,Uncommon,Finesse Versatile,Weapons,Base Weapons,1
+Wagon,1,25 gp,Common,—,Vehicles,—,L
+Sleigh,1,50 gp,Common,—,Vehicles,—,L
+Belladonna,2,5 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Black Smear Poison,2,5 gp,Uncommon,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Flare Snare,2,5 gp,Common,Consumable Mechanical Snare Trap Visual,Snares,—,—
+Focus Cathartic (Lesser),2,5 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Lovers' Ink,2,5 gp,Rare,Alchemical Consumable,Adventuring Gear,—,L
+Sinew-Shock Serum (Lesser),2,5 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Black Adder Venom,2,6 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Bloodhound Mask (Lesser),2,6 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Darkvision Elixir (Lesser),2,6 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Feather Token (Holly Bush),2,6 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Hunter's Bane,2,6 gp,Common,Consumable Divination Magical Talisman,Consumables,Talismans,—
+Infiltrator's Elixir,2,6 gp,Common,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Jade Cat,2,6 gp,Common,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Looter's Lethargy,2,6 gp,Uncommon,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Monkey Pin,2,6 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Oil of Weightlessness,2,6 gp,Common,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Orgin Unguent,2,6 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Silversheen,2,6 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Thunder Snare,2,6 gp,Common,Auditory Consumable Mechanical Snare Trap,Snares,—,—
+Toad Tears,2,6 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Antler Arrow,2,7 gp,Common,Conjuration Consumable Magical,Consumables,Ammunition,—
+Bravo's Brew (Lesser),2,7 gp,Common,Alchemical Consumable Elixir Mental,Alchemical Items,Alchemical Elixirs,L
+Bronze Bull Pendant,2,7 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Cat's Eye Elixir,2,7 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Comprehension Elixir (Lesser),2,7 gp,Common,Alchemical Consumable Elixir Mental,Alchemical Items,Alchemical Elixirs,L
+Crying Angel Pendant,2,7 gp,Common,Consumable Divine Necromancy Talisman,Consumables,Talismans,—
+Effervescent Ampoule,2,7 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Lethargy Poison,2,7 gp,Uncommon,Alchemical Consumable Incapacitation Injury Poison Sleep,Alchemical Items,Alchemical Poisons,L
+Mesmerizing Opal,2,7 gp,Common,Consumable Enchantment Magical Talisman,Consumables,Talismans,—
+Oil of Potency,2,7 gp,Common,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Onyx Panther,2,7 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Savior Spike,2,7 gp,Common,Abjuration Consumable Force Magical Talisman,Consumables,Talismans,—
+Yellow Musk Vial,2,7 gp,Common,Alchemical Consumable Inhaled Mental Poison,Alchemical Items,Alchemical Poisons,L
+Cold Iron Object (Low-Grade),2,20 gp,Common,Precious,Materials,—,—
+Silver Object (Low-Grade),2,20 gp,Common,Precious,Materials,—,—
+Bottomless Stein,2,25 gp,Uncommon,Conjuration Magical,Held Items,—,L
+Necklace of Knives,2,25 gp,Uncommon,Conjuration Invested Magical,Worn Items,Other Worn Items,—
+Periscope,2,25 gp,Common,—,Adventuring Gear,—,L
+Wayfinder,2,28 gp,Uncommon,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Archaic Wayfinder,2,30 gp,Uncommon,Evocation Magical,Worn Items,Other Worn Items,—
+Brooch of Shielding,2,30 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Cold Iron Buckler (Low-Grade),2,30 gp,Common,—,Shields,Precious Material Shields,L
+Full Plate,2,30 gp,Common,Bulwark,Armor,Base Armor,4
+Hand of the Mage,2,30 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,L
+Hat of Disguise,2,30 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,—
+Pathfinder's Coin,2,30 gp,Uncommon,Illusion Magical,Held Items,—,—
+Silver Buckler (Low-Grade),2,30 gp,Common,—,Shields,Precious Material Shields,L
+Cold Iron Shield (Low-Grade),2,34 gp,Common,—,Shields,Precious Material Shields,1
+Silver Shield (Low-Grade),2,34 gp,Common,—,Shields,Precious Material Shields,1
+Wondrous Figurine (Onyx Dog),2,34 gp,Common,Conjuration Magical,Held Items,—,L
+Glamorous Buckler,2,35 gp,Common,Illusion Magical,Shields,Specific Shields,L
+Handwraps of Mighty Blows (+1),2,35 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Hellknight Plate,2,35 gp,Uncommon,Bulwark,Armor,Base Armor,4
+Magic Weapon (+1),2,35 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Weapon Potency (+1),2,35 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Cold Iron Weapon (Low-Grade),2,40 gp,Common,—,Weapons,Precious Material Weapons,—
+Silver Weapon (Low-Grade),2,40 gp,Common,—,Weapons,Precious Material Weapons,—
+Tent (Pavilion),2,40 gp,Common,—,Adventuring Gear,—,12
+Carriage,2,100 gp,Common,—,Vehicles,—,L
+Disguise Kit (Elite Cosmetics),3,5 sp,Common,—,Adventuring Gear,—,L
+Thieves' Tools (Infiltrator Picks),3,3 gp,Common,—,Adventuring Gear,—,L
+Pathfinder Chronicle,3,6 gp,Uncommon,—,Adventuring Gear,—,L
+Scholarly Journal,3,6 gp,Uncommon,—,Adventuring Gear,—,L
+Blue Dragonfly Poison,3,7 gp,Uncommon,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Feather Step Stone,3,8 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Feather Token (Bird),3,8 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Grasping Tree,3,9 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Oil of Mending,3,9 gp,Common,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Olefactory Obfuscator,3,9 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Snapleaf,3,9 gp,Common,Consumable Illusion Magical Talisman,Consumables,Talismans,—
+Torrent Snare,3,9 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Acid Flask (Moderate),3,10 gp,Common,Acid Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Alchemist's Fire (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Beacon Shot,3,10 gp,Common,Consumable Evocation Magical,Consumables,Ammunition,—
+Blight Bomb (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Poison Splash,Alchemical Items,Alchemical Bombs,L
+Bottled Lightning (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Electricity Splash,Alchemical Items,Alchemical Bombs,L
+Cytillesh Oil,3,10 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Dread Ampoule (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Emotion Fear Mental Poison Splash,Alchemical Items,Alchemical Bombs,L
+Feather Token (Chest),3,10 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Frost Vial (Moderate),3,10 gp,Common,Alchemical Bomb Cold Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Ghost Charge (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Positive Splash,Alchemical Items,Alchemical Bombs,L
+Graveroot,3,10 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Peshpine Grenade (Moderate),3,10 gp,Uncommon,Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Shiver,3,10 gp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Survey Map,3,10 gp,Uncommon,—,Adventuring Gear,—,L
+Tanglefoot Bag (Moderate),3,10 gp,Common,Alchemical Bomb Consumable,Alchemical Items,Alchemical Bombs,L
+Thunderstone (Moderate),3,10 gp,Common,Alchemical Bomb Consumable Sonic Splash,Alchemical Items,Alchemical Bombs,L
+Vine Arrow,3,10 gp,Common,Conjuration Consumable Magical,Consumables,Ammunition,—
+Potion of Water Breathing,3,11 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Sleep Arrow,3,11 gp,Common,Consumable Enchantment Magical Mental Sleep,Consumables,Ammunition,—
+2nd-Level Scroll,3,12 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Aurifying Salts,3,12 gp,Uncommon,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Bestial Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Cognitive Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Drakeheart Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Energy Mutagen (Moderate),3,12 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Healing Potion (Lesser),3,12 gp,Common,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Juggernaut Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Oil of Unlife (Lesser),3,12 gp,Common,Consumable Magical Necromancy Negative Oil,Consumables,Oils,L
+Potion of Retaliation (Lesser),3,12 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Quicksilver Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Serene Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Silvertongue Mutagen (Moderate),3,12 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type I),3,12 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Swamp Lily Quilt,3,12 gp,Rare,Alchemical Consumable,Alchemical Items,Alchemical Tools,2
+Vaccine (Lesser),3,12 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Violet Venom,3,12 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Lock (Average),3,15 gp,Common,—,Adventuring Gear,—,—
+Dwarven Daisy (Moderate),3,18 gp,Uncommon,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Compass (Lensatic),3,20 gp,Common,—,Adventuring Gear,—,L
+Crowbar (Levered),3,20 gp,Common,—,Adventuring Gear,—,L
+Fishing Tackle (Professional),3,20 gp,Common,—,Adventuring Gear,—,1
+Manacles (Average),3,20 gp,Common,—,Adventuring Gear,—,—
+Recording Rod (Basic),3,20 gp,Uncommon,Consumable Divination Magical Scrying,Consumables,Other Consumables,1
+Concealed Sheath,3,25 gp,Common,—,Adventuring Gear,—,—
+Detective's Kit,3,25 gp,Common,—,Adventuring Gear,—,1
+Repair Kit (Superb),3,25 gp,Common,—,Adventuring Gear,—,1
+Fingerprinting Kit,3,30 gp,Uncommon,—,Adventuring Gear,—,L
+Handcuffs (Average),3,30 gp,Uncommon,—,Adventuring Gear,—,L
+Scholarly Journal (Compendium),3,30 gp,Uncommon,—,Adventuring Gear,—,L
+Skinsaw Mask,3,30 gp,Uncommon,Divination Divine Evil Invested Magical,Worn Items,Other Worn Items,L
+Climbing Kit (Extreme),3,40 gp,Common,—,Adventuring Gear,—,1
+Disguise Kit (Elite),3,40 gp,Common,—,Adventuring Gear,—,L
+Vestige Lenses,3,40 gp,Rare,Alchemical,Alchemical Items,Alchemical Tools,L
+Manacles of Persuasion,3,45 gp,Uncommon,Magical Necromancy Nonlethal,Worn Items,Other Worn Items,1
+Rope of Climbing (Lesser),3,45 gp,Common,Magical Transmutation,Held Items,—,L
+Slick,3,45 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Abadar's Flawless Scale,3,50 gp,Uncommon,Divination Magical,Held Items,—,1
+Artisan's Tools (Sterling),3,50 gp,Common,—,Adventuring Gear,—,2
+Doubling Rings,3,50 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Fighter's Fork,3,50 gp,Common,Magical Transmutation,Weapons,Specific Magic Weapons,1
+Hat of the Magi,3,50 gp,Common,Arcane Conjuration Invested,Worn Items,Other Worn Items,—
+Healer's Tools (Expanded),3,50 gp,Common,—,Adventuring Gear,—,1
+Musical Instrument (Virtuoso Handheld),3,50 gp,Common,—,Adventuring Gear,—,1
+Persona Mask,3,50 gp,Common,Fortune Illusion Invested Magical,Worn Items,Other Worn Items,—
+Survey Map (Atlas),3,50 gp,Uncommon,—,Adventuring Gear,—,L
+Thieves' Tools (Infiltrator),3,50 gp,Common,—,Adventuring Gear,—,L
+Bracers of Missile Deflection,3,52 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Kin-Warding,3,52 gp,Uncommon,Abjuration Dwarf Magical,Runes,Weapon Property Runes,—
+Alchemist's Lab (Expanded),3,55 gp,Common,—,Adventuring Gear,—,6
+Bullhook,3,55 gp,Uncommon,Enchantment Magical,Held Items,—,1
+Clothing (High-Fashion Fine),3,55 gp,Common,—,Adventuring Gear,—,L
+Golden Legion Epaulet,3,55 gp,Uncommon,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Returning,3,55 gp,Common,Evocation Magical,Runes,Weapon Property Runes,—
+Shadow,3,55 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Snare Kit (Specialist),3,55 gp,Common,—,Adventuring Gear,—,2
+Thurible of Revelation (Lesser),3,55 gp,Common,Divination Divine,Held Items,—,1
+Channel Protection Amulet,3,56 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Bracelets of Dashing,3,58 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Coyote Cloak,3,60 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Crafter's Eyepiece,3,60 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Dancing Scarf,3,60 gp,Common,Illusion Invested Magical Visual,Worn Items,Other Worn Items,—
+Maestro's Instrument (Lesser),3,60 gp,Common,Enchantment Magical,Held Items,—,1
+Magic Wand (1st-Level Spell),3,60 gp,Common,Magical Wand,Wands,Magic Wands,L
+Palm Crossbow,3,60 gp,Rare,—,Adventuring Gear,—,L
+Pendant of the Occult,3,60 gp,Common,Divination Invested Occult,Worn Items,Other Worn Items,—
+Retribution Axe,3,60 gp,Common,Enchantment Magical,Weapons,Specific Magic Weapons,2
+Staff of Fire,3,60 gp,Common,Evocation Magical Staff,Staves,—,1
+Tracker's Goggles,3,60 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Ventriloquist's Ring,3,60 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,—
+Musical Instrument (Virtuoso Heavy),3,100 gp,Common,—,Adventuring Gear,—,16
+Heavy Chariot,3,150 gp,Common,—,Vehicles,—,L
+Darkvision Elixir (Moderate),4,11 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Dragon Turtle Scale,4,13 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Dreamtime Tea,4,13 gp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Fortifying Pebble,4,13 gp,Uncommon,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Stone Fist Elixir,4,13 gp,Common,Alchemical Consumable Elixir Morph,Alchemical Items,Alchemical Elixirs,L
+Bomber's Eye Elixir (Lesser),4,14 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Timeless Salts,4,14 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Barkskin Potion,4,15 gp,Common,Abjuration Consumable Potion Primal,Consumables,Potions,L
+Biting Snare,4,15 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Climbing Bolt,4,15 gp,Common,Conjuration Consumable Magical,Consumables,Ammunition,—
+Deteriorating Dust,4,15 gp,Uncommon,Consumable Evocation Magical,Consumables,Other Consumables,—
+Fang Snare,4,15 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Feather Token (Fan),4,15 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Focus Cathartic (Moderate),4,15 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Hobbling Snare,4,15 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Leadenleg,4,15 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Salamander Elixir (Lesser),4,15 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Shrinking Potion,4,15 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Sinew-Shock Serum (Moderate),4,15 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Stalker Bane Snare,4,15 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Trip Snare,4,15 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Warning Snare,4,15 gp,Common,Auditory Consumable Mechanical Snare Trap,Snares,—,—
+Winter Wolf Elixir (Lesser),4,15 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Crystal Shards (Moderate),4,16 gp,Common,Alchemical Bomb Consumable Earth Splash,Alchemical Items,Alchemical Bombs,L
+Viper Arrow,4,17 gp,Common,Conjuration Consumable Magical,Consumables,Ammunition,—
+Mistform Elixir (Lesser),4,18 gp,Common,Alchemical Consumable Elixir Illusion Visual,Alchemical Items,Alchemical Elixirs,L
+Applereed Mutagen (Lesser),4,20 gp,Rare,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Bloodseeker Beak,4,20 gp,Common,Consumable Magical Necromancy Talisman,Consumables,Talismans,—
+Fear Gem,4,20 gp,Common,Consumable Enchantment Fear Magical Mental Talisman,Consumables,Talismans,—
+Invisibility Potion,4,20 gp,Uncommon,Consumable Illusion Magical Potion,Consumables,Potions,L
+Zerk,4,20 gp,Common,Alchemical Consumable Drug Injury Poison,Alchemical Items,Drugs,L
+Striking,4,65 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Bag of Holding (Type I),4,75 gp,Common,Conjuration Extradimensional Magical,Held Items,—,1
+Ghost Touch,4,75 gp,Common,Magical Transmutation,Runes,Weapon Property Runes,—
+Mortar of Hidden Meaning,4,75 gp,Common,Divination Magical,Held Items,—,L
+Healer's Gloves,4,80 gp,Common,Invested Magical Necromancy,Worn Items,Other Worn Items,L
+Hunter's Arrowhead,4,80 gp,Rare,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Lifting Belt,4,80 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Spyglass (Fine),4,80 gp,Common,—,Adventuring Gear,—,L
+Wayfinder of Rescue,4,80 gp,Uncommon,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Demon Mask,4,85 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Animal Staff,4,90 gp,Common,Divination Magical Staff,Staves,—,1
+Blessed Tattoo,4,90 gp,Uncommon,Abjuration Invested Magical Tattoo,Tattoos,—,—
+Cloak of Repute,4,90 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,1
+Exquisite Sword Cane,4,90 gp,Common,Agile Concealable Finesse Parry Twin,Weapons,Base Weapons,1
+Mentalist's Staff,4,90 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Healing,4,90 gp,Common,Magical Necromancy Staff,Staves,—,1
+Alchemist Goggles,4,100 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Arcane Scroll Case of Simplicity,4,100 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Divine Scroll Case of Simplicity,4,100 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Handwraps of Mighty Blows (+1 Striking),4,100 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Magic Weapon (+1 Striking),4,100 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Marvelous Calliope,4,100 gp,Uncommon,Conjuration Magical Structure,Structures,—,L
+Occult Scroll Case of Simplicity,4,100 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Primal Scroll Case of Simplicity,4,100 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Shining Wayfinder,4,100 gp,Uncommon,Abjuration Divination Evocation Invested Magical,Worn Items,Other Worn Items,—
+Sleeves of Storage,4,100 gp,Common,Conjuration Extradimensional Invested Magical,Worn Items,Other Worn Items,L
+Sturdy Shield (Minor),4,100 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Wand of Widening (1st-Level Spell),4,100 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Singing Sword,5,—,Rare,Enchantment Intelligent Occult,Intelligent Items,—,1
+Diluted Hype,5,20 gp,Uncommon,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Potion of Leaping,5,21 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Universal Solvent (Moderate),5,21 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Sea Touch Elixir (Lesser),5,22 gp,Common,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Sneaky Key,5,22 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Stone Body Mutagen (Lesser),5,22 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Shark Tooth Charm,5,23 gp,Common,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Cheetah's Elixir (Moderate),5,25 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Dagger of Eternal Sleep,5,25 gp,Uncommon,Consumable Magical Necromancy,Consumables,Other Consumables,L
+Elven Absinthe,5,25 gp,Common,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Exploding Shield,5,25 gp,Common,Evocation Magical,Shields,Specific Shields,1
+False Death,5,25 gp,Uncommon,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Freezing Ammunition,5,25 gp,Common,Cold Consumable Evocation Magical,Consumables,Ammunition,—
+Hunting Spider Venom,5,25 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Oil of Revelation,5,25 gp,Common,Consumable Evocation Magical Oil,Consumables,Oils,L
+Salve of Slipperiness,5,25 gp,Common,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Sixfingers Elixir (Lesser),5,25 gp,Uncommon,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Beckoning Cat Amulet,5,26 gp,Uncommon,Consumable Divination Fortune Magical Talisman,Consumables,Talismans,—
+Eagle Eye Elixir (Moderate),5,27 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+3rd-Level Scroll,5,30 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Cytillesh,5,30 gp,Uncommon,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Elixir of Life (Lesser),5,30 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Emerald Grasshopper,5,30 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Oily Button,5,30 gp,Uncommon,Conjuration Consumable Magical Talisman,Consumables,Talismans,—
+Potion of Disguise (Lesser),5,30 gp,Uncommon,Consumable Magical Polymorph Potion Transmutation,Consumables,Potions,L
+Spellstrike Ammunition (Type II),5,30 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Tiger Menuki,5,30 gp,Common,Consumable Magical Talisman Transmutation,Consumables,Talismans,—
+Blindpepper Bomb,5,40 gp,Uncommon,Alchemical Bomb Consumable Visual,Alchemical Items,Alchemical Bombs,L
+Necklace of Fireballs I,5,44 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Recording Rod (Reusable),5,60 gp,Uncommon,Consumable Divination Magical Scrying,Held Items,—,1
+Floorbell,5,120 gp,Uncommon,Abjuration Magical,Held Items,—,1
+Diplomat's Badge,5,125 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Rope of Climbing (Moderate),5,125 gp,Common,Magical Transmutation,Held Items,—,L
+Skeleton Key,5,125 gp,Common,Magical Transmutation,Held Items,—,—
+Pocket Stage,5,138 gp,Common,Conjuration Magical Structure,Structures,—,L
+Cold Iron Armor (Low-Grade),5,140 gp,Common,—,Armor,Precious Material Armor,—
+Glamered,5,140 gp,Common,Illusion Magical,Runes,Armor Property Runes,—
+Silver Armor (Low-Grade),5,140 gp,Common,—,Armor,Precious Material Armor,—
+Wondrous Figurine (Candy Constrictor),5,140 gp,Common,Conjuration Magical,Held Items,—,L
+Boots of Elvenkind,5,145 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Cinderclaw Gauntlet,5,150 gp,Uncommon,Evocation Magical,Weapons,Specific Magic Weapons,L
+Corpseward Pendant,5,150 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Dagger of Venom,5,150 gp,Common,Magical Necromancy Poison,Weapons,Specific Magic Weapons,L
+Disrupting,5,150 gp,Common,Magical Necromancy,Runes,Weapon Property Runes,—
+Goggles of Night,5,150 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Infiltrator's Accessory,5,150 gp,Common,Illusion Magical,Weapons,Specific Magic Weapons,1
+Pacifying,5,150 gp,Uncommon,Enchantment Magical,Runes,Weapon Property Runes,—
+Vanishing Wayfinder,5,150 gp,Uncommon,Evocation Illusion Invested Magical,Worn Items,Other Worn Items,—
+Caterwaul Sling,5,155 gp,Common,Evocation Magical,Weapons,Specific Magic Weapons,L
+Armor Potency (+1),5,160 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+Bort's Blessing,5,160 gp,Rare,Divination Invested,Worn Items,Other Worn Items,—
+Fearsome,5,160 gp,Common,Emotion Enchantment Fear Magical Mental,Runes,Weapon Property Runes,—
+Holy Prayer Beads,5,160 gp,Uncommon,Divine Healing Necromancy Positive,Held Items,—,—
+Magic Armor (+1),5,160 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Magic Wand (2nd-Level Spell),5,160 gp,Common,Magical Wand,Wands,Magic Wands,L
+Merchant's Guile,5,160 gp,Uncommon,Enchantment Invested,Worn Items,Other Worn Items,—
+Ring of Minor Arcana,5,160 gp,Uncommon,Arcane Evocation Invested,Worn Items,Other Worn Items,—
+Ring of the Weary Traveler,5,160 gp,Uncommon,Invested Transmutation,Worn Items,Other Worn Items,—
+Stalwart's Ring,5,160 gp,Uncommon,Invested Necromancy,Worn Items,Other Worn Items,—
+Wand of Continuation (1st-Level Spell),5,160 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Manifold Missiles (1st-Level Spell),5,160 gp,Common,Evocation Force Magical Wand,Wands,Specialty Wands,L
+Warrior's Training Ring,5,160 gp,Uncommon,Divination Invested,Worn Items,Other Worn Items,—
+Reaper's Lancet,5,200 gp,Unique,Magical Necromancy Poison,Weapons,Specific Magic Weapons,1
+Addiction Suppressant (Moderate),6,30 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antidote (Moderate),6,35 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antiplague (Moderate),6,35 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Oil of Weightlessness (Greater),6,36 gp,Common,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Feather Token (Tree),6,38 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Bloodhound Mask (Moderate),6,40 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Giant Scorpion Venom,6,40 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Nauseating Snare,6,40 gp,Common,Consumable Mechanical Poison Snare Trap,Snares,—,—
+Salve of Antiparalysis,6,40 gp,Common,Consumable Healing Magical Necromancy Oil,Consumables,Oils,L
+Extended Deteriorating Dust,6,45 gp,Uncommon,Consumable Evocation Magical,Consumables,Other Consumables,—
+Potion of Resistance (Lesser),6,45 gp,Common,Abjuration Consumable Magical Potion,Consumables,Potions,L
+Truth Potion,6,46 gp,Uncommon,Consumable Enchantment Magical Mental Potion,Consumables,Potions,L
+Dust of Appearance,6,50 gp,Common,Consumable Divination Magical,Consumables,Other Consumables,—
+Healing Potion (Moderate),6,50 gp,Common,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Iron Cube,6,50 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Oil of Unlife (Moderate),6,50 gp,Common,Consumable Magical Necromancy Negative Oil,Consumables,Oils,L
+Potion of Retaliation (Moderate),6,50 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Potion of Swimming (Moderate),6,50 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Terrifying Ammunition,6,50 gp,Common,Consumable Emotion Enchantment Fear Magical Mental,Consumables,Ammunition,—
+Vaccine (Moderate),6,50 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Mistform Elixir (Moderate),6,56 gp,Common,Alchemical Consumable Elixir Illusion Visual,Alchemical Items,Alchemical Elixirs,L
+Bi-Resonant Wayfinder,6,200 gp,Uncommon,Evocation Illusion Invested Magical,Worn Items,Other Worn Items,—
+Choker of Elocution,6,200 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Pathfinder's Pouch,6,200 gp,Uncommon,Abjuration Extradimensional Invested Magical,Worn Items,Other Worn Items,L
+Ready,6,200 gp,Common,Evocation Magical,Runes,Armor Property Runes,—
+Traveler's Any-Tool,6,200 gp,Common,Magical Transmutation,Held Items,—,1
+Bellflower Toolbelt,6,220 gp,Rare,Invested Magical Transmutation,Worn Items,Other Worn Items,1
+Ghoul Hide,6,220 gp,Uncommon,Invested Magical Necromancy,Armor,Specific Magic Armor,2
+Ring of the Ram,6,220 gp,Common,Evocation Force Invested Magical,Worn Items,Other Worn Items,—
+Insistent Door Knocker,6,225 gp,Common,Conjuration Magical,Held Items,—,1
+Shifting,6,225 gp,Common,Magical Transmutation,Runes,Weapon Property Runes,—
+Verdant Staff,6,225 gp,Common,Divination Magical Staff,Staves,—,1
+Aeon Stone (Gold Nodule),6,230 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Clandestine Cloak,6,230 gp,Uncommon,Illusion Invested Magical,Worn Items,Other Worn Items,L
+Horn of Fog,6,230 gp,Common,Conjuration Magical Water,Held Items,—,1
+Primeval Mistletoe,6,230 gp,Common,Primal Transmutation,Held Items,—,—
+Ringmaster's Staff,6,230 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Staff of Abjuration,6,230 gp,Common,Abjuration Magical Staff,Staves,—,1
+Staff of Conjuration,6,230 gp,Common,Conjuration Magical Staff,Staves,—,1
+Staff of Divination,6,230 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Enchantment,6,230 gp,Common,Enchantment Magical Staff,Staves,—,1
+Staff of Evocation,6,230 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Illusion,6,230 gp,Common,Illusion Magical Staff,Staves,—,1
+Staff of Impossible Visions,6,230 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Staff of Necromancy,6,230 gp,Common,Magical Necromancy Staff,Staves,—,1
+Staff of Providence,6,230 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Transmutation,6,230 gp,Common,Magical Staff Transmutation,Staves,—,1
+Vaultbreaker's Harness,6,230 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,1
+Acrobat's Staff,6,235 gp,Uncommon,Fortune Magical Transmutation,Weapons,Specific Magic Weapons,2
+Chime of Opening,6,235 gp,Uncommon,Evocation Magical,Held Items,—,L
+Bloodletting Kukri,6,240 gp,Uncommon,Magical Necromancy,Weapons,Specific Magic Weapons,L
+Lion's Shield,6,245 gp,Common,Conjuration Magical,Shields,Specific Shields,1
+Ring of Energy Resistance,6,245 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Clockwork Recorder,6,250 gp,Rare,—,Adventuring Gear,—,L
+Gluttonous Spear,6,250 gp,Uncommon,Magical Necromancy,Weapons,Specific Magic Weapons,1
+Spellguard Shield,6,250 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Twining Staff,6,250 gp,Common,Magical Transmutation,Weapons,Specific Magic Weapons,—
+Wand of Hopeless Night (2nd-Level Spell),6,250 gp,Common,Darkness Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Noisome Acid (2nd-Level Spell),6,250 gp,Uncommon,Acid Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (2nd-Level Spell),6,250 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (2nd-Level Spell),6,250 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Martyr's Shield,7,—,Rare,Abjuration Divine Intelligent,Intelligent Items,—,1
+Smokestick (Greater),7,53 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Comprehension Elixir (Greater),7,54 gp,Common,Alchemical Consumable Elixir Mental,Alchemical Items,Alchemical Elixirs,L
+Feather Token (Anchor),7,55 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Giant Wasp Venom,7,55 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Grim Trophy,7,55 gp,Common,Consumable Enchantment Magical Talisman,Consumables,Talismans,—
+Isolation Draught,7,55 gp,Uncommon,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Leaper's Elixir (Greater),7,55 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Malyass Root Paste,7,55 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Ration Tonic (Greater),7,55 gp,Common,Conjuration Consumable Magical Potion,Consumables,Potions,L
+Skinitch Salve,7,55 gp,Common,Alchemical Consumable Healing,Alchemical Items,Alchemical Tools,L
+Sovereign Glue,7,55 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Starshot Arrow (Lesser),7,55 gp,Rare,Conjuration Consumable Magical,Consumables,Ammunition,—
+Addlebrain,7,58 gp,Rare,Alchemical Consumable Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Candle of Revealing,7,60 gp,Common,Consumable Divination Magical,Consumables,Other Consumables,—
+Invisible Net,7,60 gp,Uncommon,Abjuration Consumable Magical,Consumables,Other Consumables,—
+Serum of Sex Shift,7,60 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Putrescent Glob,7,65 gp,Uncommon,Conjuration Consumable Magical Talisman,Consumables,Talismans,—
+Murderer's Knot,7,66 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+4th-Level Scroll,7,70 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Corrosive Ammunition,7,70 gp,Common,Consumable Evocation Magical,Consumables,Ammunition,—
+Dragon's Breath Potion (Young),7,70 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Knockout Dram,7,70 gp,Uncommon,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Saints' Balm,7,70 gp,Uncommon,Consumable Healing Magical Necromancy Oil,Consumables,Oils,—
+Spellstrike Ammunition (Type III),7,70 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Swift Block Cabochon,7,70 gp,Uncommon,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Necklace of Fireballs II,7,115 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Cold Iron Object (Standard-Grade),7,250 gp,Common,Precious,Materials,—,—
+Silver Object (Standard-Grade),7,250 gp,Common,Precious,Materials,—,—
+Bag of Holding (Type II),7,300 gp,Common,Conjuration Extradimensional Magical,Held Items,—,1
+Cold Iron Buckler (Standard-Grade),7,300 gp,Common,—,Shields,Precious Material Shields,L
+Rope of Climbing (Greater),7,300 gp,Common,Magical Transmutation,Held Items,—,L
+Silver Buckler (Standard-Grade),7,300 gp,Common,—,Shields,Precious Material Shields,L
+Unmemorable Mantle,7,300 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,1
+Bottled Air,7,320 gp,Common,Air Conjuration Magical,Held Items,—,L
+Decanter of Endless Water,7,320 gp,Common,Conjuration Magical Water,Held Items,—,L
+Spellguard Blade,7,320 gp,Common,Abjuration Magical,Weapons,Specific Magic Weapons,L
+Aeon Stone (Clear Spindle),7,325 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Ethersight Ring,7,325 gp,Uncommon,Divination Invested Magical Revelation,Worn Items,Other Worn Items,—
+Ring of Sustenance,7,325 gp,Uncommon,Conjuration Invested Magical,Worn Items,Other Worn Items,—
+Slippers of Spider Climbing,7,325 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Boots of Bounding,7,340 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Cold Iron Shield (Standard-Grade),7,340 gp,Common,—,Shields,Precious Material Shields,1
+Gloves of Storing,7,340 gp,Uncommon,Extradimensional Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Hat of Disguise (Greater),7,340 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,—
+Horseshoes of Speed,7,340 gp,Common,Companion Invested Primal Transmutation,Worn Items,Companion Items,1
+Silver Shield (Standard-Grade),7,340 gp,Common,—,Shields,Precious Material Shields,1
+Wondrous Figurine (Jade Serpent),7,340 gp,Common,Conjuration Magical,Held Items,—,L
+Wounding,7,340 gp,Common,Magical Necromancy,Runes,Weapon Property Runes,—
+Aeon Stone (Tourmaline Sphere),7,350 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Wondrous Figurine (Rubber Bear),7,350 gp,Common,Conjuration Magical,Held Items,—,L
+Cloak of Elvenkind,7,360 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,L
+Dragon's Eye Charm,7,360 gp,Uncommon,Divination Magical,Held Items,—,L
+Magic Wand (3rd-Level Spell),7,360 gp,Common,Magical Wand,Wands,Magic Wands,L
+Moonlit Chain,7,360 gp,Common,Divination Invested Magical,Armor,Specific Magic Armor,2
+Ring of Wizardry (Type I),7,360 gp,Uncommon,Arcane Divination Invested,Worn Items,Other Worn Items,—
+Slime Whip,7,360 gp,Uncommon,Magical Transmutation,Weapons,Specific Magic Weapons,1
+Spined Shield,7,360 gp,Common,Evocation Magical,Shields,Specific Shields,1
+Sturdy Shield (Lesser),7,360 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Wand of Continuation (2nd-Level Spell),7,360 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of the Spider (2nd-Level Spell),7,360 gp,Common,Conjuration Magical Poison Wand,Wands,Specialty Wands,L
+Bomb Snare,8,75 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Candle of Truth,8,75 gp,Uncommon,Consumable Enchantment Magical Mental,Consumables,Other Consumables,—
+Grasping Snare,8,75 gp,Uncommon,Consumable Mechanical Snare Trap,Snares,—,—
+Mnemonic Acid,8,75 gp,Uncommon,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Nettleweed Residue,8,75 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Striking Snare,8,75 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Feather Token (Swan Boat),8,76 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Scour,8,80 gp,Uncommon,Alchemical Consumable Drug Ingested Inhaled Poison,Alchemical Items,Drugs,L
+Wyvern Poison,8,80 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Oil of Object Animation,8,85 gp,Uncommon,Consumable Magical Oil Transmutation,Consumables,Oils,—
+Darkvision Elixir (Greater),8,90 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Potion of Quickness,8,90 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Shrinking Potion (Greater),8,90 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Dust of Corpse Animation,8,100 gp,Uncommon,Consumable Magical Necromancy,Consumables,Other Consumables,—
+Gallows Tooth,8,100 gp,Common,Consumable Divination Magical Talisman,Consumables,Talismans,—
+Hype,8,100 gp,Rare,Alchemical Consumable Drug Ingested,Alchemical Items,Drugs,L
+Jade Bauble,8,100 gp,Common,Consumable Enchantment Magical Mental Talisman,Consumables,Talismans,—
+Potion of Disguise (Moderate),8,100 gp,Uncommon,Consumable Magical Polymorph Potion Transmutation,Consumables,Potions,L
+Potion of Flying,8,100 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Resilient,8,340 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+Adamantine Object (Standard-Grade),8,350 gp,Uncommon,Precious,Materials,—,—
+Darkwood Object (Standard-Grade),8,350 gp,Uncommon,Precious,Materials,—,—
+Dragonhide Object (Standard-Grade),8,350 gp,Uncommon,Precious,Materials,—,—
+Mithral Object (Low-Grade),8,350 gp,Uncommon,Precious,Materials,—,—
+Adamantine Buckler (Standard-Grade),8,400 gp,Uncommon,—,Shields,Precious Material Shields,L
+Darkwood Buckler (Standard-Grade),8,400 gp,Uncommon,—,Shields,Precious Material Shields,L
+Dragonhide Buckler (Standard-Grade),8,400 gp,Uncommon,—,Shields,Precious Material Shields,L
+Mithral Buckler (Standard-Grade),8,400 gp,Uncommon,—,Shields,Precious Material Shields,L
+Energy-Resistant,8,420 gp,Common,Abjuration Magical,Runes,Armor Property Runes,—
+Staff of Illumination,8,425 gp,Common,Evocation Magical Staff,Staves,—,1
+Adamantine Shield (Standard-Grade),8,440 gp,Uncommon,—,Shields,Precious Material Shields,1
+Darkwood Shield (Standard-Grade),8,440 gp,Uncommon,—,Shields,Precious Material Shields,1
+Dragonhide Shield (Standard-Grade),8,440 gp,Uncommon,—,Shields,Precious Material Shields,1
+Mithral Shield (Standard-Grade),8,440 gp,Uncommon,—,Shields,Precious Material Shields,L
+Bracers of Armor I,8,450 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Eclipse,8,450 gp,Unique,Evocation Light Magical,Weapons,Specific Magic Weapons,L
+Mentalist's Staff (Greater),8,450 gp,Common,Divination Magical Staff,Staves,—,1
+Slick (Greater),8,450 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Spiritsight Crossbow,8,450 gp,Uncommon,Conjuration Magical Teleportation,Weapons,Specific Magic Weapons,2
+Staff of Fire (Greater),8,450 gp,Common,Evocation Magical Staff,Staves,—,1
+Animal Staff (Greater),8,460 gp,Common,Divination Magical Staff,Staves,—,1
+Swarmeater's Clasp,8,460 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Rod of Wonder,8,465 gp,Rare,Chaotic Evocation Magical,Held Items,—,L
+Staff of Healing (Greater),8,470 gp,Common,Magical Necromancy Staff,Staves,—,1
+Bloodbane,8,475 gp,Uncommon,Dwarf Evocation Magical,Runes,Weapon Property Runes,—
+Collar of Inconspicuousness,8,475 gp,Common,Companion Invested Primal Transmutation,Worn Items,Companion Items,1
+Flaying Knife,8,480 gp,Uncommon,Magical Necromancy,Weapons,Specific Magic Weapons,1
+Corrosive,8,500 gp,Common,Acid Conjuration Magical,Runes,Weapon Property Runes,—
+Deafening Music Box,8,500 gp,Uncommon,Auditory Evocation Magical,Held Items,—,1
+Flaming,8,500 gp,Common,Conjuration Fire Magical,Runes,Weapon Property Runes,—
+Frost,8,500 gp,Common,Cold Conjuration Magical,Runes,Weapon Property Runes,—
+Invisibility,8,500 gp,Common,Illusion Magical,Runes,Armor Property Runes,—
+Lover's Gloves,8,500 gp,Common,Emotion Enchantment Invested Magical Mental,Worn Items,Other Worn Items,—
+Magic Armor (+1 Resilient),8,500 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Moonstone Diadem,8,500 gp,Rare,Divination Invested Magical,Worn Items,Other Worn Items,L
+Shock,8,500 gp,Common,Electricity Evocation Magical,Runes,Weapon Property Runes,—
+Sinister Knight,8,500 gp,Uncommon,Abjuration Illusion Magical,Runes,Armor Property Runes,—
+Thundering,8,500 gp,Common,Evocation Magical Sonic,Runes,Weapon Property Runes,—
+Wand of Crackling Lightning (3rd-Level Spell),8,500 gp,Common,Electricity Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Smoldering Fireballs (3rd-Level Spell),8,500 gp,Common,Evocation Fire Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (3rd-Level Spell),8,500 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (3rd-Level Spell),8,500 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Darkwood Tower Shield (Standard-Grade),8,560 gp,Uncommon,—,Shields,Precious Material Shields,3
+Cursed Dreamstone,9,—,Uncommon,Enchantment Magical,Held Items,—,L
+Caustic Deteriorating Dust,9,105 gp,Uncommon,Consumable Evocation Magical,Consumables,Other Consumables,—
+Cheetah's Elixir (Greater),9,110 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Javelin of Lightning,9,110 gp,Common,Consumable Electricity Evocation Magical,Consumables,Other Consumables,L
+Lich Dust,9,110 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Spider Root,9,110 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Explosive Ammunition,9,130 gp,Common,Consumable Evocation Fire Magical,Consumables,Ammunition,—
+Feather Token (Whip),9,130 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Storm Arrow,9,130 gp,Common,Air Consumable Electricity Evocation Magical,Consumables,Ammunition,—
+Dust of Disappearance,9,135 gp,Common,Consumable Illusion Magical,Consumables,Other Consumables,—
+Aligned Oil,9,140 gp,Common,Consumable Divine Evocation Oil,Consumables,Oils,L
+5th-Level Scroll,9,150 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Basilisk Eye,9,150 gp,Common,Consumable Magical Talisman Transmutation Visual,Consumables,Talismans,—
+Elixir of Life (Moderate),9,150 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type IV),9,150 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Lock (Good),9,200 gp,Common,—,Adventuring Gear,—,—
+Manacles (Good),9,250 gp,Common,—,Adventuring Gear,—,—
+Necklace of Fireballs III,9,300 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Handcuffs (Good),9,350 gp,Uncommon,—,Adventuring Gear,—,L
+Standard-Grade Sovereign Steel Object,9,500 gp,Rare,Precious,Materials,—,L
+Earthsight Box,9,575 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Collar of Empathy,9,600 gp,Common,Companion Divination Invested Primal,Worn Items,Companion Items,1
+Dreadsmoke Thurible,9,600 gp,Uncommon,Magical Necromancy,Held Items,—,1
+Heartstone,9,600 gp,Common,Abjuration Invested Occult,Worn Items,Other Worn Items,—
+Immovable Rod,9,600 gp,Common,Magical Transmutation,Held Items,—,1
+Shoony Shovel,9,600 gp,Rare,Earth Magical,Held Items,—,2
+Sleeves of Storage (Greater),9,600 gp,Common,Conjuration Extradimensional Invested Magical,Worn Items,Other Worn Items,L
+Triton's Conch,9,640 gp,Common,Magical Transmutation,Held Items,—,L
+Armbands of Athleticism,9,645 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Belt of the Five Kings,9,650 gp,Uncommon,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Bracers of Missile Deflection (Greater),9,650 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Chain of the Stilled Spirit,9,650 gp,Uncommon,Magical Necromancy,Held Items,—,2
+Coyote Cloak (Greater),9,650 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Dancing Scarf (Greater),9,650 gp,Common,Illusion Invested Magical Visual,Worn Items,Other Worn Items,—
+Force Shield,9,650 gp,Uncommon,Evocation Force Magical,Shields,Specific Shields,L
+Gourd Home,9,650 gp,Rare,Conjuration Extradimensional Magical Structure,Structures,—,L
+Hat of the Magi (Greater),9,650 gp,Common,Arcane Conjuration Invested,Worn Items,Other Worn Items,—
+Inspiring Spotlight,9,650 gp,Uncommon,Enchantment Light Magical,Held Items,—,3
+Pendant of the Occult (Greater),9,650 gp,Common,Divination Invested Occult,Worn Items,Other Worn Items,—
+Persona Mask (Greater),9,650 gp,Common,Fortune Illusion Invested Magical,Worn Items,Other Worn Items,—
+Shadow (Greater),9,650 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Tracker's Goggles (Greater),9,660 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Dragonslayer's Shield,9,670 gp,Uncommon,Abjuration Magical,Shields,Specific Shields,1
+Ventriloquist's Ring (Greater),9,670 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,—
+Knapsack of Halflingkind,9,675 gp,Uncommon,Conjuration Extradimensional Healing Invested Magical,Worn Items,Other Worn Items,L
+Victory Plate,9,675 gp,Uncommon,Abjuration Invested Magical,Armor,Specific Magic Armor,4
+Bountiful Cauldron,9,680 gp,Uncommon,Conjuration Magical,Other,Magic Pots,2
+Phylactery of Faithfulness,9,680 gp,Common,Divination Divine Invested,Worn Items,Other Worn Items,L
+Crimson Brand,9,700 gp,Uncommon,Evocation Magical,Weapons,Specific Magic Weapons,1
+Dreamstone,9,700 gp,Uncommon,Enchantment Magical,Held Items,—,L
+Eyes of the Eagle,9,700 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Gloom Blade,9,700 gp,Common,Evocation Magical,Weapons,Specific Magic Weapons,L
+Grievous,9,700 gp,Common,Enchantment Magical,Runes,Weapon Property Runes,—
+Healer's Gloves (Greater),9,700 gp,Common,Invested Magical Necromancy,Worn Items,Other Worn Items,L
+Horn of Blasting,9,700 gp,Common,Evocation Sonic,Held Items,—,L
+Magic Wand (4th-Level Spell),9,700 gp,Common,Magical Wand,Wands,Magic Wands,L
+Mask of the Banshee,9,700 gp,Common,Auditory Invested Magical Necromancy Negative,Worn Items,Other Worn Items,—
+Messenger's Ring,9,700 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Rhino Hide,9,700 gp,Common,Invested Magical Transmutation,Armor,Specific Magic Armor,2
+Spangled Rider's Suit,9,700 gp,Uncommon,Divination Invested Magical,Armor,Specific Magic Armor,1
+Stole of Civility,9,700 gp,Uncommon,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Urn of Ashes,9,700 gp,Common,Magical Necromancy Negative,Held Items,—,—
+Wand of Continuation (3rd-Level Spell),9,700 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Manifold Missiles (3rd-Level Spell),9,700 gp,Common,Evocation Force Magical Wand,Wands,Specialty Wands,L
+Wand of Overflowing Life (3rd-Level Spell),9,700 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Cloak of Repute (Greater),9,1300 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,1
+Unmemorable Mantle (Greater),9,1300 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,1
+Sailing Ship,9,2000 gp,Common,—,Vehicles,—,L
+Whip of Compliance,9,3000 gp,Uncommon,Enchantment Magical,Weapons,Specific Magic Weapons,1
+Aluum Charm,10,—,Uncommon,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Addiction Suppressant (Greater),10,140 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Bravo's Brew (Moderate),10,150 gp,Common,Alchemical Consumable Elixir Mental,Alchemical Items,Alchemical Elixirs,L
+Wolfsbane,10,155 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Antidote (Greater),10,160 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antiplague (Greater),10,160 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Shadow Essence,10,160 gp,Common,Alchemical Consumable Injury Negative Poison,Alchemical Items,Alchemical Poisons,L
+Vanishing Coin,10,160 gp,Common,Consumable Illusion Magical Talisman,Consumables,Talismans,—
+Alchemical Atomizer,10,175 gp,Rare,Alchemical,Alchemical Items,Alchemical Tools,L
+Iron Medallion,10,175 gp,Common,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Lucky Rabbit's Foot,10,175 gp,Uncommon,Consumable Divination Fortune Magical Talisman,Consumables,Talismans,—
+Mummified Bat,10,175 gp,Common,Consumable Divination Magical Talisman,Consumables,Talismans,—
+Honeyscent,10,180 gp,Rare,Alchemical Consumable Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Mistform Elixir (Greater),10,180 gp,Common,Alchemical Consumable Elixir Illusion Visual,Alchemical Items,Alchemical Elixirs,L
+Potion of Resistance (Moderate),10,180 gp,Common,Abjuration Consumable Magical Potion,Consumables,Potions,L
+Snagging Hook Snare,10,180 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Eagle Eye Elixir (Greater),10,200 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Elemental Gem,10,200 gp,Common,Conjuration Consumable Magical,Consumables,Other Consumables,—
+Olefactory Obfuscator (Greater),10,225 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Miter of Communion,10,800 gp,Uncommon,Divination Invested Magical,Worn Items,Other Worn Items,L
+Choker of Elocution (Greater),10,850 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Golem Stylus,10,850 gp,Uncommon,Invested Magical Transmutation,Held Items,—,L
+Grail of Twisted Desires,10,850 gp,Unique,Conjuration Illusion Magical,Held Items,—,L
+Ring of Lies,10,850 gp,Uncommon,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Winged Boots,10,850 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Cold Iron Weapon (Standard-Grade),10,880 gp,Common,—,Weapons,Precious Material Weapons,—
+Explorer's Yurt,10,880 gp,Common,Conjuration Magical Structure,Structures,—,1
+Silver Weapon (Standard-Grade),10,880 gp,Common,—,Weapons,Precious Material Weapons,—
+Barding of the Zephyr,10,900 gp,Common,Companion Invested Primal Transmutation,Worn Items,Companion Items,L
+Clandestine Cloak (Greater),10,900 gp,Uncommon,Illusion Invested Magical,Worn Items,Other Worn Items,L
+Daredevil Boots,10,900 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Demon Mask (Greater),10,900 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Maestro's Instrument (Moderate),10,900 gp,Common,Enchantment Magical,Held Items,—,1
+Numerian Steel Breastplate,10,900 gp,Common,—,Armor,Specific Magic Armor,2
+Staff of Abjuration (Greater),10,900 gp,Common,Abjuration Magical Staff,Staves,—,1
+Staff of Conjuration (Greater),10,900 gp,Common,Conjuration Magical Staff,Staves,—,1
+Staff of Divination (Greater),10,900 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Enchantment (Greater),10,900 gp,Common,Enchantment Magical Staff,Staves,—,1
+Staff of Evocation (Greater),10,900 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Illusion (Greater),10,900 gp,Common,Illusion Magical Staff,Staves,—,1
+Staff of Nature's Vengeance,10,900 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Necromancy (Greater),10,900 gp,Common,Magical Necromancy Staff,Staves,—,1
+Staff of Providence (Greater),10,900 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Transmutation (Greater),10,900 gp,Common,Magical Staff Transmutation,Staves,—,1
+Thurible of Revelation (Moderate),10,900 gp,Common,Divination Divine,Held Items,—,1
+Wondrous Figurine (Golden Lions),10,900 gp,Common,Conjuration Magical,Held Items,—,L
+Ring of Counterspells,10,925 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Weapon Potency (+2),10,935 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Fire-Jump Ring,10,940 gp,Uncommon,Conjuration Fire Invested Magical Teleportation,Worn Items,Other Worn Items,—
+Cloak of the Bat,10,950 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Electric Eelskin,10,950 gp,Common,Invested Magical Transmutation,Armor,Specific Magic Armor,1
+Forge Warden,10,975 gp,Uncommon,Abjuration Magical,Shields,Specific Shields,1
+Ring of Energy Resistance (Greater),10,975 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Cape of the Mountebank,10,980 gp,Uncommon,Conjuration Invested Magical,Worn Items,Other Worn Items,L
+Breastplate of Command,10,1000 gp,Common,Enchantment Invested Magical,Armor,Specific Magic Armor,2
+Druid's Vestments,10,1000 gp,Common,Focused Invested Primal Transmutation,Worn Items,Other Worn Items,L
+Handwraps of Mighty Blows (+2 Striking),10,1000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Invisibility (Greater),10,1000 gp,Common,Illusion Magical,Runes,Armor Property Runes,—
+Magic Weapon (+2 Striking),10,1000 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Ring of Wizardry (Type II),10,1000 gp,Uncommon,Arcane Divination Invested,Worn Items,Other Worn Items,—
+Serrating,10,1000 gp,Uncommon,Evocation Magical,Runes,Weapon Property Runes,—
+Sturdy Shield (Moderate),10,1000 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Wand of Crackling Lightning (4th-Level Spell),10,1000 gp,Common,Electricity Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Hopeless Night (4th-Level Spell),10,1000 gp,Common,Darkness Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Noisome Acid (4th-Level Spell),10,1000 gp,Uncommon,Acid Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (4th-Level Spell),10,1000 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (4th-Level Spell),10,1000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Galley,10,3000 gp,Common,—,Vehicles,—,L
+Fiendish Teleportation,11,—,Rare,Conjuration Contract Invested Magical,Other,Infernal Contracts,—
+Oil of Repulsion,11,175 gp,Common,Abjuration Consumable Magical Oil,Consumables,Oils,L
+Blightburn Resin,11,225 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Acid Flask (Greater),11,250 gp,Common,Acid Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Alchemist's Fire (Greater),11,250 gp,Common,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Blight Bomb (Greater),11,250 gp,Common,Alchemical Bomb Consumable Poison Splash,Alchemical Items,Alchemical Bombs,L
+Bloodhound Mask (Greater),11,250 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Bottled Lightning (Greater),11,250 gp,Common,Alchemical Bomb Consumable Electricity Splash,Alchemical Items,Alchemical Bombs,L
+Frost Vial (Greater),11,250 gp,Common,Alchemical Bomb Cold Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Ghost Charge (Greater),11,250 gp,Common,Alchemical Bomb Consumable Positive Splash,Alchemical Items,Alchemical Bombs,L
+Oil of Keen Edges,11,250 gp,Uncommon,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Peshpine Grenade (Greater),11,250 gp,Uncommon,Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Potion of Swimming (Greater),11,250 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Sixfingers Elixir (Moderate),11,250 gp,Uncommon,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Tanglefoot Bag (Greater),11,250 gp,Common,Alchemical Bomb Consumable,Alchemical Items,Alchemical Bombs,L
+Thunderstone (Greater),11,250 gp,Common,Alchemical Bomb Consumable Sonic Splash,Alchemical Items,Alchemical Bombs,L
+6th-Level Scroll,11,300 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Bestial Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Cognitive Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Drakeheart Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Dread Ampoule (Greater),11,300 gp,Common,Alchemical Bomb Consumable Emotion Fear Mental Poison Splash,Alchemical Items,Alchemical Bombs,L
+Energy Mutagen (Greater),11,300 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Juggernaut Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Potion of Disguise (Greater),11,300 gp,Uncommon,Consumable Magical Polymorph Potion Transmutation,Consumables,Potions,L
+Quicksilver Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Serene Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Silvertongue Mutagen (Greater),11,300 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type V),11,300 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Necklace of Fireballs IV,11,700 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Armor Potency (+2),11,1060 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+Cassock of Devotion,11,1150 gp,Common,Divination Divine Focused Invested,Worn Items,Other Worn Items,L
+Ring of Maniacal Devices,11,1175 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Singing Bowl of the Versatile Stance,11,1175 gp,Uncommon,Enchantment Magical,Held Items,—,L
+Bag of Holding (Type III),11,1200 gp,Common,Conjuration Extradimensional Magical,Held Items,—,1
+Cold Iron Armor (Standard-Grade),11,1200 gp,Common,—,Armor,Precious Material Armor,—
+Crafter's Eyepiece (Greater),11,1200 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Envisioning Mask,11,1200 gp,Common,Divination Invested Magical Mental,Worn Items,Other Worn Items,—
+Rat-Catcher Trident,11,1200 gp,Uncommon,Conjuration Magical,Weapons,Specific Magic Weapons,1
+Ready (Greater),11,1200 gp,Common,Evocation Magical,Runes,Armor Property Runes,—
+Silver Armor (Standard-Grade),11,1200 gp,Common,—,Armor,Precious Material Armor,—
+Stoneraiser Javelin,11,1200 gp,Uncommon,Conjuration Earth Magical,Weapons,Specific Magic Weapons,L
+Boots of Elvenkind (Greater),11,1250 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Floating Shield,11,1250 gp,Uncommon,Magical,Shields,Specific Shields,L
+Goggles of Night (Greater),11,1250 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Gorget of the Primal Roar,11,1250 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,L
+Insistent Door Knocker (Greater),11,1250 gp,Common,Conjuration Magical,Held Items,—,1
+Skeleton Key (Greater),11,1250 gp,Common,Magical Transmutation,Held Items,—,—
+Spore Sap,11,1250 gp,Uncommon,Evocation Fungus Magical,Weapons,Specific Magic Weapons,L
+Doubling Rings (Greater),11,1300 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Oathbow,11,1300 gp,Common,Divination Magical,Weapons,Specific Magic Weapons,2
+Arrow-Catching Shield,11,1350 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Adamantine Weapon (Standard-Grade),11,1400 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Alchemist Goggles (Greater),11,1400 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Anarchic,11,1400 gp,Common,Chaotic Evocation Magical,Runes,Weapon Property Runes,—
+Axiomatic,11,1400 gp,Common,Evocation Lawful Magical,Runes,Weapon Property Runes,—
+Darkwood Weapon (Standard-Grade),11,1400 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Holy,11,1400 gp,Common,Evocation Good Magical,Runes,Weapon Property Runes,—
+Holy Prayer Beads (Greater),11,1400 gp,Uncommon,Divine Healing Necromancy Positive,Held Items,—,—
+Magic Armor (+2 Resilient),11,1400 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Mithral Weapon (Standard-Grade),11,1400 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Unholy,11,1400 gp,Common,Evil Evocation Magical,Runes,Weapon Property Runes,—
+Wand of Overflowing Life (4th-Level Spell),11,1400 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Wand of the Spider (4th-Level Spell),11,1400 gp,Common,Conjuration Magical Poison Wand,Wands,Specialty Wands,L
+Magic Wand (5th-Level Spell),11,1500 gp,Common,Magical Wand,Wands,Magic Wands,L
+Wand of Continuation (4th-Level Spell),11,1500 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Sea Touch Elixir (Moderate),12,300 gp,Common,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Stone Body Mutagen (Moderate),12,300 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Bleeding Spines Snare,12,320 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Fade Band,12,320 gp,Common,Consumable Illusion Magical Talisman,Consumables,Talismans,—
+Potion of Tongues,12,320 gp,Uncommon,Consumable Divination Magical Potion,Consumables,Potions,L
+Salamander Elixir (Moderate),12,320 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Scything Blade Snare,12,320 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Stunning Snare,12,320 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Winter Wolf Elixir (Moderate),12,320 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Focus Cathartic (Greater),12,325 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Mage Bane,12,325 gp,Uncommon,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Salve of Antiparalysis (Greater),12,325 gp,Common,Consumable Healing Magical Necromancy Oil,Consumables,Oils,L
+Sinew-Shock Serum (Greater),12,325 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Slumber Wine,12,325 gp,Common,Alchemical Consumable Ingested Poison Sleep,Alchemical Items,Alchemical Poisons,L
+Universal Solvent (Greater),12,325 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Oil of Animation,12,330 gp,Uncommon,Consumable Magical Oil Transmutation,Consumables,Oils,L
+Blackfinger Blight,12,350 gp,Rare,Alchemical Consumable Contact Poison Virulent,Alchemical Items,Alchemical Poisons,L
+Crystal Shards (Greater),12,350 gp,Common,Alchemical Bomb Consumable Earth Splash,Alchemical Items,Alchemical Bombs,L
+Incense of Distilled Death,12,350 gp,Common,Consumable Magical Necromancy Negative,Consumables,Other Consumables,—
+Applereed Mutagen (Moderate),12,400 gp,Rare,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Balisse Feather,12,400 gp,Common,Consumable Divine Evocation Magical Talisman,Consumables,Talismans,—
+Dragon's Breath Potion (Adult),12,400 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Eye of Apprehension,12,400 gp,Common,Consumable Divination Fortune Talisman,Consumables,Talismans,—
+Healing Potion (Greater),12,400 gp,Common,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Iron Equalizer,12,400 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Oil of Unlife (Greater),12,400 gp,Common,Consumable Magical Necromancy Negative Oil,Consumables,Oils,L
+Penetrating Ammunition,12,400 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Plasma Hype,12,400 gp,Rare,Alchemical Consumable Drug Ingested Poison,Alchemical Items,Drugs,L
+Potion of Retaliation (Greater),12,400 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Vaccine (Greater),12,400 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Striking (Greater),12,1065 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Adamantine Armor (Standard-Grade),12,1600 gp,Uncommon,—,Armor,Precious Material Armor,—
+Darkwood Armor (Standard-Grade),12,1600 gp,Uncommon,—,Armor,Precious Material Armor,—
+Dragonhide Armor (Standard-Grade),12,1600 gp,Uncommon,—,Armor,Precious Material Armor,—
+Lich Phylactery,12,1600 gp,Rare,Arcane Necromancy Negative,Held Items,—,—
+Mithral Armor (Standard-Grade),12,1600 gp,Uncommon,—,Armor,Precious Material Armor,—
+Standard-Grade Sovereign Steel Weapon,12,1600 gp,Rare,—,Weapons,Precious Material Weapons,L
+Energy-Resistant (Greater),12,1650 gp,Common,Abjuration Magical,Runes,Armor Property Runes,—
+Jawbreaker Shield,12,1650 gp,Uncommon,Abjuration Magical,Shields,Specific Shields,1
+Four-Ways Dogslicer,12,1700 gp,Uncommon,Cold Electricity Evocation Fire Magical,Weapons,Specific Magic Weapons,L
+Cloak of Elvenkind (Greater),12,1750 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,L
+Ring of Climbing,12,1750 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Ring of Swimming,12,1750 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Verdant Staff (Greater),12,1750 gp,Common,Divination Magical Staff,Staves,—,1
+Marvelous Medicines,12,1800 gp,Common,Magical Necromancy,Held Items,—,1
+Mentalist's Staff (Major),12,1800 gp,Common,Divination Magical Staff,Staves,—,1
+Ring of Stoneshifting,12,1800 gp,Uncommon,Conjuration Earth Invested Magical Teleportation,Worn Items,Other Worn Items,L
+Ringmaster's Staff (Greater),12,1800 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Staff of Fire (Major),12,1800 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Healing (Major),12,1800 gp,Common,Magical Necromancy Staff,Staves,—,1
+Staff of Impossible Visions (Greater),12,1800 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Staff of the Black Desert,12,1850 gp,Uncommon,Divination Magical Staff,Staves,—,1
+Aeon Stone (Pink Rhomboid),12,1900 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Animal Staff (Major),12,1900 gp,Common,Divination Magical Staff,Staves,—,1
+Broom of Flying,12,1900 gp,Common,Magical Transmutation,Held Items,—,1
+Bullhook (Greater),12,1900 gp,Uncommon,Enchantment Magical,Held Items,—,1
+Aeon Stone (Black Pearl),12,2000 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Berserker's Cloak,12,2000 gp,Common,Invested Primal Transmutation,Worn Items,Other Worn Items,1
+Fearsome (Greater),12,2000 gp,Common,Emotion Enchantment Fear Magical Mental,Runes,Weapon Property Runes,—
+Fortification,12,2000 gp,Common,Abjuration Magical,Runes,Armor Property Runes,—
+Handwraps of Mighty Blows (+2 Greater Striking),12,2000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Magic Weapon (+2 Greater Striking),12,2000 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Ring of Wizardry (Type III),12,2000 gp,Uncommon,Arcane Divination Invested,Worn Items,Other Worn Items,—
+Wand of Smoldering Fireballs (5th-Level Spell),12,2000 gp,Common,Evocation Fire Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (5th-Level Spell),12,2000 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (5th-Level Spell),12,2000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Airship,12,6000 gp,Rare,—,Vehicles,—,L
+Deathcap Powder,13,450 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Panacea,13,450 gp,Uncommon,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Gorgon's Breath,13,475 gp,Uncommon,Alchemical Consumable Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Purple Worm Venom,13,500 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Explosive Ammunition (Greater),13,520 gp,Common,Consumable Evocation Fire Magical,Consumables,Ammunition,—
+Mending Lattice,13,525 gp,Uncommon,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Purple Worm Repellent,13,550 gp,Uncommon,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+7th-Level Scroll,13,600 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Elixir of Life (Greater),13,600 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type VI),13,600 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Time Shield Potion,13,600 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Necklace of Fireballs V,13,1600 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Aeon Stone (Pale Lavender Ellipsoid),13,2200 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Blightburn Ward,13,2300 gp,Uncommon,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Bag of Holding (Type IV),13,2400 gp,Common,Conjuration Extradimensional Magical,Held Items,—,1
+Standard-Grade Sovereign Steel Armor,13,2400 gp,Rare,—,Armor,Precious Material Armor,L
+Slates of Distant Letters,13,2450 gp,Common,Divination Magical,Held Items,—,L
+Celestial Armor,13,2500 gp,Common,Divine Good Invested Transmutation,Armor,Specific Magic Armor,1
+Demon Armor,13,2500 gp,Common,Divine Evil Invested Necromancy,Armor,Specific Magic Armor,4
+Elven Chain (Standard-Grade),13,2500 gp,Uncommon,—,Armor,Precious Material Armor,—
+Winged,13,2500 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Mail of Luck,13,2600 gp,Common,Divination Invested Magical,Armor,Specific Magic Armor,3
+Dancing,13,2700 gp,Uncommon,Evocation Magical,Runes,Weapon Property Runes,—
+Eye of Fortune,13,2700 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Ring of the Ram (Greater),13,2700 gp,Common,Evocation Force Invested Magical,Worn Items,Other Worn Items,—
+Spell-Storing,13,2700 gp,Uncommon,Abjuration Magical,Runes,Weapon Property Runes,—
+Wondrous Figurine (Marble Elephant),13,2700 gp,Common,Conjuration Magical,Held Items,—,L
+Dwarven Thrower,13,2750 gp,Common,Evocation Magical,Weapons,Specific Magic Weapons,1
+Anchor Spear,13,2800 gp,Uncommon,Magical Transmutation,Weapons,Specific Magic Weapons,1
+Ankylostar,13,2800 gp,Uncommon,Magical Transmutation,Weapons,Specific Magic Weapons,1
+Bloodbane (Greater),13,2800 gp,Uncommon,Dwarf Evocation Magical,Runes,Weapon Property Runes,—
+Bomber's Saddle,13,2800 gp,Uncommon,Companion Invested Magical,Worn Items,Companion Items,2
+Flame Tongue,13,2800 gp,Common,Evocation Fire Magical,Weapons,Specific Magic Weapons,1
+Noxious Jerkin,13,2800 gp,Rare,Evocation Magical,Armor,Specific Magic Armor,L
+Knapsack of Halflingkind (Greater),13,2850 gp,Uncommon,Conjuration Extradimensional Healing Invested Magical,Worn Items,Other Worn Items,L
+Boots of Speed,13,3000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Hellfire Boots,13,3000 gp,Common,Evocation Fire Invested Magical,Worn Items,Other Worn Items,1
+Keen,13,3000 gp,Uncommon,Magical Transmutation,Runes,Weapon Property Runes,—
+Magic Wand (6th-Level Spell),13,3000 gp,Common,Magical Wand,Wands,Magic Wands,L
+Medusa's Scream,13,3000 gp,Common,Magical Transmutation,Shields,Specific Shields,1
+Rock-Braced,13,3000 gp,Rare,Abjuration Dwarf Magical Saggorak,Runes,Armor Property Runes,—
+Sturdy Shield (Greater),13,3000 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Wand of Continuation (5th-Level Spell),13,3000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Manifold Missiles (5th-Level Spell),13,3000 gp,Common,Evocation Force Magical Wand,Wands,Specialty Wands,L
+Wand of Overflowing Life (5th-Level Spell),13,3000 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Addiction Suppressant (Major),14,500 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antidote (Major),14,675 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Antiplague (Major),14,675 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Bomber's Eye Elixir (Greater),14,700 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Grinning Pugwampi,14,700 gp,Uncommon,Consumable Enchantment Magical Misfortune Talisman,Consumables,Talismans,—
+Starshot Arrow (Greater),14,800 gp,Rare,Conjuration Consumable Magical,Consumables,Ammunition,—
+Potion of Resistance (Greater),14,850 gp,Common,Abjuration Consumable Magical Potion,Consumables,Potions,L
+Viper's Fang,14,850 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Dazing Coil,14,900 gp,Common,Consumable Enchantment Magical Talisman,Consumables,Talismans,—
+Engulfing Snare,14,900 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Ghost Ammunition,14,900 gp,Common,Magical Transmutation,Consumables,Ammunition,—
+Iron Cudgel,14,900 gp,Common,Consumable Evocation Magical Talisman,Consumables,Talismans,—
+Ruby String,14,900 gp,Rare,Conjuration Consumable,Consumables,Other Consumables,—
+Resilient (Greater),14,3440 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+Crystal Ball (Clear Quartz),14,3800 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Primeval Mistletoe (Greater),14,3900 gp,Common,Primal Transmutation,Held Items,—,—
+Bracers of Armor II,14,4000 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Deepdread Claw,14,4000 gp,Rare,Evocation Invested Magical,Weapons,Specific Magic Weapons,1
+Glaive of the Artist,14,4000 gp,Uncommon,Enchantment Magical,Weapons,Specific Magic Weapons,2
+Pactmaster's Grace,14,4000 gp,Uncommon,Divination Invested Magical,Worn Items,Other Worn Items,—
+Staff of Abjuration (Major),14,4000 gp,Common,Abjuration Magical Staff,Staves,—,1
+Staff of Conjuration (Major),14,4000 gp,Common,Conjuration Magical Staff,Staves,—,1
+Staff of Divination (Major),14,4000 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Enchantment (Major),14,4000 gp,Common,Enchantment Magical Staff,Staves,—,1
+Staff of Evocation (Major),14,4000 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Illusion (Major),14,4000 gp,Common,Illusion Magical Staff,Staves,—,1
+Staff of Nature's Vengeance (Greater),14,4000 gp,Common,Evocation Magical Staff,Staves,—,1
+Staff of Necromancy (Major),14,4000 gp,Common,Magical Necromancy Staff,Staves,—,1
+Staff of Transmutation (Major),14,4000 gp,Common,Magical Staff Transmutation,Staves,—,1
+Storm Flash,14,4000 gp,Common,Electricity Evocation Magical,Weapons,Specific Magic Weapons,1
+Staff of Providence (Major),14,4100 gp,Common,Divination Magical Staff,Staves,—,1
+Boots of Bounding (Greater),14,4250 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Horseshoes of Speed (Greater),14,4250 gp,Common,Companion Invested Primal Transmutation,Worn Items,Companion Items,1
+Disrupting (Greater),14,4300 gp,Common,Magical Necromancy,Runes,Weapon Property Runes,—
+Rod of Negation,14,4300 gp,Common,Abjuration Magical,Held Items,—,1
+Ring of Energy Resistance (Major),14,4400 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Glorious Plate,14,4500 gp,Rare,Evocation Good Light Magical,Armor,Specific Magic Armor,4
+Holy Avenger,14,4500 gp,Uncommon,Divine Evocation Good Lawful,Weapons,Specific Magic Weapons,1
+Magic Armor (+2 Greater Resilient),14,4500 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Ring of Wizardry (Type IV),14,4500 gp,Uncommon,Arcane Divination Invested,Worn Items,Other Worn Items,—
+Wand of Crackling Lightning (6th-Level Spell),14,4500 gp,Common,Electricity Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Noisome Acid (6th-Level Spell),14,4500 gp,Uncommon,Acid Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (6th-Level Spell),14,4500 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of the Snowfields (5th-Level Spell),14,4500 gp,Common,Cold Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Widening (6th-Level Spell),14,4500 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Steam Giant,14,12500 gp,Rare,—,Vehicles,—,L
+Infernal Health,15,—,Rare,Contract Healing Invested Magical,Other,Infernal Contracts,—
+Bravo's Brew (Greater),15,700 gp,Common,Alchemical Consumable Elixir Mental,Alchemical Items,Alchemical Elixirs,L
+Sea Touch Elixir (Greater),15,920 gp,Common,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Stone Body Mutagen (Greater),15,920 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Dragon Bile,15,925 gp,Common,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Mindfog Mist,15,1000 gp,Common,Alchemical Consumable Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Potion of Flying (Greater),15,1000 gp,Common,Consumable Magical Potion Transmutation,Consumables,Potions,L
+Azure Worm Repellent,15,1100 gp,Uncommon,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Obfuscation Oil,15,1200 gp,Common,Consumable Illusion Magical Oil,Consumables,Oils,L
+8th-Level Scroll,15,1300 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Disintegration Bolt,15,1300 gp,Uncommon,Consumable Evocation Magical,Consumables,Ammunition,—
+Elixir of Life (Major),15,1300 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type VII),15,1300 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Stone Bullet,15,1300 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Demilich Eye Gem,15,3000 gp,Rare,Arcane,Held Items,—,—
+Necklace of Fireballs VI,15,4200 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Cold Iron Object (High-Grade),15,4500 gp,Common,Precious,Materials,—,—
+Silver Object (High-Grade),15,4500 gp,Common,Precious,Materials,—,—
+Cold Iron Buckler (High-Grade),15,5000 gp,Common,—,Shields,Precious Material Shields,L
+Silver Buckler (High-Grade),15,5000 gp,Common,—,Shields,Precious Material Shields,L
+Heedless Spurs,15,5200 gp,Rare,Abjuration Magical,Worn Items,Other Worn Items,L
+Cold Iron Shield (High-Grade),15,5500 gp,Common,—,Shields,Precious Material Shields,1
+Silver Shield (High-Grade),15,5500 gp,Common,—,Shields,Precious Material Shields,1
+Victory Plate (Greater),15,5500 gp,Uncommon,Abjuration Invested Magical,Armor,Specific Magic Armor,4
+Radiant Lance,15,5750 gp,Uncommon,Divine Evocation Fire Good Light,Weapons,Specific Magic Weapons,2
+Dragonscale Amulet,15,5800 gp,Rare,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Reforging Shield,15,6000 gp,Rare,Abjuration Magical,Shields,Specific Shields,1
+Wondrous Figurine (Obsidian Steed),15,6000 gp,Common,Conjuration Magical,Held Items,—,L
+Antimagic,15,6500 gp,Uncommon,Abjuration Magical,Runes,Armor Property Runes,—
+Blade of the Black Soverign,15,6500 gp,Unique,Electricity Evocation Magical,Weapons,Specific Magic Weapons,2
+Corrosive (Greater),15,6500 gp,Common,Acid Conjuration Magical,Runes,Weapon Property Runes,—
+Earthglide Cloak,15,6500 gp,Common,Earth Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Flaming (Greater),15,6500 gp,Common,Conjuration Fire Magical,Runes,Weapon Property Runes,—
+Frost (Greater),15,6500 gp,Common,Cold Conjuration Magical,Runes,Weapon Property Runes,—
+Magic Wand (7th-Level Spell),15,6500 gp,Common,Magical Wand,Wands,Magic Wands,L
+Plate Armor of the Deep,15,6500 gp,Uncommon,Abjuration Invested Magical,Armor,Specific Magic Armor,4
+Robe of the Archmagi,15,6500 gp,Uncommon,Abjuration Arcane Invested,Worn Items,Other Worn Items,1
+Shock (Greater),15,6500 gp,Common,Electricity Evocation Magical,Runes,Weapon Property Runes,—
+Thundering (Greater),15,6500 gp,Common,Evocation Magical Sonic,Runes,Weapon Property Runes,—
+Wand of Continuation (6th-Level Spell),15,6500 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Overflowing Life (6th-Level Spell),15,6500 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Crystal Ball (Selenite),15,7000 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Ancestral Echoing,15,9500 gp,Rare,Dwarf Evocation Magical Saggorak,Runes,Weapon Property Runes,—
+Nightmare Vapor,16,1400 gp,Common,Alchemical Consumable Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Oil of Object Animation (Greater),16,1400 gp,Uncommon,Consumable Magical Oil Transmutation,Consumables,Oils,—
+Salamander Elixir (Greater),16,1400 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Weeping Midnight,16,1400 gp,Uncommon,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Winter Wolf Elixir (Greater),16,1400 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Cerulean Scourge,16,1450 gp,Common,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+Brimstone Fumes,16,1500 gp,Common,Alchemical Consumable Evil Inhaled Poison,Alchemical Items,Alchemical Poisons,L
+Dust of Corpse Animation (Greater),16,1500 gp,Uncommon,Consumable Magical Necromancy,Consumables,Other Consumables,—
+Frenzy Oil,16,1500 gp,Uncommon,Alchemical Consumable Contact Poison,Alchemical Items,Alchemical Poisons,L
+Hail of Arrows Snare,16,1500 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Omnidirectional Spear Snare,16,1500 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Truesight Potion,16,1500 gp,Common,Consumable Divination Magical Potion,Consumables,Potions,L
+Flame Navette,16,1800 gp,Common,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Ghost Dust,16,1800 gp,Common,Consumable Illusion Occult Talisman,Consumables,Talismans,—
+Candle of Invocation,16,2000 gp,Uncommon,Conjuration Consumable Divine,Consumables,Other Consumables,—
+Eagle Eye Elixir (Major),16,2000 gp,Common,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Adamantine Object (High-Grade),16,6000 gp,Uncommon,Precious,Materials,—,—
+Darkwood Object (High-Grade),16,6000 gp,Uncommon,Precious,Materials,—,—
+Dragonhide Object (High-Grade),16,6000 gp,Uncommon,Precious,Materials,—,—
+Mithral Object (High-Grade),16,6000 gp,Uncommon,Precious,Materials,—,—
+Crystal Ball (Moonstone),16,7500 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Adamantine Buckler (High-Grade),16,8000 gp,Uncommon,—,Shields,Precious Material Shields,L
+Darkwood Buckler (High-Grade),16,8000 gp,Uncommon,—,Shields,Precious Material Shields,L
+Dragonhide Buckler (High-Grade),16,8000 gp,Uncommon,—,Shields,Precious Material Shields,L
+Mithral Buckler (High-Grade),16,8000 gp,Uncommon,—,Shields,Precious Material Shields,L
+Nethysian Bulwark,16,8000 gp,Uncommon,Abjuration Evocation Magical,Shields,Specific Shields,1
+Adamantine Shield (High-Grade),16,8800 gp,Uncommon,—,Shields,Precious Material Shields,1
+Darkwood Shield (High-Grade),16,8800 gp,Uncommon,—,Shields,Precious Material Shields,1
+Dragonhide Shield (High-Grade),16,8800 gp,Uncommon,—,Shields,Precious Material Shields,1
+Mithral Shield (High-Grade),16,8800 gp,Uncommon,—,Shields,Precious Material Shields,L
+Weapon Potency (+3),16,8935 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Cold Iron Weapon (High-Grade),16,9000 gp,Common,—,Weapons,Precious Material Weapons,—
+Floating Shield (Greater),16,9000 gp,Uncommon,Magical,Shields,Specific Shields,L
+Medusa's Scream (Greater),16,9000 gp,Common,Magical Transmutation,Shields,Specific Shields,1
+Silver Weapon (High-Grade),16,9000 gp,Common,—,Weapons,Precious Material Weapons,—
+Slick (Major),16,9000 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Staff of Healing (True),16,9200 gp,Common,Magical Necromancy Staff,Staves,—,1
+Instant Fortress,16,9300 gp,Uncommon,Conjuration Magical Structure,Structures,—,L
+Staff of the Black Desert (Greater),16,9500 gp,Uncommon,Divination Magical Staff,Staves,—,1
+Aeon Stone (Orange Prism),16,9750 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Dragonplate,16,10000 gp,Uncommon,Evocation Invested Magical,Armor,Specific Magic Armor,4
+Frost Brand,16,10000 gp,Common,Cold Evocation Magical,Weapons,Specific Magic Weapons,2
+Guiding Chisel,16,10000 gp,Unique,Conjuration Elf Magical,Held Items,—,1
+Handwraps of Mighty Blows (+3 Greater Striking),16,10000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Magic Weapon (+3 Greater Striking),16,10000 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Mountain to the Sky,16,10000 gp,Unique,Conjuration Magical Structure,Structures,—,—
+Speed,16,10000 gp,Rare,Magical Transmutation,Runes,Weapon Property Runes,—
+Staff of Impossible Visions (Major),16,10000 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Staff of Power,16,10000 gp,Rare,Evocation Magical Staff,Staves,—,1
+Sturdy Shield (Major),16,10000 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Wand of Slaying (7th-Level Spell),16,10000 gp,Common,Illusion Magical Wand,Wands,Specialty Wands,L
+Wand of Smoldering Fireballs (7th-Level Spell),16,10000 gp,Common,Evocation Fire Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (7th-Level Spell),16,10000 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (7th-Level Spell),16,10000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Darkwood Tower Shield (High-Grade),16,11200 gp,Uncommon,—,Shields,Precious Material Shields,3
+Hemlock,17,2250 gp,Common,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Dispelling Sliver,17,2400 gp,Common,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Acid Flask (Major),17,2500 gp,Common,Acid Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Alchemist's Fire (Major),17,2500 gp,Common,Alchemical Bomb Consumable Fire Splash,Alchemical Items,Alchemical Bombs,L
+Blight Bomb (Major),17,2500 gp,Common,Alchemical Bomb Consumable Poison Splash,Alchemical Items,Alchemical Bombs,L
+Bottled Lightning (Major),17,2500 gp,Common,Alchemical Bomb Consumable Electricity Splash,Alchemical Items,Alchemical Bombs,L
+Frost Vial (Major),17,2500 gp,Common,Alchemical Bomb Cold Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Ghost Charge (Major),17,2500 gp,Common,Alchemical Bomb Consumable Positive Splash,Alchemical Items,Alchemical Bombs,L
+Green Gut,17,2500 gp,Uncommon,Alchemical Consumable Poison,Alchemical Items,Alchemical Tools,L
+Peshpine Grenade (Major),17,2500 gp,Uncommon,Alchemical Bomb Consumable Splash,Alchemical Items,Alchemical Bombs,L
+Sixfingers Elixir (Greater),17,2500 gp,Uncommon,Alchemical Consumable Elixir Polymorph,Alchemical Items,Alchemical Elixirs,L
+Tanglefoot Bag (Major),17,2500 gp,Common,Alchemical Bomb Consumable,Alchemical Items,Alchemical Bombs,L
+Thunderstone (Major),17,2500 gp,Common,Alchemical Bomb Consumable Sonic Splash,Alchemical Items,Alchemical Bombs,L
+9th-Level Scroll,17,3000 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Bestial Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Celestial Peach (Rejuventation),17,3000 gp,Rare,Consumable Divine Healing Magical Necromancy Positive,Consumables,Other Consumables,L
+Cognitive Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Dragon's Breath Potion (Wyrm),17,3000 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Drakeheart Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Dread Ampoule (Major),17,3000 gp,Common,Alchemical Bomb Consumable Emotion Fear Mental Poison Splash,Alchemical Items,Alchemical Bombs,L
+Energy Mutagen (Major),17,3000 gp,Uncommon,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Juggernaut Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Quicksilver Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Serene Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Silvertongue Mutagen (Major),17,3000 gp,Common,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Spellstrike Ammunition (Type VIII),17,3000 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Lock (Superior),17,4500 gp,Common,—,Adventuring Gear,—,—
+Manacles (Superior),17,5000 gp,Common,—,Adventuring Gear,—,—
+Handcuffs (Superior),17,6000 gp,Uncommon,—,Adventuring Gear,—,L
+High-Grade Sovereign Steel Object,17,8000 gp,Rare,Precious,Materials,—,L
+Necklace of Fireballs VII,17,9600 gp,Common,Evocation Invested Magical,Worn Items,Other Worn Items,—
+Orichalcum Object (High-Grade),17,10000 gp,Rare,Precious,Materials,—,—
+Orichalcum Buckler (High-Grade),17,12000 gp,Rare,—,Shields,Precious Material Shields,L
+Crystal Ball (Peridot),17,12500 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Impenetrable Scale,17,12800 gp,Uncommon,Abjuration Invested Magical,Armor,Specific Magic Armor,3
+Armbands of Athleticism (Greater),17,13000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Cloak of the Bat (Greater),17,13000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,L
+Phylactery of Faithfulness (Greater),17,13000 gp,Common,Divination Divine Invested,Worn Items,Other Worn Items,L
+Robe of Eyes,17,13000 gp,Uncommon,Divination Invested Magical,Worn Items,Other Worn Items,1
+Orichalcum Shield (High-Grade),17,13200 gp,Rare,—,Shields,Precious Material Shields,1
+Adamantine Weapon (High-Grade),17,13500 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Darkwood Weapon (High-Grade),17,13500 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Ethereal,17,13500 gp,Uncommon,Conjuration Magical,Runes,Armor Property Runes,—
+Insistent Door Knocker (Major),17,13500 gp,Common,Conjuration Magical,Held Items,—,1
+Messenger's Ring (Greater),17,13500 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Mithral Weapon (High-Grade),17,13500 gp,Uncommon,—,Weapons,Precious Material Weapons,—
+Flame Tongue (Greater),17,13800 gp,Common,Evocation Fire Magical,Weapons,Specific Magic Weapons,1
+Daredevil Boots (Greater),17,14000 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Jerkin of Liberation,17,14000 gp,Uncommon,Abjuration Invested Magical,Armor,Specific Magic Armor,1
+Shadow (Major),17,14000 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Voyager's Pack,17,14800 gp,Uncommon,Conjuration Invested Magical,Worn Items,Other Worn Items,—
+Alchemist Goggles (Major),17,15000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Anklets of Alacrity,17,15000 gp,Common,Apex Invested Magical Transmutation,Worn Items,Apex Items,—
+Belt of Giant Strength,17,15000 gp,Common,Apex Invested,Worn Items,Apex Items,L
+Belt of Regeneration,17,15000 gp,Common,Apex Magical Transmutation,Worn Items,Apex Items,L
+Circlet of Persuasion,17,15000 gp,Common,Apex Enchantment Invested Magical,Worn Items,Apex Items,—
+Diadem of Intellect,17,15000 gp,Common,Apex Divination Invested Magical,Worn Items,Apex Items,L
+Dread Blindfold,17,15000 gp,Common,Emotion Enchantment Fear Invested Magical Mental,Worn Items,Other Worn Items,—
+Headband of Inspired Wisdom,17,15000 gp,Common,Abjuration Apex Invested Magical,Worn Items,Apex Items,—
+Luck Blade,17,15000 gp,Rare,Divination Fortune Magical,Weapons,Specific Magic Weapons,L
+Magic Wand (8th-Level Spell),17,15000 gp,Common,Magical Wand,Wands,Magic Wands,L
+Vorpal,17,15000 gp,Rare,Evocation Magical,Runes,Weapon Property Runes,—
+Wand of Continuation (7th-Level Spell),17,15000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Manifold Missiles (7th-Level Spell),17,15000 gp,Common,Evocation Force Magical Wand,Wands,Specialty Wands,L
+Wand of Overflowing Life (7th-Level Spell),17,15000 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Cloak of Repute (Major),17,21750 gp,Common,Enchantment Invested Magical,Worn Items,Other Worn Items,1
+Unmemorable Mantle (Major),17,21750 gp,Common,Illusion Invested Magical,Worn Items,Other Worn Items,1
+Genius Diadem,18,—,Rare,Apex Arcane Divination Intelligent,Intelligent Items,—,L
+Focus Cathartic (Major),18,3250 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Sinew-Shock Serum (Major),18,3250 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Universal Solvent (Major),18,3250 gp,Common,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Crystal Shards (Major),18,4000 gp,Common,Alchemical Bomb Consumable Earth Splash,Alchemical Items,Alchemical Bombs,L
+King's Sleep,18,4000 gp,Common,Alchemical Consumable Ingested Poison Virulent,Alchemical Items,Alchemical Poisons,L
+Ring of Maniacal Devices (Greater),18,4250 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Potion of Undetectability,18,4400 gp,Common,Consumable Illusion Magical Potion,Consumables,Potions,L
+Crimson Worm Repellent,18,4500 gp,Uncommon,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Applereed Mutagen (Greater),18,5000 gp,Rare,Alchemical Consumable Elixir Mutagen Polymorph,Alchemical Items,Alchemical Elixirs,L
+Healing Potion (Major),18,5000 gp,Common,Consumable Healing Magical Necromancy Potion,Consumables,Potions,L
+Oil of Unlife (Major),18,5000 gp,Common,Consumable Magical Necromancy Negative Oil,Consumables,Oils,L
+Potion of Retaliation (Major),18,5000 gp,Common,Consumable Evocation Magical Potion,Consumables,Potions,L
+Sun Orchid Poultice,18,5000 gp,Rare,Alchemical Consumable,Alchemical Items,Alchemical Tools,L
+Vaccine (Major),18,5000 gp,Rare,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Reflecting Shield,18,18000 gp,Uncommon,Abjuration Magical,Shields,Specific Shields,L
+Inexplicable Apparatus,18,19000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,2
+Maestro's Instrument (Greater),18,19000 gp,Common,Enchantment Magical,Held Items,—,1
+Marvelous Medicines (Greater),18,19000 gp,Common,Magical Necromancy,Held Items,—,1
+Thurible of Revelation (Greater),18,19000 gp,Common,Divination Divine,Held Items,—,1
+Cold Iron Armor (High-Grade),18,20000 gp,Common,—,Armor,Precious Material Armor,—
+Goggles of Night (Major),18,20000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Silver Armor (High-Grade),18,20000 gp,Common,—,Armor,Precious Material Armor,—
+Armor Potency (+3),18,20560 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+Storm Flash (Greater),18,21000 gp,Common,Electricity Evocation Magical,Weapons,Specific Magic Weapons,1
+Breastplate of Command (Greater),18,22000 gp,Common,Enchantment Invested Magical,Armor,Specific Magic Armor,2
+Possibility Tome,18,22000 gp,Common,Divination Magical,Held Items,—,2
+Orichalcum Weapon (High-Grade),18,22500 gp,Rare,—,Weapons,Precious Material Weapons,—
+Life's Last Breath,18,23500 gp,Unique,Evil Magical Necromancy,Weapons,Specific Magic Weapons,2
+Fortification (Greater),18,24000 gp,Common,Abjuration Magical,Runes,Armor Property Runes,—
+Indestructible Shield,18,24000 gp,Rare,Abjuration Magical,Shields,Specific Shields,1
+Magic Armor (+3 Greater Resilient),18,24000 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Staff of Nature's Vengeance (Major),18,24000 gp,Common,Evocation Magical Staff,Staves,—,1
+Torag's Silver Anvil,18,24000 gp,Uncommon,Divine Magical Transmutation,Weapons,Specific Magic Weapons,2
+Wand of Crackling Lightning (8th-Level Spell),18,24000 gp,Common,Electricity Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Noisome Acid (8th-Level Spell),18,24000 gp,Uncommon,Acid Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Slaying (8th-Level Spell),18,24000 gp,Common,Illusion Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (8th-Level Spell),18,24000 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of the Snowfields (7th-Level Spell),18,24000 gp,Common,Cold Evocation Magical Wand,Wands,Specialty Wands,L
+Wand of Widening (8th-Level Spell),18,24000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Elixir of Life (True),19,3000 gp,Common,Alchemical Consumable Elixir Healing,Alchemical Items,Alchemical Elixirs,L
+Ambrosia of Undying Hope,19,6200 gp,Rare,Alchemical Consumable Elixir Necromancy,Alchemical Items,Alchemical Elixirs,L
+Black Lotus Extract,19,6500 gp,Common,Alchemical Consumable Contact Poison Virulent,Alchemical Items,Alchemical Poisons,L
+Oblivion Essence,19,6500 gp,Uncommon,Alchemical Consumable Injury Poison,Alchemical Items,Alchemical Poisons,L
+10th-Level Scroll,19,8000 gp,Common,Consumable Magical Scroll,Consumables,Scrolls,L
+Panacea Fruit,19,8000 gp,Rare,Consumable Healing Necromancy Primal,Consumables,Other Consumables,L
+Spellstrike Ammunition (Type IX),19,8000 gp,Common,Consumable Magical Transmutation,Consumables,Ammunition,—
+Aeon Stone (Lavender and Green Ellipsoid),19,30000 gp,Uncommon,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Luck Blade (Wishing),19,30000 gp,Rare,Divination Fortune Magical,Weapons,Specific Magic Weapons,L
+Striking (Major),19,31065 gp,Common,Evocation Magical,Runes,Fundamental Weapon Runes,—
+Adamantine Armor (High-Grade),19,32000 gp,Uncommon,—,Armor,Precious Material Armor,—
+Crystal Ball (Obsidian),19,32000 gp,Uncommon,Divination Magical Scrying,Held Items,—,L
+Darkwood Armor (High-Grade),19,32000 gp,Uncommon,—,Armor,Precious Material Armor,—
+Dragonhide Armor (High-Grade),19,32000 gp,Uncommon,—,Armor,Precious Material Armor,—
+High-Grade Sovereign Steel Weapon,19,32000 gp,Rare,—,Weapons,Precious Material Weapons,L
+Mithral Armor (High-Grade),19,32000 gp,Uncommon,—,Armor,Precious Material Armor,—
+Robe of the Archmagi (Greater),19,32000 gp,Uncommon,Abjuration Arcane Invested,Worn Items,Other Worn Items,1
+Mask of the Banshee (Greater),19,35000 gp,Common,Auditory Invested Magical Necromancy Negative,Worn Items,Other Worn Items,—
+Winged (Greater),19,35000 gp,Common,Magical Transmutation,Runes,Armor Property Runes,—
+Locket of Sealed Nightmares,19,36000 gp,Rare,Illusion Invested Magical,Worn Items,Other Worn Items,—
+Mattock of the Titans,19,36000 gp,Uncommon,Evocation Magical,Weapons,Specific Magic Weapons,16
+Berserker's Cloak (Greater),19,40000 gp,Common,Invested Primal Transmutation,Worn Items,Other Worn Items,1
+Handwraps of Mighty Blows (+3 Major Striking),19,40000 gp,Common,Invested Magical Transmutation,Worn Items,Other Worn Items,—
+Magic Wand (9th-Level Spell),19,40000 gp,Common,Magical Wand,Wands,Magic Wands,L
+Magic Weapon (+3 Major Striking),19,40000 gp,Common,Evocation Magical,Weapons,Basic Magic Weapons,—
+Sturdy Shield (Supreme),19,40000 gp,Common,Abjuration Magical,Shields,Specific Shields,1
+Third Eye,19,40000 gp,Common,Divination Invested Magical,Worn Items,Other Worn Items,—
+Wand of Continuation (8th-Level Spell),19,40000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Wand of Overflowing Life (8th-Level Spell),19,40000 gp,Common,Healing Magical Necromancy Positive Wand,Wands,Specialty Wands,L
+Elixir of Rejuvenation,20,—,Uncommon,Alchemical Consumable Elixir,Alchemical Items,Alchemical Elixirs,L
+Philosopher's Stone,20,—,Uncommon,Alchemical Consumable,Alchemical Items,Alchemical Tools,2
+Piereta,20,—,Unique,Divine Evocation Intelligent,Intelligent Items,—,1
+Sun Orchid Elixir,20,—,Rare,Alchemical Consumable Elixir Necromancy,Alchemical Items,Alchemical Elixirs,L
+Unending Youth,20,—,Rare,Conjuration Contract Invested Magical,Other,Infernal Contracts,—
+Flying Blade Wheel Snare,20,10000 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Instant Evisceration Snare,20,10000 gp,Common,Consumable Mechanical Snare Trap,Snares,—,—
+Tears of Death,20,12000 gp,Common,Alchemical Consumable Contact Poison Virulent,Alchemical Items,Alchemical Poisons,L
+Celestial Hair,20,12500 gp,Rare,Abjuration Consumable Magical Talisman,Consumables,Talismans,—
+Antimagic Oil,20,13000 gp,Rare,Abjuration Consumable Magical,Consumables,Oils,L
+Nightmare Salt,20,14000 gp,Rare,Alchemical Consumable Ingested Poison,Alchemical Items,Alchemical Poisons,L
+Resilient (Major),20,49440 gp,Common,Abjuration Magical,Runes,Fundamental Armor Runes,—
+High-Grade Sovereign Steel Armor,20,50000 gp,Rare,—,Armor,Precious Material Armor,L
+Elven Chain (High-Grade),20,52000 gp,Uncommon,—,Armor,Precious Material Armor,—
+Orichalcum Armor (High-Grade),20,55000 gp,Rare,—,Armor,Precious Material Armor,—
+Bracers of Armor III,20,60000 gp,Common,Abjuration Invested Magical,Worn Items,Other Worn Items,L
+Planar Ribbon,20,60000 gp,Unique,Conjuration Occult,Held Items,—,L
+Whisper of the First Lie,20,60000 gp,Rare,Enchantment Invested Magical,Worn Items,Other Worn Items,—
+Staff of Providence (True),20,64000 gp,Common,Divination Magical Staff,Staves,—,1
+Staff of Sieges,20,65000 gp,Uncommon,Evocation Magical Staff,Staves,—,1
+Ring of Spell Turning,20,67000 gp,Rare,Abjuration Invested Magical,Worn Items,Other Worn Items,—
+Magic Armor (+3 Major Resilient),20,70000 gp,Common,Abjuration Invested Magical,Armor,Basic Magic Armor,—
+Shield of the Unified Legion,20,70000 gp,Uncommon,Evocation Magical,Shields,Specific Shields,L
+Sky Hammer,20,70000 gp,Rare,Evocation Magical,Weapons,Specific Magic Weapons,1
+Staff of Impossible Visions (True),20,70000 gp,Uncommon,Illusion Magical Staff,Staves,—,1
+Wand of Slaying (9th-Level Spell),20,70000 gp,Common,Illusion Magical Wand,Wands,Specialty Wands,L
+Wand of Smoldering Fireballs (9th-Level Spell),20,70000 gp,Common,Evocation Fire Magical Wand,Wands,Specialty Wands,L
+Wand of Teeming Ghosts (9th-Level Spell),20,70000 gp,Uncommon,Magical Necromancy Wand,Wands,Specialty Wands,L
+Wand of Widening (9th-Level Spell),20,70000 gp,Common,Magical Wand,Wands,Specialty Wands,L
+Celestial Peach (Life),20,73000 gp,Rare,Consumable Divine Healing Magical Necromancy Positive,Consumables,Other Consumables,L
+Rod of Cancellation,20,75000 gp,Rare,Abjuration Magical,Held Items,—,1
+Staff of the Magi,20,90000 gp,Rare,Evocation Magical Staff,Staves,—,1

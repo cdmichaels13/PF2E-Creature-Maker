@@ -1,35 +1,35 @@
 Aberration: darkvision, speaks Aklo
-Aeon: monitor trait, speaks Utopian/other planar languages, envisioning for true aeons, weakness to chaotic, attacks deal additional lawful damage
+Aeon: monitor trait, speaks Utopian/other planar languages, envisioning for true aeons, WEAKNESS to chaotic, attacks deal additional lawful damage
 Air: speaks Auran, fly speed
 Angel: celestial trait, unique aura, fly speed, cast angelic messenger
-Animal: no languages, -4 or -5 INT
+Animal: no languages, INT -4-
 Archon: celestial trait, unique ability displaying this archon's virtue
 Astral: darkvision
-Azata: celestial trait, weakness to cold iron/evil, unique ability based on freedom
-Beast: INT -3 or higher
-Celestial: darkvision, speaks Celestial, +1 to saves vs. magic, weakness to evil, attacks deal additional good damage
-Cold: immunity or resistance to cold
+Azata: celestial trait, WEAKNESS to cold iron/evil, unique ability based on freedom
+Beast: INT -3+
+Celestial: darkvision, speaks Celestial, +1 to saves vs. magic, WEAKNESS to evil, attacks deal additional good damage
+Cold: immunity or RESISTANCE to cold
 Construct: mindless trait, immune to bleed, death effects, diseased, doomed, drained, fatigued, healing, necromancy, nonlethal attacks, paralyzed, poison, sickened, unconscious, mental
-Daemon: fiend trait, speaks Abyssal, has telepathy (100ft), weakness to cold iron/good, high HP, vulnerable to a specific sin that may deal mental damage, at-will dimension door (4th/5th), cast Abyssal pact ritual, unique sin ability
-Devil: fiend trait, speaks Infernal, has telepathy (100ft), immune to fire, resistant to physical (except silver) and poison, at-will dimension door (4th/5th), cast Infernal pact ritual, ability demonstrating purpose in devil hierarchy
+Daemon: fiend trait, speaks Abyssal, has telepathy (100ft), WEAKNESS to cold iron/good, high HP, vulnerable to a specific sin that may deal mental damage, at-will dimension door (4th/5th), cast Abyssal pact ritual, unique sin ability
+Devil: fiend trait, speaks Infernal, has telepathy (100ft), immune to fire, WEAKNESS to physical (except silver) and poison, at-will dimension door (4th/5th), cast Infernal pact ritual, ability demonstrating purpose in devil hierarchy
 Dragon: darkvision, speaks Draconic, fly speed, breath weapon ability
 Earth: tremorsense, speaks Terran, burrow speed
 Elemental: darkvision, immune to bleed, paralyzed, poison, sleep
 Ethereal: darkvision
-Fey: low-light vision, speaks Aklo and/or Sylvan, weakness to cold iron
-Fiend: darkvision, +1 to saves vs. magic, weak to good, attacks deal additional evil damage
-Fire: speaks Ignan, immune to fire, resistant to cold
-Fungus: mindless trait, immune to mental, occassionaly weak to slashing/fire
-Giant: humanoid trait, Large or bigger, low-light vision, speaks Jotun
-Humanoid: INT -3 or higher
+Fey: low-light vision, speaks Aklo and/or Sylvan, WEAKNESS to cold iron
+Fiend: darkvision, +1 to saves vs. magic, WEAKNESS to good, attacks deal additional evil damage
+Fire: speaks Ignan, immune to fire, RESISTANT to cold
+Fungus: mindless trait, immune to mental, occasional WEAKNESS to slashing/fire
+Giant: humanoid trait, LARGE+, low-light vision, speaks Jotun
+Humanoid: INT -3+
 Inevitable: aeon trait, monitor trait, immune to death effects, disease, emotion, poison, unconscious, attacks deal additional lawful damage
 Monitor: darkvision, neither good/evil
-Ooze: mindless trait, sense motion instead of vision, bad AC, extreme HP, immune to critical hits, precision, unconscious, acid, visual effects, mental
-Plant: mindless trait, low-light vision, immune to mental, sometimes weak to fire
-Protean: monitor trait, speaks Protean, weak to lawful, resistant to precision, has protean anatomy X, attacks deal additional chaotic damage, always has freedom of movement, can Change Shape
-Psychopomp: monitor trait, lifesense (60ft), speaks Requian, immune to death effects/disease, resistant to negative, poison, has spirit touch
-Rakshasa: fiend trait, +2 save vs. magic (+3 vs. divine), resistant to physical (except piercing), Change Shape
+Ooze: mindless trait, sense motion instead of vision, AC BAD, HP EXTREME, immune to critical hits, precision, unconscious, acid, visual effects, mental
+Plant: mindless trait, low-light vision, immune to mental, occasional WEAKNESS to fire
+Protean: monitor trait, speaks Protean, WEAKNESS to lawful, RESISTANCE to precision, has protean anatomy X, attacks deal additional chaotic damage, always has freedom of movement, can Change Shape
+Psychopomp: monitor trait, lifesense (60ft), speaks Requian, immune to death effects/disease, RESISTANCE to negative, poison, has spirit touch
+Rakshasa: fiend trait, +2 save vs. magic (+3 vs. divine), RESISTANCE to physical (except piercing), Change Shape
 Spirit: incorporeal trait, undead trait
-Swarm: Large or bigger, low HP, immune to precision, has swarm mind, weak to area damage, splash damage, resistant to all but one physical type
+Swarm: LARGE+, low HP, immune to precision, has swarm mind, WEAKNESS to area damage, splash damage, RESISTANCE to all but one physical type
 Undead: evil, incorporeal trait if ghostly, sometimes mindless trait, darkvision, negative healing, immune to death effects, disease, paralyze, poison, sleep (or unconscious if it never rests at all); if mindless, add mental
 Water: speaks Aquan, swim speed

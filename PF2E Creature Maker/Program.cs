@@ -75,8 +75,8 @@ namespace PF2E_Creature_Maker
             {
                 Step.NPCorMonster,
                 Step.Level,
-                Step.Size,
                 Step.Traits,
+                Step.Size,
                 Step.Hit_Points,
                 Step.Resistances_Weaknesses,
                 Step.Skills,
@@ -138,11 +138,6 @@ namespace PF2E_Creature_Maker
                             ExecuteStep.LevelStep(random, _creature, partyLevel);
                             break;
                         }
-                    case Step.Size:
-                        {
-                            ExecuteStep.SizeStep(_creature, random);
-                            break;
-                        }
                     case Step.Traits:
                         {
                             string userInput = "";
@@ -152,6 +147,11 @@ namespace PF2E_Creature_Maker
                                 Console.WriteLine("Press enter to continue or ADD to add another trait");
                                 userInput = GetValidString("", "ADD");
                             } while (userInput.ToUpper() == "ADD");
+                            break;
+                        }
+                    case Step.Size:
+                        {
+                            ExecuteStep.SizeStep(_creature, random);
                             break;
                         }
                     case Step.Hit_Points:
@@ -260,6 +260,37 @@ namespace PF2E_Creature_Maker
                             }
                             break;
                         }
+                    case Step.Spell_DC_And_Attack_Bonus:
+                        {
+                            if (!_creature.Spells.Any())
+                            {
+                                Console.WriteLine("No spells detected. Skipping step");
+                            }
+                            else
+                            {
+                                ExecuteStep.SpellStatsStep(_creature, random);
+                            }
+                            break;
+                        }
+                    case Step.Area_Damage:
+                        {
+                            ExecuteStep.AreaDamageStep(_creature);
+                            break;
+                        }
+                    case Step.Gear:
+                        {
+                            Console.WriteLine("Press Enter to randomly determine if creature has gear or Y\\N:");
+                            string userInput = GetValidString("", "Y", "N");
+                            if (userInput == "" && random.Next(2) == 1)
+                            {
+                                userInput = "Y";
+                            }
+                            if (userInput == "Y")
+                            {
+                                ExecuteStep.GearStep(_creature, random);
+                            }
+                            break;
+                        }
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
@@ -302,6 +333,8 @@ namespace PF2E_Creature_Maker
                 StrikeDamage = creature.StrikeDamage,
                 Perception = creature.Perception,
                 HasSpells = creature.HasSpells,
+                SpellsDC = creature.SpellsDC,
+                SpellsAttackBonus = creature.SpellsAttackBonus,
                 IsStrengthExtreme = creature.IsStrengthExtreme,
                 Type = creature.Type,
                 DegreeList = CopyDegreeList(creature.DegreeList)
@@ -349,6 +382,16 @@ namespace PF2E_Creature_Maker
             foreach (Spell spell in creature.Spells)
             {
                 creatureCopy.Spells.Add(spell);
+            }
+
+            for (int i = 0; i < creature.AreaDamageValues.Length; i++)
+            {
+                creatureCopy.AreaDamageValues[i] = creature.AreaDamageValues[i];
+            }
+
+            foreach (Item item in creature.Gear)
+            {
+                creatureCopy.Gear.Add(item);
             }
 
             return creatureCopy;

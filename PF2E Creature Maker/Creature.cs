@@ -5,6 +5,17 @@ using System.Linq;
 
 namespace PF2E_Creature_Maker
 {
+    public struct Item
+    {
+        public string name;
+        public int itemLevel;
+        public double price;
+        public string rarity;
+        public string traits;
+        public string category;
+        public string subcategory;
+        public double bulk;
+    }
     public struct Spell
     {
         public string name;
@@ -48,6 +59,11 @@ namespace PF2E_Creature_Maker
         public int Perception = 0;
         public bool HasSpells = true;
         public List<Spell> Spells = new List<Spell>();
+        public int SpellsDC = 0;
+        public int SpellsAttackBonus = 0;
+        public string[] AreaDamageValues = new string[2];
+        public List<Item> Gear = new List<Item>();
+        public int BulkLimit = 0;
         public bool IsStrengthExtreme = false;
         public CreatureType Type = CreatureType.Any;
         public List<Degree> DegreeList;
