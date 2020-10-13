@@ -6,6 +6,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace PF2E_Creature_Maker
@@ -1504,9 +1505,6 @@ namespace PF2E_Creature_Maker
 
         public static void GearStep(Creature creature, Random random)
         {
-            //TODO instead of removing items from validGear, create a new list of items that only contains gear that matches cat/subcat so validGear is only created once. Additionally, still need
-            //to ask user when to stop adding items. Additionally, identify as many inefficiencies as possible since this runs a little slow when creating validGear
-
             creature.BulkLimit = 5 + creature.AbilityScoreDictionary[AbilityScoreEnum.Strength];
             double currentBulk = 0;
             bool tryAnotherItem = false;
@@ -1522,174 +1520,202 @@ namespace PF2E_Creature_Maker
                 }
             }
 
-            int currentItemLevel = safeItemLevel;
+            int selectingItemLevel = safeItemLevel;
 
             string[] gearFile = File.ReadAllLines(Program.FilePathByName("Gear"));
             List<Item> validGear = new List<Item>();
             Item selectedItem = new Item();
 
+            Console.WriteLine("Enter Y before continuing to next step");
+            string continueY = Program.GetValidString("Y");
+            string repeatOrContinue = "";
+
             do
             {
-                List<string> validCategories = new List<string>();
-
-                for (int line = 1; line < gearFile.Length; line++)
+                do
                 {
-                    string[] splitLine = gearFile[line].Split(',');
-                    Item item = new Item();
-                    item.name = splitLine[0];
-                    item.itemLevel = int.Parse(splitLine[1]);
-                    item.rarity = splitLine[3];
-                    item.traits = splitLine[4];
-                    item.category = splitLine[5];
-                    item.subcategory = splitLine[6];
+                    tryAnotherItem = false;
+                    List<string> validCategories = new List<string>();
 
-                    string[] currencies = new string[] { " cp", " sp", " gp" };
-                    double price = 0;
-                    foreach (string currency in currencies)
+                    for (int line = 1; line < gearFile.Length; line++)
                     {
-                        if (splitLine[2].Contains(currency))
+                        string[] splitLine = gearFile[line].Split(',');
+                        if (int.Parse(splitLine[1]) > safeItemLevel)
                         {
-                            price = double.Parse(splitLine[2].Split(' ')[0]);
-                            switch (currency)
+                            break;
+                        }
+                        else
+                        {
+                            Item item = new Item();
+                            item.name = splitLine[0];
+                            item.itemLevel = int.Parse(splitLine[1]);
+                            item.rarity = splitLine[3];
+                            item.traits = splitLine[4];
+                            item.category = splitLine[5];
+                            item.subcategory = splitLine[6];
+
+                            string[] currencies = new string[] { " cp", " sp", " gp" };
+                            double price = 0;
+                            foreach (string currency in currencies)
                             {
-                                case " cp":
+                                if (splitLine[2].Contains(currency))
+                                {
+                                    price = double.Parse(splitLine[2].Split(' ')[0]);
+                                    switch (currency)
                                     {
-                                        price *= .01;
-                                        break;
+                                        case " cp":
+                                            {
+                                                price *= .01;
+                                                break;
+                                            }
+                                        case " sp":
+                                            {
+                                                price *= .1;
+                                                break;
+                                            }
+                                        default:
+                                            break;
                                     }
-                                case " sp":
-                                    {
-                                        price *= .1;
-                                        break;
-                                    }
-                                default:
-                                    break;
+                                }
+                            }
+                            item.price = price;
+
+                            try
+                            {
+                                item.bulk = int.Parse(splitLine[7]);
+                            }
+                            catch (Exception)
+                            {
+                                if (splitLine[7] == "L")
+                                {
+                                    item.bulk = .1;
+                                }
+                                else
+                                {
+                                    item.bulk = 0;
+                                }
+                            }
+
+                            validGear.Add(item);
+                            if (!validCategories.Contains(item.category))
+                            {
+                                validCategories.Add(item.category);
                             }
                         }
                     }
-                    item.price = price;
 
-                    if (splitLine[7] == "L")
+                    string selectedCategory = "";
+                    Console.WriteLine("Press Enter to randomly select an item category or SELECT");
+                    string categorySelect = Program.GetValidString("", "SELECT");
+                    if (categorySelect == "")
                     {
-                        item.bulk = .1;
+                        selectedCategory = validCategories[random.Next(validCategories.Count)];
+                        Console.WriteLine(selectedCategory);
                     }
-                    try
+                    else
                     {
-                        item.bulk = int.Parse(splitLine[7]);
-                    }
-                    catch (Exception)
-                    {
-                        item.bulk = 0;
-                    }
-
-                    if (item.itemLevel <= currentItemLevel)
-                    {
-                        validGear.Add(item);
-                        if (!validCategories.Contains(item.category))
+                        foreach (string category in validCategories)
                         {
-                            validCategories.Add(item.category);
+                            Console.WriteLine(category);
                         }
+                        selectedCategory = Program.GetValidString(validCategories.ToArray());
                     }
-                }
 
-                string selectedCategory = "";
-                Console.WriteLine("Press Enter to randomly select an item category or SELECT");
-                string categorySelect = Program.GetValidString("", "SELECT");
-                if (categorySelect == "")
-                {
-                    selectedCategory = validCategories[random.Next(validCategories.Count)];
-                    Console.WriteLine(selectedCategory);
-                }
-                else
-                {
-                    foreach (string category in validCategories)
-                    {
-                        Console.WriteLine(category);
-                    }
-                    selectedCategory = Program.GetValidString(validCategories.ToArray());
-                }
-
-                List<string> validSubcats = new List<string>();
-                foreach (Item item in validGear)
-                {
-                    if (item.category.ToLower() == selectedCategory.ToLower())
-                    {
-                        validSubcats.Add(item.subcategory);
-                    }
-                }
-
-                string selectedSubcat = "";
-                Console.WriteLine("Press Enter to randomly select an item subcategory or SELECT");
-                string subcatSelect = Program.GetValidString("", "SELECT");
-                if (subcatSelect == "")
-                {
-                    selectedSubcat = validSubcats[random.Next(validSubcats.Count)];
-                }
-                else
-                {
-                    foreach (string subcat in validSubcats)
-                    {
-                        Console.WriteLine(subcat);
-                    }
-                    selectedSubcat = Program.GetValidString(validSubcats.ToArray());
-                }
-
-                foreach (Item item in validGear)
-                {
-                    if (item.subcategory.ToLower() != selectedCategory.ToLower())
-                    {
-                        validGear.Remove(item);
-                    }
-                }
-
-                string selectedItemName = "";
-                Console.WriteLine("Press Enter to randomly select an item or SELECT");
-                string itemSelect = Program.GetValidString("", "SELECT");
-                if (itemSelect == "")
-                {
-                    selectedItemName = validGear[random.Next(validGear.Count)].name;
-                }
-                else
-                {
-                    List<string> itemNames = new List<string>();
+                    List<string> validSubcats = new List<string>();
                     foreach (Item item in validGear)
                     {
-                        Console.WriteLine(item.name);
-                        itemNames.Add(item.name);
+                        if (item.category.ToLower() == selectedCategory.ToLower() && !validSubcats.Contains(item.subcategory))
+                        {
+                            validSubcats.Add(item.subcategory);
+                        }
                     }
-                    selectedItemName = Program.GetValidString(itemNames.ToArray());
-                }
 
-                selectedItem = validGear.FirstOrDefault(Item => Item.name.ToLower() == selectedItemName.ToLower());
-
-                if (selectedItem.bulk + currentBulk > creature.BulkLimit)
-                {
-                    Console.WriteLine("Adding this item to the creature would encumber it. Add anyway? Y/N");
-                    string addAnyway = Program.GetValidString("Y", "N");
-                    if (addAnyway != "Y")
+                    string selectedSubcat = "";
+                    Console.WriteLine("Press Enter to randomly select an item subcategory or SELECT");
+                    string subcatSelect = Program.GetValidString("", "SELECT");
+                    if (subcatSelect == "")
                     {
-                        tryAnotherItem = true;
+                        selectedSubcat = validSubcats[random.Next(validSubcats.Count)];
+                        Console.WriteLine(selectedSubcat);
                     }
+                    else
+                    {
+                        foreach (string subcat in validSubcats)
+                        {
+                            Console.WriteLine(subcat);
+                        }
+                        selectedSubcat = Program.GetValidString(validSubcats.ToArray());
+                    }
+
+                    string selectedItemName = "";
+                    Console.WriteLine("Press Enter to randomly select an item or SELECT");
+                    string itemSelect = Program.GetValidString("", "SELECT");
+                    if (itemSelect == "")
+                    {
+                        do
+                        {
+                            selectedItemName = validGear[random.Next(validGear.Count)].name;
+                            selectedItem = validGear.FirstOrDefault(Item => Item.name.ToLower() == selectedItemName.ToLower());
+                        } while (selectedItem.category.ToLower() != selectedCategory.ToLower() || selectedItem.subcategory.ToLower() != selectedSubcat.ToLower());
+                        Console.WriteLine(selectedItem.name);
+                    }
+                    else
+                    {
+                        List<string> itemNames = new List<string>();
+                        foreach (Item item in validGear)
+                        {
+                            if (item.category.ToLower() == selectedCategory.ToLower() && item.subcategory.ToLower() == selectedSubcat.ToLower())
+                            {
+                                Console.WriteLine(item.name);
+                                itemNames.Add(item.name);
+                            }
+                        }
+                        selectedItemName = Program.GetValidString(itemNames.ToArray());
+                        selectedItem = validGear.FirstOrDefault(Item => Item.name.ToLower() == selectedItemName.ToLower());
+                    }
+
+                    if (selectedItem.bulk + currentBulk > creature.BulkLimit)
+                    {
+                        Console.WriteLine("Adding this item to the creature would encumber it. Add anyway? Y/N");
+                        string addAnyway = Program.GetValidString("Y", "N");
+                        if (addAnyway.ToUpper() == "N")
+                        {
+                            tryAnotherItem = true;
+                        }
+                    }
+                } while (tryAnotherItem);
+
+                creature.Gear.Add(selectedItem);
+                currentBulk += selectedItem.bulk;
+
+                Console.WriteLine("Added {0} to gear list", selectedItem.name);
+
+                if (selectingItemLevel == safeItemLevel)
+                {
+                    selectingItemLevel--;
                 }
-            } while (tryAnotherItem);
+                else
+                {
+                    selectingItemLevel = random.Next(safeItemLevel);
+                }
 
-            creature.Gear.Add(selectedItem);
-            currentBulk += selectedItem.bulk;
-
-            Console.WriteLine("Added {0} to gear list", selectedItem.name);
-
-            if (currentItemLevel == safeItemLevel)
-            {
-                currentItemLevel--;
-            }
-            else
-            {
-                currentItemLevel = random.Next(safeItemLevel);
-            }
+                Console.WriteLine("Press Enter to add more items or STOP to finish the Gear Step");
+                repeatOrContinue = Program.GetValidString("", "STOP");
+            } while (repeatOrContinue.ToUpper() != "STOP");
         }
 
         public static void EndStep(Creature creature)
         {
+            Console.WriteLine("Give this creature a name:");
+            do
+            {
+                creature.Name = Console.ReadLine();
+                if (creature.Name.Trim() == "")
+                {
+                    Console.WriteLine("Please enter a name");
+                }
+            } while (creature.Name.Trim() == "");
+
             Console.WriteLine("__Final Creature__" +
                 "\nName: " + creature.Name + 
                 "\nLevel: " + creature.Level +
@@ -1800,6 +1826,136 @@ namespace PF2E_Creature_Maker
 
                 Console.WriteLine("\nTotal Bulk: " + totalBulk + 
                     "\nTotal Price: " + totalPrice);
+            }
+        }
+
+        public static void SaveToFileStep(Creature creature)
+        {
+            string overwrite = "Y";
+            if (Directory.GetFiles(@"C:\Users\cdmic\Desktop").Contains(@"C:\Users\cdmic\Desktop\" + creature.Name + ".txt"))
+            {
+                Console.WriteLine("A file with this name already exists on the desktop. Overwrite? Y/N");
+                overwrite = Program.GetValidString("Y", "N");
+            }
+            if (overwrite.ToUpper() == "Y")
+            {
+                StreamWriter saveFile = new StreamWriter(File.Create(@"C:\Users\cdmic\Desktop\" + creature.Name + ".txt"));
+
+                saveFile.WriteLine("__Final Creature__" +
+                "\nName: " + creature.Name +
+                "\nLevel: " + creature.Level +
+                "\nSize: " + creature.Size +
+                "\nHit Points: " + creature.HitPoints);
+                if (creature.Regeneration != 0)
+                {
+                    saveFile.WriteLine("Regeneration: " + creature.Regeneration);
+                }
+
+                if (creature.ResistOrWeakType == ResistOrWeak.Resistance || creature.ResistOrWeakType == ResistOrWeak.Both)
+                {
+                    saveFile.WriteLine("Resistance: " + creature.ResistWeakValue);
+                }
+                if (creature.ResistOrWeakType == ResistOrWeak.Weakness || creature.ResistOrWeakType == ResistOrWeak.Both)
+                {
+                    saveFile.WriteLine("Weakness: " + creature.ResistWeakValue);
+                }
+
+                saveFile.WriteLine("Armor Class: " + creature.ArmorClass +
+                    "\nStrike Attack Bonus: +" + creature.StrikeAttack +
+                    "\nStrike Damage: " + creature.StrikeDamage +
+                    "\nPerception Bonus: +" + creature.Perception);
+
+                saveFile.WriteLine("\n_Ability Scores_");
+                foreach (var ability in creature.AbilityScoreDictionary)
+                {
+                    saveFile.Write(ability.Key + ": ");
+                    if (ability.Value > 0)
+                    {
+                        saveFile.Write("+");
+                    }
+                    saveFile.Write(ability.Value + "  ");
+                }
+                saveFile.WriteLine();
+
+                saveFile.WriteLine("\n_Saving Throws_");
+                foreach (var save in creature.SavingThrows)
+                {
+                    saveFile.Write(save.Key + ": ");
+                    if (save.Value > 0)
+                    {
+                        saveFile.Write("+");
+                    }
+                    saveFile.Write(save.Value + "  ");
+                }
+                saveFile.WriteLine();
+
+                saveFile.WriteLine("\n_Skills_");
+                foreach (Skill skill in creature.SkillPool.SelectedSkills)
+                {
+                    saveFile.Write("{0}: {1}  ", skill.skillName, skill.skillBonus);
+                }
+                saveFile.WriteLine();
+
+                saveFile.WriteLine("\n_Traits_");
+                foreach (string trait in creature.TraitPool.SelectedTraits)
+                {
+                    saveFile.WriteLine(trait);
+                }
+
+                if (creature.HasSpells)
+                {
+                    saveFile.WriteLine("\n_Spells_");
+                    foreach (var spell in creature.Spells)
+                    {
+                        saveFile.WriteLine(spell.name + " at level " + spell.level);
+                    }
+
+                    saveFile.WriteLine("Spells DC: " + creature.SpellsDC +
+                        "\nSpells Attack Bonus: " + creature.SpellsAttackBonus);
+                }
+
+                saveFile.WriteLine("\nArea Damage for at-will abilities: " + creature.AreaDamageValues[0]);
+                saveFile.WriteLine("Area Damage for limited abilities: " + creature.AreaDamageValues[1]);
+
+                if (creature.Gear.Any())
+                {
+                    double totalBulk = 0;
+                    double totalPrice = 0;
+                    saveFile.WriteLine("\n_Gear_");
+                    Dictionary<Item, int> uniqueItems = new Dictionary<Item, int>();
+                    foreach (Item item in creature.Gear)
+                    {
+                        if (uniqueItems.ContainsKey(item))
+                        {
+                            uniqueItems[item]++;
+                        }
+                        else
+                        {
+                            uniqueItems.Add(item, 1);
+                        }
+                    }
+                    foreach (var item in uniqueItems)
+                    {
+                        saveFile.Write(item.Key.name);
+                        if (item.Value > 1)
+                        {
+                            saveFile.Write(" x" + item.Value);
+                        }
+                        saveFile.WriteLine();
+                        saveFile.WriteLine("\tBulk per: " + item.Key.bulk +
+                            "\n\tPrice per: " + item.Key.price);
+
+                        totalBulk += item.Key.bulk * item.Value;
+                        totalPrice += item.Key.price * item.Value;
+                    }
+
+                    saveFile.WriteLine("\nTotal Bulk: " + totalBulk +
+                        "\nTotal Price: " + totalPrice);
+                }
+
+                saveFile.Close();
+
+                Console.WriteLine("Creature saved");
             }
         }
 

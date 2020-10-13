@@ -43,7 +43,8 @@ namespace PF2E_Creature_Maker
         Spell_DC_And_Attack_Bonus,
         Area_Damage,
         Gear,
-        End
+        End,
+        SaveToFile
     }
     
     public enum CreatureType
@@ -90,7 +91,8 @@ namespace PF2E_Creature_Maker
                 Step.Spell_DC_And_Attack_Bonus,
                 Step.Area_Damage,
                 Step.Gear,
-                Step.End
+                Step.End,
+                Step.SaveToFile
             };
 
             int partyLevel = Program.GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
@@ -280,12 +282,12 @@ namespace PF2E_Creature_Maker
                     case Step.Gear:
                         {
                             Console.WriteLine("Press Enter to randomly determine if creature has gear or Y\\N:");
-                            string userInput = GetValidString("", "Y", "N");
+                            string userInput = GetValidString(/*"",*/ "Y", "N");
                             if (userInput == "" && random.Next(2) == 1)
                             {
                                 userInput = "Y";
                             }
-                            if (userInput == "Y")
+                            if (userInput.ToUpper() == "Y")
                             {
                                 ExecuteStep.GearStep(_creature, random);
                             }
@@ -294,6 +296,16 @@ namespace PF2E_Creature_Maker
                     case Step.End:
                         {
                             ExecuteStep.EndStep(_creature);
+                            break;
+                        }
+                    case Step.SaveToFile:
+                        {
+                            Console.WriteLine("Would you like to save this creature to desktop? Y/N");
+                            string saveOrNot = GetValidString("Y", "N");
+                            if (saveOrNot.ToUpper() == "Y")
+                            {
+                                ExecuteStep.SaveToFileStep(_creature);
+                            }
                             endSteps = true;
                             break;
                         }
