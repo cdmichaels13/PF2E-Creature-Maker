@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
+using System.IO;
+using System.IO.Pipes;
+using Microsoft.VisualBasic.CompilerServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace PF2E_Creature_Maker
 {
@@ -9,9 +12,9 @@ namespace PF2E_Creature_Maker
     {
         bad,
         low,
-        mod,
+        moderate,
         high,
-        ex
+        extreme
     }
 
     public enum MinMax
@@ -23,6 +26,7 @@ namespace PF2E_Creature_Maker
 
     public enum Step
     {
+        NPCorMonster,
         Level,
         Size,
         Traits,
@@ -38,25 +42,42 @@ namespace PF2E_Creature_Maker
         Spells,
         Spell_DC_And_Attack_Bonus,
         Area_Damage,
-        Gear
+        Gear,
+        End,
+        SaveToFile
+    }
+    
+    public enum CreatureType
+    {
+        NPC,
+        Monster,
+        Any
+    }
+
+    public enum AbilityScoreEnum
+    {
+        Strength,
+        Dexterity,
+        Intelligence,
+        Wisdom,
+        Charisma
     }
 
     class Program
     {
-        static void Main(string[] args)
+        public static Creature _creature = new Creature();
+        public static Dictionary<Step, Creature> _creatureSaves = new Dictionary<Step, Creature>();
+        static void Main()
         {
             Random random = new Random();
-            Creature creature = new Creature();
-            List<Creature> creatureSaves = new List<Creature>() { creature };
-
-            int partyLevel;
             bool endSteps = false;
 
             Step[] stepOrder = new Step[]
             {
+                Step.NPCorMonster,
                 Step.Level,
-                Step.Size,
                 Step.Traits,
+                Step.Size,
                 Step.Hit_Points,
                 Step.Resistances_Weaknesses,
                 Step.Skills,
@@ -69,8 +90,12 @@ namespace PF2E_Creature_Maker
                 Step.Spells,
                 Step.Spell_DC_And_Attack_Bonus,
                 Step.Area_Damage,
-                Step.Gear
+                Step.Gear,
+                Step.End,
+                Step.SaveToFile
             };
+
+            int partyLevel = Program.GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
 
             for (int step = 0; endSteps == false; step++)
             {
@@ -81,165 +106,330 @@ namespace PF2E_Creature_Maker
 
                 if (step > 0)
                 {
-                    step = ContinueOrBack(stepOrder, step, creature, creatureSaves);
+                    step = ContinueOrBack(stepOrder, step);
                 }
+
+                if (_creatureSaves.ContainsKey(stepOrder[step]))
+                {
+                    _creatureSaves.Remove(stepOrder[step]);
+                }
+                _creatureSaves.Add(stepOrder[step], CopyCreature(_creature));
 
                 switch (stepOrder[step])
                 {
+                    case Step.NPCorMonster:
+                        {
+                            Console.WriteLine("Enter NPC or Monster to select a creature type, or press Enter to randomly select");
+                            string userInput = GetValidString("NPC", "Monster", "");
+                            switch(userInput.ToUpper())
+                            {
+                                case "NPC":
+                                    _creature.Type = CreatureType.NPC;
+                                    break;
+                                case "Monster":
+                                    _creature.Type = CreatureType.Monster;
+                                    break;
+                                case "":
+                                    _creature.Type = CreatureType.Any;
+                                    break;
+                            }
+                            break;
+                        }
                     case Step.Level:
                         {
-                            partyLevel = LevelStep(random, creature);
+                            ExecuteStep.LevelStep(random, _creature, partyLevel);
+                            break;
+                        }
+                    case Step.Traits:
+                        {
+                            string userInput = "";
+                            do
+                            {
+                                ExecuteStep.TraitsStep(_creature, random);
+                                Console.WriteLine("Press enter to continue or ADD to add another trait");
+                                userInput = GetValidString("", "ADD");
+                            } while (userInput.ToUpper() == "ADD");
                             break;
                         }
                     case Step.Size:
                         {
-                            SizeStep(creature, random);
+                            ExecuteStep.SizeStep(_creature, random);
+                            break;
+                        }
+                    case Step.Hit_Points:
+                        {
+                            ExecuteStep.HitPointStep(_creature, random);
+                            break;
+                        }
+                    case Step.Resistances_Weaknesses:
+                        {
+                            Console.WriteLine("Press Enter to continue or NO to skip this step");
+                            string userInput = GetValidString("", "NO");
+                            if (userInput.ToUpper() != "NO")
+                            {
+                                ExecuteStep.ResistanceWeaknessStep(_creature, random);
+                            }
+                            break;
+                        }
+                    case Step.Skills:
+                        {
+                            do
+                            {
+                                List<Degree> savedDegrees = CopyDegreeList(_creature.DegreeList);
+                                ExecuteStep.SkillStep(_creature, random);
+                                Console.WriteLine("Press ENTER to continue or BACK to erase previous skill");
+                                string userInput = GetValidString("", "BACK");
+                                if (userInput.ToUpper() == "BACK")
+                                {
+                                    int latestSkillIndex = _creature.SkillPool.SelectedSkills.Count() - 1;
+                                    _creature.SkillPool.PossibleSkills.Add(_creature.SkillPool.SelectedSkills[latestSkillIndex].skillName);
+                                    _creature.SkillPool.PossibleSkills.Sort();
+                                    _creature.SkillPool.SelectedSkills.RemoveAt(latestSkillIndex);
+                                    _creature.DegreeList = CopyDegreeList(savedDegrees);
+                                }
+                            } while (_creature.SkillPool.SelectedSkills.Count < 6);
+                            break;
+                        }
+                    case Step.Armor_Class:
+                        {
+                            ExecuteStep.ArmorClassStep(_creature, random);
+                            break;
+                        }
+                    case Step.Strike_Attack_Bonus:
+                        {
+                            ExecuteStep.StrikeAttackStep(_creature, random);
+                            break;
+                        }
+                    case Step.Strike_Damage:
+                        {
+                            ExecuteStep.StrikeDamageStep(_creature, random);
+                            break;
+                        }
+                    case Step.Ability_Scores:
+                        {
+                            AbilityScoreEnum[] abilities = new AbilityScoreEnum[] { AbilityScoreEnum.Strength, AbilityScoreEnum.Dexterity, AbilityScoreEnum.Intelligence, AbilityScoreEnum.Wisdom, AbilityScoreEnum.Charisma };
+                            foreach (AbilityScoreEnum ability in abilities)
+                            {
+                                string userInput = "";
+                                do
+                                {
+                                    List<Degree> saveDegrees = CopyDegreeList(_creature.DegreeList);
+                                    ExecuteStep.AbilityScoreStep(_creature, random, ability);
+                                    Console.WriteLine("Press ENTER to continue or BACK to redo the {0} score", ability);
+                                    userInput = GetValidString("", "BACK");
+                                    if (userInput.ToUpper() == "BACK")
+                                    {
+                                        _creature.DegreeList = CopyDegreeList(saveDegrees);
+                                    }
+                                } while (userInput.ToUpper() == "BACK");
+                            }
+                            break;
+                        }
+                    case Step.Perception:
+                        {
+                            ExecuteStep.PerceptionStep(_creature, random);
+                            break;
+                        }
+                    case Step.Saves:
+                        {
+                            SaveName[] saves = new SaveName[] { SaveName.Fortitude, SaveName.Reflex, SaveName.Will };
+                            foreach (SaveName save in saves)
+                            {
+                                ExecuteStep.SavesStep(_creature, random, save);
+                            }
+                            break;
+                        }
+                    case Step.Spells:
+                        {
+                            string[] spellTypes = new string[] { "Arcane", "Occult", "Primal", "Divine", "Focus", "NONE" };
+                            Console.WriteLine("Press Enter to randomly select this creature's magic type or one of the following types:");
+                            foreach (string type in spellTypes)
+                            {
+                                Console.WriteLine(type);
+                            }
+                            string[] validInputs = new string[spellTypes.Length + 1];
+                            for (int i = 0; i < validInputs.Length; i++)
+                            {
+                                if (i == 0)
+
+                                {
+                                    validInputs[i] = "";
+                                }
+                                else
+                                {
+                                    validInputs[i] = spellTypes[i - 1];
+                                }
+                            }
+                            string typeInput = GetValidString(validInputs);
+                            if (typeInput == "")
+                            {
+                                if (random.Next(2) == 1)
+                                {
+                                    typeInput = spellTypes[random.Next(spellTypes.Length)];
+                                }
+                                else
+                                {
+                                    _creature.HasSpells = false;
+                                }
+                            }
+                            if (typeInput.ToUpper() == "NONE")
+                            {
+                                _creature.HasSpells = false;
+                            }
+                            if (_creature.HasSpells)
+                            {
+                                ExecuteStep.SpellsStep(_creature, random, CapitalizeString(typeInput));
+                            }
+                            break;
+                        }
+                    case Step.Spell_DC_And_Attack_Bonus:
+                        {
+                            if (!_creature.Spells.Any())
+                            {
+                                Console.WriteLine("No spells detected. Skipping step");
+                            }
+                            else
+                            {
+                                ExecuteStep.SpellStatsStep(_creature, random);
+                            }
+                            break;
+                        }
+                    case Step.Area_Damage:
+                        {
+                            ExecuteStep.AreaDamageStep(_creature);
+                            break;
+                        }
+                    case Step.Gear:
+                        {
+                            Console.WriteLine("Press Enter to randomly determine if creature has gear or Y\\N:");
+                            string userInput = GetValidString("", "Y", "N");
+                            if (userInput == "" && random.Next(2) == 1)
+                            {
+                                userInput = "Y";
+                            }
+                            if (userInput.ToUpper() == "Y")
+                            {
+                                ExecuteStep.GearStep(_creature, random);
+                            }
+                            break;
+                        }
+                    case Step.End:
+                        {
+                            ExecuteStep.EndStep(_creature);
+                            break;
+                        }
+                    case Step.SaveToFile:
+                        {
+                            Console.WriteLine("Would you like to save this creature to desktop? Y/N");
+                            string saveOrNot = GetValidString("Y", "N");
+                            if (saveOrNot.ToUpper() == "Y")
+                            {
+                                ExecuteStep.SaveToFileStep(_creature);
+                            }
+                            endSteps = true;
                             break;
                         }
                     default:
-                        endSteps = true;
-                        break;
+                        {
+                            Console.WriteLine("Step incomplete");
+                            //endSteps = true;
+                            break;
+                        }
                 }
-
-                creatureSaves.Add(CopyCreature(creature));
             }
-
-            Console.WriteLine("Creature Level: " + creature._level);
-            Console.WriteLine(creature._size);
         }
 
+        #region Method Region
+        public static string FilePathByName(string fileName)
+        {
+            return @"Data Files\" + fileName + ".txt";
+        }
+
+        public static string CorrectedDash(string numberString)
+        {
+            return numberString.Replace('–', '-');
+        }
+        
         public static Creature CopyCreature(Creature creature)
         {
-            Creature creatureCopy = new Creature();
-
-            creatureCopy._isStrengthExtreme = creature._isStrengthExtreme;
-            creatureCopy._saveNumber = creature._saveNumber;
-            creatureCopy._level = creature._level;
-            creatureCopy._name = creature._name;
-            creatureCopy._size = creature._size;
-            creatureCopy._lastSaved = creature._lastSaved;
-            creatureCopy._degreeList = CopyListValues(creature._degreeList);
-
-            for (int i = 0; i < creature._abilityScores.Length; i++)
+            Creature creatureCopy = new Creature
             {
-                creatureCopy._abilityScores[i]._abilityBonus = creature._abilityScores[i]._abilityBonus;
+                Level = creature.Level,
+                Name = creature.Name,
+                Size = creature.Size,
+                HitPoints = creature.HitPoints,
+                Regeneration = creature.Regeneration,
+                ResistOrWeakType = creature.ResistOrWeakType,
+                ArmorClass = creature.ArmorClass,
+                StrikeAttack = creature.StrikeAttack,
+                StrikeDamage = creature.StrikeDamage,
+                Perception = creature.Perception,
+                HasSpells = creature.HasSpells,
+                SpellsDC = creature.SpellsDC,
+                SpellsAttackBonus = creature.SpellsAttackBonus,
+                IsStrengthExtreme = creature.IsStrengthExtreme,
+                Type = creature.Type,
+                DegreeList = CopyDegreeList(creature.DegreeList)
+            };
+
+            foreach (AbilityScoreEnum ability in creature.AbilityScoreDictionary.Keys)
+            {
+                creatureCopy.AbilityScoreDictionary[ability] = creature.AbilityScoreDictionary[ability];
+            }
+
+            foreach (SaveName save in creature.SavingThrows.Keys)
+            {
+                creatureCopy.SavingThrows[save] = creature.SavingThrows[save];
+            }
+
+            creatureCopy.TraitPool.AllPossibleTraits.Clear();
+            creatureCopy.TraitPool.SelectedTraits.Clear();
+            creatureCopy.TraitPool.HumanoidIndexes.Clear();
+
+            foreach (string trait in creature.TraitPool.AllPossibleTraits)
+            {
+                creatureCopy.TraitPool.AllPossibleTraits.Add(trait);
+            }
+            foreach (string trait in creature.TraitPool.SelectedTraits)
+            {
+                creatureCopy.TraitPool.SelectedTraits.Add(trait);
+            }
+            foreach (int index in creature.TraitPool.HumanoidIndexes)
+            {
+                creatureCopy.TraitPool.HumanoidIndexes.Add(index);
+            }
+
+            creatureCopy.SkillPool.PossibleSkills.Clear();
+            creatureCopy.SkillPool.SelectedSkills.Clear();
+
+            foreach (string skill in creature.SkillPool.PossibleSkills)
+            {
+                creatureCopy.SkillPool.PossibleSkills.Add(skill);
+            }
+            foreach (Skill skill in creature.SkillPool.SelectedSkills)
+            {
+                creatureCopy.SkillPool.SelectedSkills.Add(skill);
+            }
+
+            foreach (Spell spell in creature.Spells)
+            {
+                creatureCopy.Spells.Add(spell);
+            }
+
+            for (int i = 0; i < creature.AreaDamageValues.Length; i++)
+            {
+                creatureCopy.AreaDamageValues[i] = creature.AreaDamageValues[i];
+            }
+
+            foreach (Item item in creature.Gear)
+            {
+                creatureCopy.Gear.Add(item);
             }
 
             return creatureCopy;
         }
 
-        public static void SizeStep(Creature creature, Random random)
-        {
-            string[] sizeOptions = System.IO.File.ReadAllLines("Menu Page Size.txt");
-            List<string[]> sizeOptionsSplit = new List<string[]>();
-
-            foreach (string sizeOption in sizeOptions)
-            {
-                sizeOptionsSplit.Add(sizeOption.Split(';'));
-            }
-
-            SizeOption[] sizeOptionsArray = new SizeOption[sizeOptions.Length];
-            int mediumSizeIndex = 0;
-            for (int i = 0; i < sizeOptionsArray.Length; i++)
-            {
-                sizeOptionsArray[i] = new SizeOption();
-                sizeOptionsArray[i]._name = sizeOptionsSplit[i][0];
-                sizeOptionsArray[i]._minLevel = int.Parse(sizeOptionsSplit[i][1]);
-                if (sizeOptionsSplit[i][2] != "" && sizeOptionsSplit[i][2] != null)
-                {
-                    sizeOptionsArray[i]._maxExStrForSizeAndLevel = int.Parse(sizeOptionsSplit[i][2]);
-                }
-                if (sizeOptionsArray[i]._name == "Medium")
-                {
-                    mediumSizeIndex = i;
-                }
-            }
-
-            Console.WriteLine("Please type one of the following sizes or press Enter to randomly pick: ");
-            foreach (SizeOption option in sizeOptionsArray)
-            {
-                Console.WriteLine(option._name + " ");
-            }
-
-            string[] validSizeOptions = new string[sizeOptionsArray.Length + 1];
-            
-            for (int i = 0; i < validSizeOptions.Length; i++)
-            {
-                if (i == validSizeOptions.Length - 1)
-                {
-                    validSizeOptions[i] = "";
-                }
-                else
-                {
-                    validSizeOptions[i] = sizeOptionsArray[i]._name;
-                }
-            }
-
-            string userInput;
-            bool tooLarge = false; //test commit
-
-            do
-            {
-                tooLarge = false;
-                userInput = GetValidString(validSizeOptions);
-
-                if (userInput == "")
-                {
-                    SizeOption randomSize = new SizeOption();
-                    do
-                    {
-                        randomSize = sizeOptionsArray[GravityRandom(random, 0, sizeOptionsArray.Length - 1, mediumSizeIndex, weight: 2)];
-                    } while (creature._level < randomSize._minLevel);
-                    creature._size = randomSize._name;
-                }
-                else
-                {
-                    for (int i = 0; i < sizeOptionsArray.Length; i++)
-                    {
-                        if (userInput.ToLower() == sizeOptionsArray[i]._name.ToLower())
-                        {
-                            if (creature._level < sizeOptionsArray[i]._minLevel)
-                            {
-                                Console.WriteLine("Creatures of this level aren't usually so large. Are you sure? Y/N");
-                                userInput = GetValidString("Y", "N");
-                                if (userInput.ToUpper() == "N")
-                                {
-                                    tooLarge = true;
-                                    Console.WriteLine("Please enter a smaller size: ");
-                                }
-                            }
-                            else
-                            {
-                                creature._size = sizeOptionsArray[i]._name;
-                            }
-                        }
-                    }
-                }
-            } while (tooLarge == true);
-
-            Console.WriteLine("Creature Size: " + creature._size);
-
-            for (int i = 0; i < sizeOptionsArray.Length; i++)
-            {
-                if (sizeOptionsArray[i]._name.ToLower() == creature._size.ToLower())
-                {
-                    if (creature._level <= sizeOptionsArray[i]._maxExStrForSizeAndLevel)
-                    {
-                        creature._isStrengthExtreme = true;
-                    }
-                    break;
-                }
-            }
-
-            Console.WriteLine("Creature's Strength is Extreme: " + creature._isStrengthExtreme);
-        }
-
-        public static void AbilityScoresStep()
-        {
-
-        }
-
-        public static int GravityRandom(Random random, int min, int max, int gravityValue, int weight)
+        public static int WeightedRandom(Random random, int min, int max, int heavyValue, int weight)
         {
             int[] randoms = new int[weight + 1];
 
@@ -254,7 +444,7 @@ namespace PF2E_Creature_Maker
             {
                 foreach (int randValue in randoms)
                 {
-                    if (randValue == gravityValue - difference || randValue == gravityValue + difference)
+                    if (randValue == heavyValue - difference || randValue == heavyValue + difference)
                     {
                         return randValue;
                     }
@@ -263,7 +453,7 @@ namespace PF2E_Creature_Maker
             } while (true);
         }
 
-        public static int ContinueOrBack(Step[] stepOrder, int step, Creature creature, List<Creature> creatureSaves)
+        public static int ContinueOrBack(Step[] stepOrder, int step)
         {
             string userInput;
             do
@@ -278,27 +468,17 @@ namespace PF2E_Creature_Maker
                     }
                     else
                     {
-                        creatureSaves.RemoveAt(creatureSaves.Count - 1);
-                        creature = CopyCreature(creatureSaves[creatureSaves.Count - 1]);
-                        Console.WriteLine("Restoring creature saved at " + creature._lastSaved);
-                        Console.WriteLine("Creature save number: " + creature._saveNumber);
-                        
                         step -= 1;
-
+                        _creature = CopyCreature(_creatureSaves[stepOrder[step]]);
                         Console.WriteLine("Returning to {0} Step", stepOrder[step]);
                     }
-                }
-                else
-                {
-                    creature._lastSaved = stepOrder[step];
-                    creature._saveNumber++;
                 }
             } while (userInput.ToUpper() == "BACK");
 
             return step;
         }
 
-        public static List<Degree> CopyListValues(List<Degree> copiedList)
+        public static List<Degree> CopyDegreeList(List<Degree> copiedList)
         {
             List<Degree> returningList = new List<Degree>();
 
@@ -308,77 +488,6 @@ namespace PF2E_Creature_Maker
             }
 
             return returningList;
-        }
-
-        public static int LevelStep(Random random, Creature creature)
-        {
-            string userInput = "";
-            int partyLevel = GetMinMaxInt("Please enter the party's current level: ", MinMax.hasBoth, 1, 20);
-
-            bool passable = true;
-
-            int creatureLevel = 0;
-
-            do
-            {
-                userInput = "";
-                Console.WriteLine("Enter the creature's level or enter PARTY, NPC, or MONSTER to generate randomly based on the entry");
-                do
-                {
-                    string levelSelectionStyle = Console.ReadLine();
-                    passable = true;
-                    switch (levelSelectionStyle.ToUpper())
-                    {
-                        case "PARTY":
-                            creatureLevel = PinkRandom(random, partyLevel - 7, partyLevel + 7);
-                            break;
-                        case "NPC":
-                            creatureLevel = DisadvantageRandom(random, -1, 11);
-                            break;
-                        case "MONSTER":
-                            creatureLevel = DisadvantageRandom(random, -1, 25);
-                            break;
-                        default:
-                            try
-                            {
-                                creatureLevel = int.Parse(levelSelectionStyle);
-                            }
-                            catch
-                            {
-                                passable = false;
-                                Console.WriteLine("Invalid entry");
-                            }
-                            break;
-                    }
-                } while (passable == false);
-
-                if (creatureLevel < partyLevel - 7 || creatureLevel > partyLevel + 7)
-                {
-                    Console.WriteLine("Creature level is {0}, which is out of normal PC encounter range. Proceed anyway? Y/N", creatureLevel);
-                    userInput = GetValidString("Y", "N").ToUpper();
-                }
-            } while (userInput == "N");
-
-            Console.WriteLine("Creature Level: " + creatureLevel);
-            creature._level = creatureLevel;
-
-            for (int i = 11; i <= creature._level; i++)
-            {
-                int[] extremeLevels = new int[] { 11, 15, 20 };
-                if(extremeLevels.Contains(i))
-                {
-                    int removingDegree;
-                    do
-                    {
-                        removingDegree = random.Next(0, creature._degreeList.Count);
-                    } while (creature._degreeList[removingDegree] == Degree.ex);
-
-                    creature._degreeList.RemoveAt(removingDegree);
-                    creature._degreeList.Add(Degree.ex);
-                }
-            }
-
-            return partyLevel;
         }
 
         public static string GetValidString(params string[] valids)
@@ -409,7 +518,7 @@ namespace PF2E_Creature_Maker
 
             return userInput;
         }
-        
+
         public static int DisadvantageRandom(Random random, int min, int max)
         {
             int[] randomInts = new int[2];
@@ -420,7 +529,7 @@ namespace PF2E_Creature_Maker
 
             return randomInts.Min();
         }
-        
+
         public static int PinkRandom(Random random, int min, int max)
         {
             int[] randomInts = new int[2];
@@ -439,7 +548,7 @@ namespace PF2E_Creature_Maker
             bool passable = true;
             int userInt = 0;
 
-            if(minMaxes.Length >= 1 || minMaxes.Length <= 2)
+            if (minMaxes.Length >= 1 || minMaxes.Length <= 2)
             {
                 do
                 {
@@ -501,5 +610,13 @@ namespace PF2E_Creature_Maker
                 }
             } while (true);
         }
+
+        public static string CapitalizeString(string stringToCapitalize)
+        {
+            return stringToCapitalize.ToUpper()[0] + stringToCapitalize.ToLower().Substring(1);
+        }
+
+        #endregion
     }
+
 }

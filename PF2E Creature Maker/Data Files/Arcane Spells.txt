@@ -1,22 +1,22 @@
 Name,School,Description,Level
-Acid Splash,Evocationcation,Damage creatures with acid.,0
-Chill Touch,Necromancyromancy,Your touch hurts the living or disorients undead.,0
-Dancing Lights,Evocationcation,Create four floating lights you can move.,0
-Daze,Enchantmenthantment,Damage a creature's mind and possibly stun it.,0
-Detect Magic,Divinationination,Sense whether magic is nearby.,0
-Electric Arc,Evocationcation,Zap one or two creatures with lightning.,0
-Ghost Sound,Illusionusion,Make false sounds.,0
-Light,Evocationcation,Make an object glow.,0
-Mage Hand,Evocationcation,Command a floating hand to move an object.,0
-Message,Illusionusion,Speak a message to a distant creature-- who can reply.,0
-Prestidigitation,Evocationcation,Perform a minor magical trick.,0
-Produce Flame,Evocationcation,Kindle small flames to attack close or at range.,0
-Ray of Frost,Evocationcation,Damage a creature with cold.,0
-Read Aura,Divinationination,Detect if an object is magical-- and determine the school of its magic.,0
-Shield,Abjurationuration,A shield of magical force blocks attacks and magic missiles.,0
-Sigil,Transmutationnsmutation,Leave a magical mark.,0
-Tanglefoot,Conjurationjuration,Conjure a vine to entangle a creature.,0
-Telekinetic Projectile,Evocationcation,Fling an object at a creature.,0
+Acid Splash,Evocation,Damage creatures with acid.,0
+Chill Touch,Necromancy,Your touch hurts the living or disorients undead.,0
+Dancing Lights,Evocation,Create four floating lights you can move.,0
+Daze,Enchantment,Damage a creature's mind and possibly stun it.,0
+Detect Magic,Divination,Sense whether magic is nearby.,0
+Electric Arc,Evocation,Zap one or two creatures with lightning.,0
+Ghost Sound,Illusion,Make false sounds.,0
+Light,Evocation,Make an object glow.,0
+Mage Hand,Evocation,Command a floating hand to move an object.,0
+Message,Illusion,Speak a message to a distant creature-- who can reply.,0
+Prestidigitation,Evocation,Perform a minor magical trick.,0
+Produce Flame,Evocation,Kindle small flames to attack close or at range.,0
+Ray of Frost,Evocation,Damage a creature with cold.,0
+Read Aura,Divination,Detect if an object is magical-- and determine the school of its magic.,0
+Shield,Abjuration,A shield of magical force blocks attacks and magic missiles.,0
+Sigil,Transmutation,Leave a magical mark.,0
+Tanglefoot,Conjuration,Conjure a vine to entangle a creature.,0
+Telekinetic Projectile,Evocation,Fling an object at a creature.,0
 Acidic Burst,Evocation,You create a shell of acid around yourself that immediately bursts outward.,1
 Admonishing Ray,Necromancy,A ray of energy bludgeons your target into submission without causing lasting harm.,1
 Agitate,Enchantment,You send the target’s mind and body into overdrive-- forcing it to become restless and hyperactive.,1
