@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Dynamic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 
 namespace PF2E_Creature_Maker
 {
@@ -1839,14 +1833,19 @@ namespace PF2E_Creature_Maker
         public static void SaveToFileStep(Creature creature)
         {
             string overwrite = "Y";
-            if (Directory.GetFiles(@"C:\Users\cdmic\Desktop").Contains(@"C:\Users\cdmic\Desktop\" + creature.Name + ".txt"))
+            string savedCreaturesDirectory = Directory.GetCurrentDirectory() + @"\Saved Creatures";
+
+            Directory.CreateDirectory(savedCreaturesDirectory);
+
+            if (Directory.GetFiles(savedCreaturesDirectory).Contains(savedCreaturesDirectory + @"\" + creature.Name + ".txt"))
             {
-                Console.WriteLine("A file with this name already exists on the desktop. Overwrite? Y/N");
+                Console.WriteLine("A file with this name already exists. Overwrite? Y/N");
                 overwrite = Program.GetValidString("Y", "N");
             }
+
             if (overwrite.ToUpper() == "Y")
             {
-                StreamWriter saveFile = new StreamWriter(File.Create(@"C:\Users\cdmic\Desktop\" + creature.Name + ".txt"));
+                StreamWriter saveFile = new StreamWriter(File.Create(savedCreaturesDirectory + @"\" + creature.Name + ".txt"));
 
                 saveFile.WriteLine("__Final Creature__" +
                 "\nName: " + creature.Name +
@@ -1962,7 +1961,7 @@ namespace PF2E_Creature_Maker
 
                 saveFile.Close();
 
-                Console.WriteLine("Creature saved");
+                Console.WriteLine("Creature saved to " + savedCreaturesDirectory);
             }
         }
 

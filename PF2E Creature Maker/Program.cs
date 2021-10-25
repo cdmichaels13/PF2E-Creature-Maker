@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
-using System.IO.Pipes;
-using Microsoft.VisualBasic.CompilerServices;
-using System.ComponentModel.DataAnnotations;
 
 namespace PF2E_Creature_Maker
 {
@@ -320,7 +316,7 @@ namespace PF2E_Creature_Maker
                         }
                     case Step.SaveToFile:
                         {
-                            Console.WriteLine("Would you like to save this creature to desktop? Y/N");
+                            Console.WriteLine("Would you like to save this creature? Y/N");
                             string saveOrNot = GetValidString("Y", "N");
                             if (saveOrNot.ToUpper() == "Y")
                             {
