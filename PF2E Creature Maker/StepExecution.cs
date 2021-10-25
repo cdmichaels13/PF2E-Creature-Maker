@@ -493,7 +493,10 @@ namespace PF2E_Creature_Maker
                 validSkills[i] = creature.SkillPool.PossibleSkills[i];
                 Console.WriteLine(validSkills[i]);
             }
-            string userInput = Console.ReadLine();
+            List<string> validInputsList = validSkills.ToList<string>();
+            validInputsList.Add("");
+            string[] validInputs = validInputsList.ToArray();
+            string userInput = Program.GetValidString(validInputs);
             string selectedSkill;
             if (userInput == "")
             {
@@ -502,7 +505,7 @@ namespace PF2E_Creature_Maker
             }
             else
             {
-                selectedSkill = Program.GetValidString(validSkills);
+                selectedSkill = Program.CapitalizeString(userInput);
             }
 
             foreach (string skill in creature.SkillPool.PossibleSkills)
@@ -1301,7 +1304,11 @@ namespace PF2E_Creature_Maker
             }
 
             int distanceFromTopSpells = 0;
-            for (int spellLevelSelection = Convert.ToInt32(Math.Round(Convert.ToDouble(creature.Level / 2), MidpointRounding.ToPositiveInfinity)); spellLevelSelection > 0; spellLevelSelection--)
+            int spellLevelSelection = Convert.ToInt32(Math.Round(Convert.ToDouble(creature.Level / 2), MidpointRounding.ToPositiveInfinity));
+            spellLevelSelection = spellLevelSelection > 9 ? 9 : spellLevelSelection;
+
+
+            for (; spellLevelSelection > 0; spellLevelSelection--)
             {
                 Console.WriteLine("spellLevelSelection = " + spellLevelSelection);
 
@@ -1526,8 +1533,8 @@ namespace PF2E_Creature_Maker
             List<Item> validGear = new List<Item>();
             Item selectedItem = new Item();
 
-            Console.WriteLine("Enter Y before continuing to next step");
-            string continueY = Program.GetValidString("Y");
+            //Console.WriteLine("Enter Y before continuing to next step");
+            //string continueY = Program.GetValidString("Y");
             string repeatOrContinue = "";
 
             do

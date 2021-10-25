@@ -173,12 +173,21 @@ namespace PF2E_Creature_Maker
                         }
                     case Step.Skills:
                         {
-                            int sixSkills = 0;
                             do
                             {
+                                List<Degree> savedDegrees = CopyDegreeList(_creature.DegreeList);
                                 ExecuteStep.SkillStep(_creature, random);
-                                sixSkills++;
-                            } while (_creature.SkillPool.SelectedSkills.Count < 6 && sixSkills < 6);
+                                Console.WriteLine("Press ENTER to continue or BACK to erase previous skill");
+                                string userInput = GetValidString("", "BACK");
+                                if (userInput.ToUpper() == "BACK")
+                                {
+                                    int latestSkillIndex = _creature.SkillPool.SelectedSkills.Count() - 1;
+                                    _creature.SkillPool.PossibleSkills.Add(_creature.SkillPool.SelectedSkills[latestSkillIndex].skillName);
+                                    _creature.SkillPool.PossibleSkills.Sort();
+                                    _creature.SkillPool.SelectedSkills.RemoveAt(latestSkillIndex);
+                                    _creature.DegreeList = CopyDegreeList(savedDegrees);
+                                }
+                            } while (_creature.SkillPool.SelectedSkills.Count < 6);
                             break;
                         }
                     case Step.Armor_Class:
@@ -201,7 +210,18 @@ namespace PF2E_Creature_Maker
                             AbilityScoreEnum[] abilities = new AbilityScoreEnum[] { AbilityScoreEnum.Strength, AbilityScoreEnum.Dexterity, AbilityScoreEnum.Intelligence, AbilityScoreEnum.Wisdom, AbilityScoreEnum.Charisma };
                             foreach (AbilityScoreEnum ability in abilities)
                             {
-                                ExecuteStep.AbilityScoreStep(_creature, random, ability);
+                                string userInput = "";
+                                do
+                                {
+                                    List<Degree> saveDegrees = CopyDegreeList(_creature.DegreeList);
+                                    ExecuteStep.AbilityScoreStep(_creature, random, ability);
+                                    Console.WriteLine("Press ENTER to continue or BACK to redo the {0} score", ability);
+                                    userInput = GetValidString("", "BACK");
+                                    if (userInput.ToUpper() == "BACK")
+                                    {
+                                        _creature.DegreeList = CopyDegreeList(saveDegrees);
+                                    }
+                                } while (userInput.ToUpper() == "BACK");
                             }
                             break;
                         }
@@ -282,7 +302,7 @@ namespace PF2E_Creature_Maker
                     case Step.Gear:
                         {
                             Console.WriteLine("Press Enter to randomly determine if creature has gear or Y\\N:");
-                            string userInput = GetValidString(/*"",*/ "Y", "N");
+                            string userInput = GetValidString("", "Y", "N");
                             if (userInput == "" && random.Next(2) == 1)
                             {
                                 userInput = "Y";
